@@ -695,6 +695,10 @@ const courses = {
   {
     "name": "Android Development",
     "overview": "Learn to develop native Android applications using Java and Kotlin. This course covers all essential concepts required to build robust Android apps.",
+    "image":"/Courses/app dev/android development.png",
+    "duration":"8 months",
+    "enrolledStudents":963,
+    "position":"top",
     "Key Modules": [
       "Android Studio Setup and IDE Overview",
       "Activities, Fragments, and Intents",
@@ -723,6 +727,10 @@ const courses = {
   {
     "name": "Flutter Development",
     "overview": "Learn cross-platform mobile development using Flutter. Build high-performance apps that run on both Android and iOS with a single codebase.",
+      "image":"/Courses/app dev/flutter development.png",
+    "duration":"9 months",
+    "enrolledStudents":683,
+    "position":"top",
     "Key Modules": [
       "Flutter Basics and Widgets",
       "State Management (Provider, Riverpod)",
@@ -751,6 +759,10 @@ const courses = {
   {
     "name": "Kotlin Development",
     "overview": "Learn Kotlin programming and use it to develop modern Android applications. Focus on clean, concise code with advanced Android features.",
+      "image":"/Courses/app dev/kotlin development.png",
+    "duration":"7 months",
+    "enrolledStudents":661,
+    "position":"top",
     "Key Modules": [
       "Kotlin Syntax and Basics",
       "Object-Oriented Programming with Kotlin",
@@ -778,6 +790,10 @@ const courses = {
   {
     "name": "App Development with Flutter (6 Months)",
     "overview": "An extended, professional course to master Flutter development for cross-platform mobile applications with real-world projects.",
+      "image":"/Courses/app dev/flutter 6 months.png",
+    "duration":"10 months",
+    "enrolledStudents":1023,
+    "position":"top",
     "Key Modules": [
       "Complete Flutter Widget Library",
       "Advanced State Management",
@@ -806,6 +822,10 @@ const courses = {
   {
     "name": "App Development with Kotlin (6 Months)",
     "overview": "Comprehensive professional course for developing Android applications using Kotlin. Covers end-to-end app development for commercial use.",
+      "image":"/Courses/app dev/kotlin 6 months.png",
+    "duration":"8 months",
+    "enrolledStudents":575,
+    "position":"top",
     "Key Modules": [
       "Kotlin Advanced Concepts",
       "Android Studio Advanced Features",
@@ -834,6 +854,10 @@ const courses = {
   {
     "name": "iOS Development",
     "overview": "Learn to build native iOS applications using Swift and Xcode. Covers all fundamental concepts to develop apps for iPhones and iPads.",
+      "image":"/Courses/app dev/ios development.png",
+    "duration":"9 months",
+    "enrolledStudents":863,
+    "position":"top",
     "Key Modules": [
       "Swift Programming Basics",
       "Xcode IDE and Interface Builder",
@@ -862,6 +886,10 @@ const courses = {
   {
     "name": "React Native Development",
     "overview": "Learn cross-platform mobile app development using React Native. Build apps for both Android and iOS with a single codebase.",
+      "image":"/Courses/app dev/react native.png",
+    "duration":"6 months",
+    "enrolledStudents":901,
+    "position":"top",
     "Key Modules": [
       "React Native Basics and Components",
       "State Management with Redux",
@@ -895,6 +923,10 @@ const courses = {
   {
     "name": "Digital Marketing Training",
     "overview": "This course covers the basics of digital marketing and introduces students to online marketing strategies used by businesses to grow their online presence.",
+    "image":"/Courses/digital marketing/digital marketing.png",
+    "duration":"9 months",
+    "enrolledStudents":584,
+    "position":"top",
     "Key Modules": [
       "Introduction to Digital Marketing",
       "Search Engine Optimization (SEO) Basics",
@@ -923,6 +955,10 @@ const courses = {
   {
     "name": "Advanced Digital Marketing",
     "overview": "Advanced course for students who want to specialize in digital marketing and learn strategies to increase ROI, engagement, and conversions.",
+    "image":"/Courses/digital marketing/advanced DM.png",
+    "duration":"12 months",
+    "enrolledStudents":683,
+    "position":"top",
     "Key Modules": [
       "Advanced SEO Techniques",
       "Paid Advertising: Google Ads, Facebook Ads",
@@ -950,6 +986,10 @@ const courses = {
   {
     "name": "Advanced Digital Marketing with AI",
     "overview": "This course integrates AI technologies into digital marketing for smarter, data-driven campaigns. Learn to use AI tools to enhance marketing strategy and automation.",
+        "image":"/Courses/digital marketing/Advanced DM with AI.png",
+    "duration":"14 months",
+    "enrolledStudents":919,
+    "position":"top",
     "Key Modules": [
       "AI in Digital Marketing: Concepts and Tools",
       "Predictive Analytics for Campaigns",
@@ -983,6 +1023,10 @@ const courses = {
  {
     "name": "ERP HR",
     "overview": "Learn how to manage Human Resource processes using ERP software. This course focuses on automating HR tasks and integrating employee data efficiently.",
+    "image":"/Courses/ERP/ERP HR.png",
+    "duration":"3 months",
+    "enrolledStudents":319,
+    "position":"center",
     "Key Modules": [
       "Introduction to ERP and HR Module",
       "Employee Data Management",
@@ -1010,6 +1054,10 @@ const courses = {
   {
     "name": "ERP S4 HANA FICO",
     "overview": "Master the Financial Accounting (FI) and Controlling (CO) modules in SAP S4 HANA. This course prepares students for finance-related ERP roles.",
+    "image":"/Courses/ERP/ERP s4 hana fico.png",
+    "duration":"4 months",
+    "enrolledStudents":519,
+    "position":"center",
     "Key Modules": [
       "SAP S4 HANA Overview",
       "General Ledger and Accounts Payable/Receivable",
@@ -1037,6 +1085,10 @@ const courses = {
   {
     "name": "ERP S4 HANA MM",
     "overview": "Learn the Materials Management (MM) module in SAP S4 HANA for procurement and inventory management in organizations.",
+    "image":"/Courses/ERP/ERP hana mm.png",
+    "duration":"4 months",
+    "enrolledStudents":471,
+    "position":"center",
     "Key Modules": [
       "Material Master Data Management",
       "Vendor Management",
@@ -1064,6 +1116,10 @@ const courses = {
   {
     "name": "ERP S4 HANA PP",
     "overview": "Master Production Planning (PP) in SAP S4 HANA. This module helps in planning and controlling manufacturing processes.",
+    "image":"/Courses/ERP/ERP hana pp.png",
+    "duration":"5 months",
+    "enrolledStudents":612,
+    "position":"center",
     "Key Modules": [
       "Production Planning and Scheduling",
       "Material Requirement Planning (MRP)",
@@ -1091,6 +1147,10 @@ const courses = {
   {
     "name": "ERP S4 HANA SD",
     "overview": "Learn Sales and Distribution (SD) in SAP S4 HANA for managing sales processes, orders, and distribution channels.",
+    "image":"/Courses/ERP/ERP hana SD.png",
+    "duration":"5 months",
+    "enrolledStudents":321,
+    "position":"center",
     "Key Modules": [
       "Sales Order Management",
       "Pricing and Billing",
@@ -1118,6 +1178,10 @@ const courses = {
   {
     "name": "ERP S4 HANA ABAP",
     "overview": "Learn ABAP programming in SAP S4 HANA to customize ERP applications and create reports or forms.",
+    "image":"/Courses/ERP/ERP ABAP.png",
+    "duration":"4 months",
+    "enrolledStudents":819,
+    "position":"bottom",
     "Key Modules": [
       "ABAP Basics and Syntax",
       "Data Dictionary and Tables",
@@ -1145,6 +1209,10 @@ const courses = {
   {
     "name": "ERP S4 HANA BASIS",
     "overview": "Learn SAP BASIS for system administration, installation, and configuration of SAP systems.",
+    "image":"/Courses/ERP/ERP hana basis.png",
+    "duration":"4 months",
+    "enrolledStudents":541,
+    "position":"center",
     "Key Modules": [
       "SAP System Architecture",
       "Client Administration",
@@ -1172,6 +1240,10 @@ const courses = {
   {
     "name": "ERP S4 HANA SuccessFactors",
     "overview": "Learn SAP SuccessFactors for human capital management and talent management in organizations.",
+    "image":"/Courses/ERP/ERP hana successfactors.png",
+    "duration":"3 months",
+    "enrolledStudents":311,
+    "position":"center",
     "Key Modules": [
       "Employee Central Configuration",
       "Performance & Goals Management",
@@ -1200,10 +1272,15 @@ const courses = {
 "Software Testing": {
   "image":"/Courses/software-testing.webp",
   "description":"Ensure high-quality software with expert testing skills !\nLearn manual and automated testing, bug tracking, and quality assurance best practices for real-world projects.",
+
   "subcourses":[
   {
     "name": "Manual Testing + Selenium",
     "overview": "Learn the fundamentals of software testing with practical exposure to manual testing and automation using Selenium. This course is ideal for quality assurance (QA) professionals.",
+       "image":"/Courses/software testing/manual testing and selenium.png",
+    "duration":"6 months",
+    "enrolledStudents":711,
+    "position":"top",
     "Key Modules": [
       "Introduction to Software Testing",
       "SDLC and STLC Concepts",
@@ -1232,6 +1309,10 @@ const courses = {
   {
     "name": "QA Full Stack",
     "overview": "A complete course covering both manual and automation testing, including full-stack QA practices. Learn to test web, mobile, and database applications effectively.",
+       "image":"/Courses/software testing/QA full stack.png",
+    "duration":"7 months",
+    "enrolledStudents":657,
+    "position":"top",
     "Key Modules": [
       "Manual Testing Concepts",
       "Automation Testing with Selenium and Appium",

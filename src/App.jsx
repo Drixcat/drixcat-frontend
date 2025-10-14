@@ -26,6 +26,7 @@ import CareerPrograms from './components/Courses/CareerPrograms';
 import AboutUs from './components/About/AboutUs';
 import Placement from './components/Placements/PlacementPage';
 import SubCourses from './components/Courses/SubCourses';
+import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 
 function App() {
 
@@ -42,8 +43,10 @@ function App() {
     <header className='sticky top-0 z-50'>
       <Navbar/>
     </header>
+     <ScrollToTop/>
     <main>
       <Routes>
+     
     <Route path="/" element={<>
       <Heroes/>
       <CoursesHome/>
