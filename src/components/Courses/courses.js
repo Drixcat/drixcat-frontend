@@ -1345,6 +1345,10 @@ const courses = {
   {
     "name": "Graphic Design",
     "overview": "Learn the fundamentals of graphic design, including visual communication, typography, and creating appealing designs using industry-standard software.",
+     "image":"/Courses/graphic design/Graphic design.png",
+    "duration":"7 months",
+    "enrolledStudents":657,
+    "position":"center",
     "Key Modules": [
       "Principles of Graphic Design",
       "Color Theory and Typography",
@@ -1372,6 +1376,10 @@ const courses = {
   {
     "name": "Motion Graphics Design",
     "overview": "Learn to create engaging animated graphics for videos, advertisements, and social media using motion graphics tools.",
+     "image":"/Courses/graphic design/motion graphics.png",
+    "duration":"8 months",
+    "enrolledStudents":827,
+    "position":"center",
     "Key Modules": [
       "Introduction to Motion Graphics",
       "Adobe After Effects Basics",
@@ -1399,6 +1407,10 @@ const courses = {
   {
     "name": "One-Year Diploma in Graphic Design",
     "overview": "A comprehensive diploma covering all aspects of graphic and digital design, suitable for professional careers in creative industries.",
+     "image":"/Courses/graphic design/one yr program.png",
+    "duration":"12 months",
+    "enrolledStudents":657,
+    "position":"center",
     "Key Modules": [
       "Graphic Design Principles",
       "Adobe Photoshop, Illustrator, and InDesign",
@@ -2186,6 +2198,10 @@ const courses = {
   {
     "name": "MySQL",
     "overview": "Learn MySQL, a powerful relational database management system, to design, manage, and query databases efficiently.",
+     "image":"/Courses/database/MySQL.png",
+    "duration":"5 months",
+    "enrolledStudents":817,
+    "position":"center",
     "Key Modules": [
       "Introduction to MySQL and Database Concepts",
       "Creating and Managing Databases",
@@ -2214,6 +2230,10 @@ const courses = {
   {
     "name": "MongoDB",
     "overview": "Learn MongoDB, a NoSQL database, to manage unstructured data and build scalable applications.",
+         "image":"/Courses/database/MongoDB.png",
+    "duration":"4 months",
+    "enrolledStudents":677,
+    "position":"center",
     "Key Modules": [
       "Introduction to NoSQL and MongoDB",
       "Database, Collections, and Documents",
@@ -2242,6 +2262,10 @@ const courses = {
   {
     "name": "MIS: Advanced Excel & BI Tools",
     "overview": "Learn to analyze business data and create reports using Excel and business intelligence tools.",
+         "image":"/Courses/database/MIS.png",
+    "duration":"6 months",
+    "enrolledStudents":912,
+    "position":"center",
     "Key Modules": [
       "Advanced Excel Functions and Formulas",
       "Pivot Tables and Charts",
