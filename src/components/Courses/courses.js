@@ -1443,6 +1443,10 @@ const courses = {
   {
     "name": "AutoCAD & 3D Design",
     "overview": "Learn 2D and 3D drafting, modeling, and design using AutoCAD. Ideal for engineers, architects, and designers.",
+    "image":"/Courses/CAD/AutoCAD.png",
+    "duration":"7 months",
+    "enrolledStudents":651,
+    "position":"top",
     "Key Modules": [
       "AutoCAD Interface and Tools",
       "2D Drawing and Drafting Techniques",
@@ -1470,6 +1474,10 @@ const courses = {
   {
     "name": "3D Max",
     "overview": "Learn 3D modeling, animation, and rendering using Autodesk 3ds Max for architectural and visual effects projects.",
+       "image":"/Courses/CAD/3ds max.png",
+    "duration":"8 months",
+    "enrolledStudents":751,
+    "position":"top",
     "Key Modules": [
       "3D Modeling Techniques",
       "Texturing and Materials",
@@ -1497,6 +1505,10 @@ const courses = {
   {
     "name": "Revit Architecture",
     "overview": "Learn building design and construction modeling using Autodesk Revit Architecture. Ideal for architects and interior designers.",
+       "image":"/Courses/CAD/revit architecture.png",
+    "duration":"5 months",
+    "enrolledStudents":421,
+    "position":"top",
     "Key Modules": [
       "Revit Interface and Tools",
       "Building Modeling and Components",
@@ -1524,6 +1536,10 @@ const courses = {
   {
     "name": "V-Ray",
     "overview": "Master rendering and visualization using V-Ray for realistic images and architectural presentations.",
+       "image":"/Courses/CAD/V-Ray.png",
+    "duration":"6 months",
+    "enrolledStudents":841,
+    "position":"top",
     "Key Modules": [
       "V-Ray Setup and Interface",
       "Lighting and Camera Techniques",
@@ -1551,6 +1567,10 @@ const courses = {
   {
     "name": "SolidWorks",
     "overview": "Learn 3D mechanical design, modeling, and simulation using SolidWorks. Ideal for mechanical engineers and product designers.",
+       "image":"/Courses/CAD/SolidWorks.png",
+    "duration":"6 months",
+    "enrolledStudents":628,
+    "position":"top",
     "Key Modules": [
       "SolidWorks Interface and Tools",
       "3D Part Modeling",
@@ -1578,6 +1598,10 @@ const courses = {
   {
     "name": "CATIA",
     "overview": "Learn 3D product design, modeling, and manufacturing using CATIA. Focuses on complex mechanical and industrial designs.",
+       "image":"/Courses/CAD/catia.png",
+    "duration":"5 months",
+    "enrolledStudents":521,
+    "position":"top",
     "Key Modules": [
       "CATIA Interface and Tools",
       "Part and Assembly Design",
@@ -1605,6 +1629,10 @@ const courses = {
   {
     "name": "StaadPro",
     "overview": "Learn structural analysis and design using STAAD.Pro software. Ideal for civil engineers and structural designers.",
+       "image":"/Courses/CAD/Staad pro.jpeg",
+    "duration":"8 months",
+    "enrolledStudents":841,
+    "position":"top",
     "Key Modules": [
       "STAAD.Pro Interface and Tools",
       "Structural Modeling and Load Application",
@@ -1632,6 +1660,10 @@ const courses = {
   {
     "name": "Diploma in Interior Designing",
     "overview": "Comprehensive interior design course covering conceptualization, 3D visualization, and design execution.",
+       "image":"/Courses/CAD/diploma.png",
+    "duration":"10 months",
+    "enrolledStudents":684,
+    "position":"top",
     "Key Modules": [
       "Interior Design Principles",
       "Space Planning and Layouts",
@@ -1665,6 +1697,10 @@ const courses = {
   {
     "name": "CCNA (Cisco Certified Network Associate)",
     "overview": "Learn the fundamentals of networking and Cisco technologies. This course covers network design, configuration, and troubleshooting.",
+        "image":"/Courses/Network&Security/CCNA.png",
+    "duration":"9 months",
+    "enrolledStudents":622,
+    "position":"center",
     "Key Modules": [
       "Networking Basics and OSI Model",
       "IP Addressing and Subnetting",
@@ -1692,6 +1728,10 @@ const courses = {
   {
     "name": "CCNP (Cisco Certified Network Professional)",
     "overview": "Advanced networking course for professionals aiming to manage complex network infrastructures.",
+        "image":"/Courses/Network&Security/CCNP.png",
+    "duration":"9 months",
+    "enrolledStudents":471,
+    "position":"center",
     "Key Modules": [
       "Advanced Routing Protocols (OSPF, EIGRP, BGP)",
       "LAN and WAN Optimization",
@@ -1719,6 +1759,10 @@ const courses = {
   {
     "name": "MCSE (Microsoft Certified Solutions Expert)",
     "overview": "Learn to implement and manage Microsoft server infrastructures and services.",
+      "image":"/Courses/Network&Security/MCSE.png",
+    "duration":"10 months",
+    "enrolledStudents":647,
+    "position":"center",
     "Key Modules": [
       "Windows Server Installation and Configuration",
       "Active Directory Management",
@@ -1740,6 +1784,10 @@ const courses = {
   {
     "name": "MCSA (Microsoft Certified Solutions Associate)",
     "overview": "Foundation course to manage Microsoft systems and prepare for advanced certifications.",
+      "image":"/Courses/Network&Security/MCSA.png",
+    "duration":"9 months",
+    "enrolledStudents":457,
+    "position":"center",
     "Key Modules": [
       "Windows Server Fundamentals",
       "Networking and Security Basics",
@@ -1760,6 +1808,10 @@ const courses = {
   {
     "name": "Cyber Security",
     "overview": "Learn to protect systems, networks, and applications from cyber threats. Covers defensive strategies and security tools.",
+     "image":"/Courses/Network&Security/cyber security.png",
+    "duration":"10 months",
+    "enrolledStudents":647,
+    "position":"center",
     "Key Modules": [
       "Introduction to Cyber Security",
       "Network Security Fundamentals",
@@ -1787,6 +1839,10 @@ const courses = {
   {
     "name": "Ethical Hacking",
     "overview": "Learn ethical hacking techniques to test and secure systems legally. Focuses on real-world security challenges.",
+    "image":"/Courses/Network&Security/ethical hacking.png",
+    "duration":"9 months",
+    "enrolledStudents":357,
+    "position":"center",
     "Key Modules": [
       "Introduction to Ethical Hacking",
       "Footprinting and Reconnaissance",
@@ -1814,6 +1870,10 @@ const courses = {
   {
     "name": "Diploma in Cyber Security & Networking (1 Year)",
     "overview": "Comprehensive course covering networking fundamentals, advanced cyber security, and practical applications over one year.",
+     "image":"/Courses/Network&Security/diploma.png",
+    "duration":"12 months",
+    "enrolledStudents":647,
+    "position":"center",
     "Key Modules": [
       "Networking Basics and Advanced Networking",
       "Cyber Security Principles and Practices",
@@ -1846,6 +1906,10 @@ const courses = {
   {
     "name": "Linux Administration",
     "overview": "Learn to manage Linux servers and systems, a critical skill for cloud and enterprise environments.",
+    "image":"/Courses/cloud computing/linux admin.png",
+    "duration":"9 months",
+    "enrolledStudents":622,
+    "position":"center",
     "Key Modules": [
       "Linux Basics and Commands",
       "File System Management",
@@ -1873,6 +1937,10 @@ const courses = {
   {
     "name": "Salesforce Administrator",
     "overview": "Learn Salesforce platform basics and administration, including managing users, data, and security in CRM.",
+    "image":"/Courses/cloud computing/salesforce admin.png",
+    "duration":"8 months",
+    "enrolledStudents":542,
+    "position":"center",
     "Key Modules": [
       "Salesforce Platform Overview",
       "User Management and Security",
@@ -1899,6 +1967,10 @@ const courses = {
   {
     "name": "AWS Solution Architect",
     "overview": "Learn to design and deploy scalable, reliable, and secure applications on AWS.",
+    "image":"/Courses/cloud computing/aws.png",
+    "duration":"7 months",
+    "enrolledStudents":356,
+    "position":"center",
     "Key Modules": [
       "AWS Core Services (EC2, S3, RDS)",
       "VPC and Networking",
@@ -1926,6 +1998,10 @@ const courses = {
   {
     "name": "Azure",
     "overview": "Learn Microsoft Azure cloud platform to deploy and manage cloud applications and services.",
+    "image":"/Courses/cloud computing/azure.png",
+    "duration":"6 months",
+    "enrolledStudents":471,
+    "position":"center",
     "Key Modules": [
       "Azure Architecture and Services Overview",
       "Virtual Machines and Storage",
@@ -1953,6 +2029,10 @@ const courses = {
   {
     "name": "Cloud Computing Fundamentals",
     "overview": "Learn the core concepts of cloud computing, deployment models, and service models.",
+    "image":"/Courses/cloud computing/cloud computing.png",
+    "duration":"8 months",
+    "enrolledStudents":742,
+    "position":"center",
     "Key Modules": [
       "Introduction to Cloud Computing",
       "Cloud Service Models (IaaS, PaaS, SaaS)",
@@ -1975,6 +2055,10 @@ const courses = {
   {
     "name": "Google Cloud Platform (GCP)",
     "overview": "Learn Google Cloud services and tools for deploying and managing applications.",
+    "image":"/Courses/cloud computing/GCP.png",
+    "duration":"5 months",
+    "enrolledStudents":532,
+    "position":"center",
     "Key Modules": [
       "GCP Core Services",
       "Compute Engine and Storage",
@@ -1997,6 +2081,10 @@ const courses = {
   {
     "name": "Microservices Training",
     "overview": "Learn microservices architecture for designing scalable and independent services in cloud environments.",
+    "image":"/Courses/cloud computing/microservices training.png",
+    "duration":"8 months",
+    "enrolledStudents":542,
+    "position":"center",
     "Key Modules": [
       "Microservices Fundamentals",
       "REST APIs and Service Communication",
@@ -2019,6 +2107,10 @@ const courses = {
   {
     "name": "Microsoft Azure Administrator",
     "overview": "Learn to manage Azure cloud infrastructure, including virtual networks, storage, and monitoring.",
+    "image":"/Courses/cloud computing/microsoft azure admin.png",
+    "duration":"7 months",
+    "enrolledStudents":638,
+    "position":"center",
     "Key Modules": [
       "Azure Resource Management",
       "Virtual Machines and Networking",
@@ -2040,6 +2132,10 @@ const courses = {
   {
     "name": "Salesforce Platform Developer",
     "overview": "Learn to develop applications on Salesforce platform using Apex and Visualforce.",
+    "image":"/Courses/cloud computing/salesforce platform.png",
+    "duration":"8 months",
+    "enrolledStudents":631,
+    "position":"center",
     "Key Modules": [
       "Salesforce Development Basics",
       "Apex Programming Language",
@@ -2062,6 +2158,10 @@ const courses = {
   {
     "name": "AWS SysOps Administrator",
     "overview": "Learn AWS system administration, including deployment, management, and operational tasks.",
+    "image":"/Courses/cloud computing/AWS sysops.png",
+    "duration":"8 months",
+    "enrolledStudents":642,
+    "position":"center",
     "Key Modules": [
       "AWS Deployment and Management",
       "EC2, S3, RDS Management",
@@ -2083,6 +2183,10 @@ const courses = {
   {
     "name": "Internet of Things (IoT)",
     "overview": "Learn to connect devices, collect data, and create IoT applications using cloud platforms.",
+    "image":"/Courses/cloud computing/iot.png",
+    "duration":"6 months",
+    "enrolledStudents":542,
+    "position":"center",
     "Key Modules": [
       "Introduction to IoT Concepts",
       "Sensors and Data Collection",
@@ -2105,6 +2209,10 @@ const courses = {
   {
     "name": "DevOps Certification",
     "overview": "Learn DevOps practices for CI/CD, automation, and cloud deployment.",
+    "image":"/Courses/cloud computing/devops.png",
+    "duration":"6 months",
+    "enrolledStudents":759,
+    "position":"center",
     "Key Modules": [
       "DevOps Fundamentals",
       "Continuous Integration and Delivery",
@@ -2127,6 +2235,10 @@ const courses = {
   {
     "name": "Kubernetes Certification",
     "overview": "Learn Kubernetes to manage containerized applications in production environments.",
+    "image":"/Courses/cloud computing/kubernetes.png",
+    "duration":"8 months",
+    "enrolledStudents":502,
+    "position":"center",
     "Key Modules": [
       "Kubernetes Architecture",
       "Pods, Deployments, and Services",
@@ -2149,6 +2261,10 @@ const courses = {
   {
     "name": "AWS Certified DevOps Engineer",
     "overview": "Advanced course on implementing DevOps practices on AWS cloud for automation, CI/CD, and monitoring.",
+    "image":"/Courses/cloud computing/aws certified.png",
+    "duration":"11 months",
+    "enrolledStudents":874,
+    "position":"center",
     "Key Modules": [
       "AWS DevOps Tools Overview",
       "Continuous Integration and Delivery on AWS",
@@ -2171,6 +2287,10 @@ const courses = {
   {
     "name": "Docker Certification",
     "overview": "Learn containerization using Docker to build, deploy, and manage applications efficiently.",
+    "image":"/Courses/cloud computing/docker certification.png",
+    "duration":"9 months",
+    "enrolledStudents":620,
+    "position":"center",
     "Key Modules": [
       "Docker Fundamentals",
       "Docker Images and Containers",
