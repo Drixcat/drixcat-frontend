@@ -1,7 +1,7 @@
 const courses = {
  "Python": {
   "image":"/Courses/Python.jpg",
-  "description":"Master Python — the most versatile programming language !\nBuild a strong foundation for data science, AI, web development, and automation with hands-on projects.",
+  "description":"Master Python — the world’s most versatile language! Build a solid foundation for AI, data science, web development, and automation through hands-on Projects.",
   subcourses:[
  
     {
@@ -10,7 +10,7 @@ const courses = {
       "image":"/Courses/python/python-core.png",
       "duration":"6 months",
       "enrolledStudents":765,
-      "keyModules": [
+      "KeyModules": [
         "Python Basics: Variables, Data Types, Operators",
         "Control Flow: Conditional Statements, Loops",
         "Functions and Modules",
@@ -18,17 +18,17 @@ const courses = {
         "Object-Oriented Programming (OOP) Concepts",
         "Working with Libraries (math, random, datetime, etc.)"
       ],
-      "skillsGained": [
+      "SkillsGained": [
         "Writing clean, structured Python code",
         "Solving programming problems",
-        "Understanding OOP for Python projects"
+        "Understanding OOP for Python Projects"
       ],
-      "careerBenefits": [
+      "CareerBenefits": [
         "Entry-level Python Developer",
         "Data Analyst Trainee",
         "Backend Developer Intern"
       ],
-      "projects": [
+      "Projects": [
         "Calculator application",
         "To-do list application",
         "File management system"
@@ -58,7 +58,7 @@ const courses = {
         "Backend Web Developer",
         "Full-Stack Developer (with frontend skills)"
       ],
-      "projects": [
+      "Projects": [
         "Blogging platform",
         "Online bookstore",
         "Employee management system"
@@ -87,7 +87,7 @@ const courses = {
         "AI-enabled Web Developer",
         "Junior Python Developer"
       ],
-      "projects": [
+      "Projects": [
         "AI-powered chatbot web application",
         "E-commerce platform with recommendation system",
         "Task management app with AI-based suggestions"
@@ -116,7 +116,7 @@ const courses = {
         "Business Analyst",
         "Junior Data Scientist"
       ],
-      "projects": [
+      "Projects": [
         "Sales data analysis and visualization",
         "Customer segmentation with AI",
         "Predictive analytics on real datasets"
@@ -146,7 +146,7 @@ const courses = {
         "ML Engineer",
         "AI Developer"
       ],
-      "projects": [
+      "Projects": [
         "Predictive sales model",
         "Customer churn prediction",
         "AI-powered recommendation system"
@@ -175,7 +175,7 @@ const courses = {
         "Machine Learning Engineer",
         "Data Scientist"
       ],
-      "projects": [
+      "Projects": [
         "AI chatbot",
         "Image classification using AI",
         "Predictive modeling for business"
@@ -187,7 +187,7 @@ const courses = {
 "Java": {
 
   "image":"/Courses/java.jpg",
-  "description":"Learn Java — the backbone of enterprise and Android development !\nGain hands-on experience in object-oriented programming, app building, and real-world project design.",
+  "description":"Learn Java — the core of enterprise and Android development! Get hands-on experience in OOP, app building, and real-world Projects.",
   subcourses:[{
     "name": "Java for Beginners",
     "overview": "This course introduces the fundamentals of Java programming. Learn to write clean, efficient Java code and develop problem-solving skills through practical exercises.",
@@ -195,7 +195,7 @@ const courses = {
      "position":"top",
     "duration":"3 months",
     "enrolledStudents":562,
-    "Key Modules": [
+    "KeyModules": [
       "Java Basics: Variables, Data Types, Operators",
       "Control Statements: Loops, Conditions",
       "Object-Oriented Programming (OOP) Concepts: Classes, Objects, Inheritance, Polymorphism",
@@ -203,12 +203,12 @@ const courses = {
       "Java Collections Framework",
       "File Handling"
     ],
-    "Skills Gained": [
+    "SkillsGained": [
       "Writing efficient Java programs",
       "Understanding OOP principles",
       "Problem-solving using Java"
     ],
-    "Career Benefits": [
+    "CareerBenefits": [
       "Java Developer",
       "Software Developer Intern",
       "Backend Developer"
@@ -226,7 +226,7 @@ const courses = {
      "position":"top",
     "duration":"6 months",
     "enrolledStudents":862,
-    "Key Modules": [
+    "KeyModules": [
       "Advanced OOP Concepts",
       "Multithreading and Concurrency",
       "Java Streams and Lambda Expressions",
@@ -234,12 +234,12 @@ const courses = {
       "Design Patterns",
       "Exception Handling & Logging"
     ],
-    "Skills Gained": [
+    "SkillsGained": [
       "Building complex Java applications",
       "Working with databases using Java",
       "Understanding advanced programming concepts"
     ],
-    "Career Benefits": [
+    "CareerBenefits": [
       "Senior Java Developer",
       "Backend Developer",
       "Full Stack Java Developer"
@@ -257,7 +257,7 @@ const courses = {
      "position":"top",
     "duration":"9 months",
     "enrolledStudents":1462,
-    "Key Modules": [
+    "KeyModules": [
       "Java Spring Boot for Backend",
       "REST API Development",
       "React.js for Frontend Development",
@@ -265,12 +265,12 @@ const courses = {
       "AI Basics Integration for Intelligent Features",
       "Deployment on Cloud Platforms"
     ],
-    "Skills Gained": [
+    "SkillsGained": [
       "Full-stack application development",
       "Frontend-backend integration",
       "Basic AI implementation"
     ],
-    "Career Benefits": [
+    "CareerBenefits": [
       "Full Stack Java Developer",
       "Java Web Developer with AI Skills"
     ],
@@ -287,19 +287,19 @@ const courses = {
     "position":"top",
     "duration":"12 months",
     "enrolledStudents":802,
-    "Key Modules": [
+    "KeyModules": [
       "Java Backend Development with Spring Boot",
       "Frontend with React.js",
       "DSA Concepts: Arrays, Linked Lists, Trees, Graphs, Searching & Sorting",
       "Database Integration & Hibernate",
       "AI integration for predictive features"
     ],
-    "Skills Gained": [
+    "SkillsGained": [
       "Full-stack web development expertise",
       "Strong problem-solving with DSA",
       "AI-enabled application development"
     ],
-    "Career Benefits": [
+    "CareerBenefits": [
       "Full Stack Developer",
       "AI-enabled Java Developer",
       "Software Engineer"
@@ -318,7 +318,7 @@ const courses = {
     "duration":"7 months",
     "enrolledStudents":762,
     
-    "Key Modules": [
+    "KeyModules": [
       "Spring Boot Fundamentals",
       "RESTful API Development",
       "Microservices Architecture & Communication",
@@ -326,12 +326,12 @@ const courses = {
       "Security with Spring Security",
       "Exception Handling & Logging"
     ],
-    "Skills Gained": [
+    "SkillsGained": [
       "Building scalable backend applications",
       "Secure REST APIs",
       "Microservices development and integration"
     ],
-    "Career Benefits": [
+    "CareerBenefits": [
       "Backend Developer",
       "Microservices Developer",
       "Java Security Developer"
@@ -349,7 +349,7 @@ const courses = {
 
 "Web Development & Full Stack Development": {
   "image":"/Courses/web dev.jpg",
-  "description":"Become a professional web developer from front to back !\nLearn to build responsive websites, dynamic web apps, and powerful backend systems using modern tools and frameworks.",
+  "description":"Become a full-stack developer! Build responsive websites and dynamic apps with modern tools.",
   
   "subcourses":[
 
@@ -360,7 +360,7 @@ const courses = {
     "image":"/Courses/web dev/web designing.png",
     "duration":"6 months",
     "enrolledStudents":987,
-    "Key Modules": [
+    "KeyModules": [
       "HTML5 and CSS3 basics",
       "CSS Flexbox and Grid",
       "JavaScript Fundamentals",
@@ -368,12 +368,12 @@ const courses = {
       "Animations and Effects",
       "SEO-friendly design principles"
     ],
-    "Skills Gained": [
+    "SkillsGained": [
       "Build responsive and interactive websites",
       "Apply modern web design techniques",
-      "Work on real-time projects"
+      "Work on real-time Projects"
     ],
-    "Career Benefits": [
+    "CareerBenefits": [
       "Frontend Developer",
       "Web Designer",
       "UI Developer"
@@ -390,19 +390,19 @@ const courses = {
     "image":"/Courses/web dev/react.png",
     "duration":"6 months",
     "enrolledStudents":987,
-    "Key Modules": [
+    "KeyModules": [
       "React Components and Props",
       "State Management and Hooks",
       "Routing with React Router",
       "Integrating APIs",
       "Project Structuring and Best Practices"
     ],
-    "Skills Gained": [
+    "SkillsGained": [
       "Build dynamic and interactive web apps",
       "Understand frontend frameworks",
       "Work with APIs and data-driven applications"
     ],
-    "Career Benefits": [
+    "CareerBenefits": [
       "React Developer",
       "Frontend Developer",
       "Full Stack Developer (React.js)"
@@ -419,7 +419,7 @@ const courses = {
     "image":"/Courses/web dev/Angular.png",
     "duration":"7 months",
     "enrolledStudents":691,
-    "Key Modules": [
+    "KeyModules": [
       "Angular Components and Modules",
       "Services and Dependency Injection",
       "Routing and Navigation",
@@ -427,12 +427,12 @@ const courses = {
       "HTTP Client and APIs",
       "State Management"
     ],
-    "Skills Gained": [
+    "SkillsGained": [
       "Develop scalable web applications",
       "Integrate APIs and manage data",
-      "Maintain code structure for large projects"
+      "Maintain code structure for large Projects"
     ],
-    "Career Benefits": [
+    "CareerBenefits": [
       "Angular Developer",
       "Frontend Engineer",
       "UI/UX Frontend Developer"
@@ -449,7 +449,7 @@ const courses = {
     "image":"/Courses/web dev/Mern stack.png",
     "duration":"9 months",
     "enrolledStudents":1087,
-    "Key Modules": [
+    "KeyModules": [
       "MongoDB for NoSQL Databases",
       "Express.js for backend APIs",
       "Node.js server-side programming",
@@ -457,12 +457,12 @@ const courses = {
       "Connecting frontend and backend",
       "Authentication and Deployment"
     ],
-    "Skills Gained": [
+    "SkillsGained": [
       "Build full-stack applications",
       "Work with NoSQL databases",
       "Implement authentication and secure APIs"
     ],
-    "Career Benefits": [
+    "CareerBenefits": [
       "MERN Stack Developer",
       "Full Stack Web Developer",
       "Backend and Frontend Integration Specialist"
@@ -479,7 +479,7 @@ const courses = {
     "image":"/Courses/web dev/Mean stack.png",
     "duration":"8 months",
     "enrolledStudents":987,
-    "Key Modules": [
+    "KeyModules": [
       "MongoDB database operations",
       "Express.js API development",
       "Node.js server-side logic",
@@ -487,12 +487,12 @@ const courses = {
       "User authentication and security",
       "Project deployment"
     ],
-    "Skills Gained": [
+    "SkillsGained": [
       "Full-stack application development",
       "Angular frontend expertise",
       "Secure backend integration"
     ],
-    "Career Benefits": [
+    "CareerBenefits": [
       "MEAN Stack Developer",
       "Full Stack Developer",
       "Web Application Developer"
@@ -509,7 +509,7 @@ const courses = {
     "image":"/Courses/web dev/web full stack with node.png",
     "duration":"6 months",
     "enrolledStudents":1210,
-    "Key Modules": [
+    "KeyModules": [
       "Node.js Fundamentals",
       "Express.js Framework",
       "RESTful API Development",
@@ -517,12 +517,12 @@ const courses = {
       "Database Integration (MongoDB/MySQL)",
       "Deployment on Cloud Platforms"
     ],
-    "Skills Gained": [
+    "SkillsGained": [
       "Full-stack application development",
       "Backend and API development",
       "Frontend integration and deployment"
     ],
-    "Career Benefits": [
+    "CareerBenefits": [
       "Full Stack Developer",
       "Node.js Developer",
       "Web Application Developer"
@@ -539,19 +539,19 @@ const courses = {
     "image":"/Courses/web dev/ui-ux.png",
     "duration":"6 months",
     "enrolledStudents":497,
-    "Key Modules": [
+    "KeyModules": [
       "UI Design Principles and Typography",
       "UX Research and Wireframing",
       "Prototyping with Figma/Adobe XD",
       "User Testing and Feedback",
       "Design System and Style Guides"
     ],
-    "Skills Gained": [
+    "SkillsGained": [
       "Design intuitive interfaces",
       "Conduct UX research",
       "Create wireframes, prototypes, and mockups"
     ],
-    "Career Benefits": [
+    "CareerBenefits": [
       "UI/UX Designer",
       "Product Designer",
       "Web Designer"
@@ -565,7 +565,7 @@ const courses = {
 ]},
 "Programming": {
   "image":"/Courses/Cpp.webp",
-  "description":"Build a strong foundation in coding and problem-solving !\nLearn core programming concepts, logic building, and algorithmic thinking with real-world coding exercises.",
+  "description":"Build a strong coding foundation! Learn programming concepts, logic, and algorithms through real-world exercises.",
   "subcourses":[
   {
     "name": "C Programming",
@@ -573,7 +573,7 @@ const courses = {
      "image":"/Courses/programming/C-programming.png",
     "duration":"6 months",
     "enrolledStudents":497,
-    "Key Modules": [
+    "KeyModules": [
       "Introduction to C Programming",
       "Variables, Data Types, and Operators",
       "Control Structures: If-Else, Loops",
@@ -581,12 +581,12 @@ const courses = {
       "Arrays, Pointers, and Strings",
       "Structures, Unions, and File Handling"
     ],
-    "Skills Gained": [
+    "SkillsGained": [
       "Writing efficient C programs",
       "Strong understanding of memory management and pointers",
       "Problem-solving and algorithmic thinking"
     ],
-    "Career Benefits": [
+    "CareerBenefits": [
       "Software Developer",
       "Embedded Systems Developer",
       "Competitive Programming"
@@ -603,7 +603,7 @@ const courses = {
        "image":"/Courses/programming/cpp-programming.webp",
     "duration":"6 months",
     "enrolledStudents":497,
-    "Key Modules": [
+    "KeyModules": [
       "C++ Basics and Syntax",
       "Classes, Objects, and Constructors",
       "Inheritance, Polymorphism, and Encapsulation",
@@ -611,12 +611,12 @@ const courses = {
       "Standard Template Library (STL)",
       "Dynamic Memory Management"
     ],
-    "Skills Gained": [
+    "SkillsGained": [
       "Object-Oriented Programming expertise",
       "Using STL for efficient coding",
       "Building modular and reusable code"
     ],
-    "Career Benefits": [
+    "CareerBenefits": [
       "C++ Developer",
       "Game Developer",
       "Software Engineer"
@@ -633,7 +633,7 @@ const courses = {
          "image":"/Courses/programming/dsa-C.jpg",
     "duration":"6 months",
     "enrolledStudents":497,
-    "Key Modules": [
+    "KeyModules": [
       "Arrays, Strings, and Linked Lists",
       "Stacks and Queues",
       "Trees and Binary Search Trees",
@@ -641,12 +641,12 @@ const courses = {
       "Searching and Sorting Techniques",
       "Time and Space Complexity Analysis"
     ],
-    "Skills Gained": [
+    "SkillsGained": [
       "Implement efficient data structures",
       "Solve complex problems using algorithms",
       "Prepare for technical interviews"
     ],
-    "Career Benefits": [
+    "CareerBenefits": [
       "Software Engineer",
       "Algorithm Developer",
       "Backend Developer"
@@ -663,7 +663,7 @@ const courses = {
      "image":"/Courses/programming/dsa-java.png",
     "duration":"6 months",
     "enrolledStudents":497,
-    "Key Modules": [
+    "KeyModules": [
       "Arrays, Linked Lists, Stacks, Queues",
       "Trees and Graphs",
       "Sorting and Searching Algorithms",
@@ -671,12 +671,12 @@ const courses = {
       "Recursion and Dynamic Programming",
       "Complexity Analysis"
     ],
-    "Skills Gained": [
+    "SkillsGained": [
       "Implement data structures in Java",
       "Solve algorithmic problems efficiently",
       "Prepare for coding interviews and competitive programming"
     ],
-    "Career Benefits": [
+    "CareerBenefits": [
       "Java Developer",
       "Backend Developer",
       "Full Stack Developer"
@@ -690,7 +690,7 @@ const courses = {
 ]},
 "App Development": {
   "image":"/Courses/App dev.jpg",
-  "description":"Create powerful mobile apps from idea to launch !\nLearn Android and iOS development, UI/UX design, and hands-on project building with modern frameworks.",
+  "description":"Create powerful mobile apps! Learn Android & iOS development, UI/UX design, and build real-world Projects.",
   "subcourses":[
   {
     "name": "Android Development",
@@ -699,7 +699,7 @@ const courses = {
     "duration":"8 months",
     "enrolledStudents":963,
     "position":"top",
-    "Key Modules": [
+    "KeyModules": [
       "Android Studio Setup and IDE Overview",
       "Activities, Fragments, and Intents",
       "User Interface Design (Layouts, Views, Widgets)",
@@ -708,12 +708,12 @@ const courses = {
       "Material Design and Animations",
       "Publishing Apps on Google Play Store"
     ],
-    "Skills Gained": [
+    "SkillsGained": [
       "Build fully functional Android apps",
       "Integrate APIs and databases",
       "Design intuitive mobile interfaces"
     ],
-    "Career Benefits": [
+    "CareerBenefits": [
       "Android Developer",
       "Mobile App Developer",
       "UI/UX Mobile Designer"
@@ -731,7 +731,7 @@ const courses = {
     "duration":"9 months",
     "enrolledStudents":683,
     "position":"top",
-    "Key Modules": [
+    "KeyModules": [
       "Flutter Basics and Widgets",
       "State Management (Provider, Riverpod)",
       "UI Design and Theming",
@@ -740,12 +740,12 @@ const courses = {
       "Animations and Navigation",
       "Deployment to Play Store and App Store"
     ],
-    "Skills Gained": [
+    "SkillsGained": [
       "Cross-platform mobile app development",
       "Efficient UI/UX design",
       "Backend integration with Firebase"
     ],
-    "Career Benefits": [
+    "CareerBenefits": [
       "Flutter Developer",
       "Cross-platform Mobile App Developer",
       "UI/UX Mobile Designer"
@@ -763,7 +763,7 @@ const courses = {
     "duration":"7 months",
     "enrolledStudents":661,
     "position":"top",
-    "Key Modules": [
+    "KeyModules": [
       "Kotlin Syntax and Basics",
       "Object-Oriented Programming with Kotlin",
       "Kotlin Coroutines for Asynchronous Programming",
@@ -771,12 +771,12 @@ const courses = {
       "Working with Databases and APIs",
       "Material Design and UI Best Practices"
     ],
-    "Skills Gained": [
+    "SkillsGained": [
       "Build native Android apps using Kotlin",
       "Write efficient and clean code",
       "Implement advanced Android features"
     ],
-    "Career Benefits": [
+    "CareerBenefits": [
       "Kotlin Developer",
       "Android Mobile App Developer",
       "Backend Android Programmer"
@@ -789,12 +789,12 @@ const courses = {
   },
   {
     "name": "App Development with Flutter (6 Months)",
-    "overview": "An extended, professional course to master Flutter development for cross-platform mobile applications with real-world projects.",
+    "overview": "An extended, professional course to master Flutter development for cross-platform mobile applications with real-world Projects.",
       "image":"/Courses/app dev/flutter 6 months.png",
     "duration":"10 months",
     "enrolledStudents":1023,
     "position":"top",
-    "Key Modules": [
+    "KeyModules": [
       "Complete Flutter Widget Library",
       "Advanced State Management",
       "Firebase Authentication and Database Integration",
@@ -803,12 +803,12 @@ const courses = {
       "Publishing and App Store Guidelines",
       "Testing and Debugging Flutter Apps"
     ],
-    "Skills Gained": [
+    "SkillsGained": [
       "Develop production-ready apps",
       "Integrate backend and third-party APIs",
-      "Work with real-world Flutter projects"
+      "Work with real-world Flutter Projects"
     ],
-    "Career Benefits": [
+    "CareerBenefits": [
       "Professional Flutter Developer",
       "Mobile App Engineer",
       "Cross-platform App Specialist"
@@ -826,7 +826,7 @@ const courses = {
     "duration":"8 months",
     "enrolledStudents":575,
     "position":"top",
-    "Key Modules": [
+    "KeyModules": [
       "Kotlin Advanced Concepts",
       "Android Studio Advanced Features",
       "Data Persistence and SQLite",
@@ -835,12 +835,12 @@ const courses = {
       "Material Design and Animations",
       "App Deployment and Publishing"
     ],
-    "Skills Gained": [
+    "SkillsGained": [
       "Full Android app development with Kotlin",
       "Backend integration and API handling",
       "Publish professional apps to Google Play Store"
     ],
-    "Career Benefits": [
+    "CareerBenefits": [
       "Android App Developer",
       "Kotlin Expert",
       "Mobile Software Engineer"
@@ -858,7 +858,7 @@ const courses = {
     "duration":"9 months",
     "enrolledStudents":863,
     "position":"top",
-    "Key Modules": [
+    "KeyModules": [
       "Swift Programming Basics",
       "Xcode IDE and Interface Builder",
       "UIKit and SwiftUI",
@@ -867,12 +867,12 @@ const courses = {
       "Animations and User Interface Design",
       "App Store Deployment"
     ],
-    "Skills Gained": [
+    "SkillsGained": [
       "Develop native iOS apps",
       "Integrate APIs and databases",
       "Work with SwiftUI for modern app interfaces"
     ],
-    "Career Benefits": [
+    "CareerBenefits": [
       "iOS Developer",
       "Mobile App Developer",
       "Swift Developer"
@@ -890,7 +890,7 @@ const courses = {
     "duration":"6 months",
     "enrolledStudents":901,
     "position":"top",
-    "Key Modules": [
+    "KeyModules": [
       "React Native Basics and Components",
       "State Management with Redux",
       "Navigation and Routing",
@@ -899,12 +899,12 @@ const courses = {
       "Firebase Backend Integration",
       "Deployment to Play Store and App Store"
     ],
-    "Skills Gained": [
+    "SkillsGained": [
       "Cross-platform mobile app development",
       "Work with APIs and backend services",
       "Create responsive and modern UI"
     ],
-    "Career Benefits": [
+    "CareerBenefits": [
       "React Native Developer",
       "Mobile App Developer",
       "Full Stack Mobile App Engineer"
@@ -918,7 +918,7 @@ const courses = {
 ]},
 "Digital Marketing": {
   "image":"/Courses/digital marketing.jpg",
-  "description":"Master the art of online growth and brand visibility!\nLearn SEO, social media marketing, Google Ads, and analytics to drive traffic and boost conversions.",
+  "description":"Master online growth and brand visibility! Learn SEO, social media marketing, Google Ads, and analytics to boost conversions.",
   "subcourses":[
   {
     "name": "Digital Marketing Training",
@@ -927,7 +927,7 @@ const courses = {
     "duration":"9 months",
     "enrolledStudents":584,
     "position":"top",
-    "Key Modules": [
+    "KeyModules": [
       "Introduction to Digital Marketing",
       "Search Engine Optimization (SEO) Basics",
       "Social Media Marketing (SMM)",
@@ -936,12 +936,12 @@ const courses = {
       "Content Marketing Fundamentals",
       "Basics of Analytics and Reporting"
     ],
-    "Skills Gained": [
+    "SkillsGained": [
       "Build and manage digital marketing campaigns",
       "Optimize websites for search engines",
       "Use social media to engage audiences"
     ],
-    "Career Benefits": [
+    "CareerBenefits": [
       "Digital Marketing Executive",
       "Social Media Marketer",
       "SEO Analyst"
@@ -959,7 +959,7 @@ const courses = {
     "duration":"12 months",
     "enrolledStudents":683,
     "position":"top",
-    "Key Modules": [
+    "KeyModules": [
       "Advanced SEO Techniques",
       "Paid Advertising: Google Ads, Facebook Ads",
       "Social Media Strategy and Analytics",
@@ -967,12 +967,12 @@ const courses = {
       "Lead Generation and Conversion Optimization",
       "Marketing Automation Tools"
     ],
-    "Skills Gained": [
+    "SkillsGained": [
       "Plan and execute advanced digital campaigns",
       "Analyze campaign performance",
       "Optimize marketing strategies for business growth"
     ],
-    "Career Benefits": [
+    "CareerBenefits": [
       "Digital Marketing Manager",
       "PPC Specialist",
       "Content Marketing Strategist"
@@ -990,7 +990,7 @@ const courses = {
     "duration":"14 months",
     "enrolledStudents":919,
     "position":"top",
-    "Key Modules": [
+    "KeyModules": [
       "AI in Digital Marketing: Concepts and Tools",
       "Predictive Analytics for Campaigns",
       "Chatbots and Automated Customer Interaction",
@@ -998,12 +998,12 @@ const courses = {
       "AI for SEO Optimization",
       "Marketing Automation with AI"
     ],
-    "Skills Gained": [
+    "SkillsGained": [
       "Use AI tools to optimize marketing campaigns",
       "Implement predictive analytics for strategy planning",
       "Automate marketing processes for efficiency"
     ],
-    "Career Benefits": [
+    "CareerBenefits": [
       "AI-Enhanced Digital Marketing Specialist",
       "Marketing Automation Expert",
       "Data-Driven Marketing Analyst"
@@ -1018,7 +1018,7 @@ const courses = {
 "ERP": {
 
   "image":"/Courses/ERP.jpg",
-  "description":"Understand how businesses run efficiently with ERP systems !\nLearn to manage and integrate operations like finance, HR, and supply chain using real-world ERP tools.",
+  "description":"Learn how businesses run efficiently with ERP systems! Manage finance, HR, and supply chain using real-world tools.",
   "subcourses":[
  {
     "name": "ERP HR",
@@ -1027,7 +1027,7 @@ const courses = {
     "duration":"3 months",
     "enrolledStudents":319,
     "position":"center",
-    "Key Modules": [
+    "KeyModules": [
       "Introduction to ERP and HR Module",
       "Employee Data Management",
       "Payroll Management and Compensation",
@@ -1035,12 +1035,12 @@ const courses = {
       "Time Management and Attendance",
       "Reports and Analytics"
     ],
-    "Skills Gained": [
+    "SkillsGained": [
       "Manage HR processes in ERP systems",
       "Automate payroll and attendance",
       "Generate HR reports for decision-making"
     ],
-    "Career Benefits": [
+    "CareerBenefits": [
       "ERP HR Consultant",
       "HR Analyst",
       "HR Executive (ERP-enabled systems)"
@@ -1058,7 +1058,7 @@ const courses = {
     "duration":"4 months",
     "enrolledStudents":519,
     "position":"center",
-    "Key Modules": [
+    "KeyModules": [
       "SAP S4 HANA Overview",
       "General Ledger and Accounts Payable/Receivable",
       "Asset Accounting",
@@ -1066,12 +1066,12 @@ const courses = {
       "Financial Reports and Analysis",
       "Integration with Other ERP Modules"
     ],
-    "Skills Gained": [
+    "SkillsGained": [
       "Manage financial accounting using ERP",
       "Generate reports and analyze business finance",
       "Work with S4 HANA financial modules efficiently"
     ],
-    "Career Benefits": [
+    "CareerBenefits": [
       "ERP Finance Consultant",
       "SAP FICO Analyst",
       "Finance & Accounting Specialist"
@@ -1089,7 +1089,7 @@ const courses = {
     "duration":"4 months",
     "enrolledStudents":471,
     "position":"center",
-    "Key Modules": [
+    "KeyModules": [
       "Material Master Data Management",
       "Vendor Management",
       "Purchase Orders and Goods Receipts",
@@ -1097,12 +1097,12 @@ const courses = {
       "Integration with Finance and Sales Modules",
       "Reporting and Analytics"
     ],
-    "Skills Gained": [
+    "SkillsGained": [
       "Manage procurement and inventory processes",
       "Generate reports for supply chain management",
       "Efficiently use ERP MM module"
     ],
-    "Career Benefits": [
+    "CareerBenefits": [
       "ERP MM Consultant",
       "Inventory Management Specialist",
       "Procurement Analyst"
@@ -1120,7 +1120,7 @@ const courses = {
     "duration":"5 months",
     "enrolledStudents":612,
     "position":"center",
-    "Key Modules": [
+    "KeyModules": [
       "Production Planning and Scheduling",
       "Material Requirement Planning (MRP)",
       "Work Center and Routing",
@@ -1128,12 +1128,12 @@ const courses = {
       "Integration with MM and SD Modules",
       "Reporting and Analytics"
     ],
-    "Skills Gained": [
+    "SkillsGained": [
       "Plan and manage production processes",
       "Optimize manufacturing schedules",
       "Generate production reports"
     ],
-    "Career Benefits": [
+    "CareerBenefits": [
       "ERP Production Planning Consultant",
       "Manufacturing Analyst",
       "Supply Chain Planner"
@@ -1151,7 +1151,7 @@ const courses = {
     "duration":"5 months",
     "enrolledStudents":321,
     "position":"center",
-    "Key Modules": [
+    "KeyModules": [
       "Sales Order Management",
       "Pricing and Billing",
       "Shipping and Delivery",
@@ -1159,12 +1159,12 @@ const courses = {
       "Integration with Finance and MM Modules",
       "Reporting and Analytics"
     ],
-    "Skills Gained": [
+    "SkillsGained": [
       "Manage sales processes using ERP",
       "Generate billing and shipping reports",
       "Optimize sales operations"
     ],
-    "Career Benefits": [
+    "CareerBenefits": [
       "ERP SD Consultant",
       "Sales Operations Analyst",
       "Customer Relationship Specialist"
@@ -1182,7 +1182,7 @@ const courses = {
     "duration":"4 months",
     "enrolledStudents":819,
     "position":"bottom",
-    "Key Modules": [
+    "KeyModules": [
       "ABAP Basics and Syntax",
       "Data Dictionary and Tables",
       "Reports and Forms Development",
@@ -1190,12 +1190,12 @@ const courses = {
       "Enhancements and User Exits",
       "Debugging and Performance Optimization"
     ],
-    "Skills Gained": [
+    "SkillsGained": [
       "Develop and customize SAP applications",
       "Build reports and forms for business use",
-      "Work with ABAP in real-time ERP projects"
+      "Work with ABAP in real-time ERP Projects"
     ],
-    "Career Benefits": [
+    "CareerBenefits": [
       "ABAP Developer",
       "SAP Customization Specialist",
       "ERP Programmer"
@@ -1213,7 +1213,7 @@ const courses = {
     "duration":"4 months",
     "enrolledStudents":541,
     "position":"center",
-    "Key Modules": [
+    "KeyModules": [
       "SAP System Architecture",
       "Client Administration",
       "Transport Management System (TMS)",
@@ -1221,12 +1221,12 @@ const courses = {
       "System Monitoring and Performance",
       "Backup and Disaster Recovery"
     ],
-    "Skills Gained": [
+    "SkillsGained": [
       "Manage SAP system installations and configurations",
       "Perform administrative and troubleshooting tasks",
       "Monitor and optimize SAP performance"
     ],
-    "Career Benefits": [
+    "CareerBenefits": [
       "SAP BASIS Administrator",
       "System Support Engineer",
       "ERP Technical Consultant"
@@ -1244,7 +1244,7 @@ const courses = {
     "duration":"3 months",
     "enrolledStudents":311,
     "position":"center",
-    "Key Modules": [
+    "KeyModules": [
       "Employee Central Configuration",
       "Performance & Goals Management",
       "Recruitment and Onboarding",
@@ -1252,12 +1252,12 @@ const courses = {
       "Reporting and Analytics",
       "Integration with SAP ERP"
     ],
-    "Skills Gained": [
+    "SkillsGained": [
       "Manage HR processes using SuccessFactors",
       "Automate recruitment and onboarding",
       "Track employee performance and development"
     ],
-    "Career Benefits": [
+    "CareerBenefits": [
       "SuccessFactors Consultant",
       "ERP HR Specialist",
       "Talent Management Analyst"
@@ -1271,7 +1271,7 @@ const courses = {
 ]},
 "Software Testing": {
   "image":"/Courses/software-testing.webp",
-  "description":"Ensure high-quality software with expert testing skills !\nLearn manual and automated testing, bug tracking, and quality assurance best practices for real-world projects.",
+  "description":"Ensure top-quality software! Learn manual and automated testing, bug tracking, and QA best practices.",
 
   "subcourses":[
   {
@@ -1281,7 +1281,7 @@ const courses = {
     "duration":"6 months",
     "enrolledStudents":711,
     "position":"top",
-    "Key Modules": [
+    "KeyModules": [
       "Introduction to Software Testing",
       "SDLC and STLC Concepts",
       "Test Case Design and Execution",
@@ -1290,12 +1290,12 @@ const courses = {
       "Automation of Web Applications using Selenium",
       "Integration with Testing Frameworks (TestNG, Maven)"
     ],
-    "Skills Gained": [
+    "SkillsGained": [
       "Understand manual testing processes",
       "Automate repetitive test cases",
       "Perform bug tracking and reporting efficiently"
     ],
-    "Career Benefits": [
+    "CareerBenefits": [
       "QA Tester",
       "Automation Test Engineer",
       "Selenium Developer"
@@ -1313,7 +1313,7 @@ const courses = {
     "duration":"7 months",
     "enrolledStudents":657,
     "position":"top",
-    "Key Modules": [
+    "KeyModules": [
       "Manual Testing Concepts",
       "Automation Testing with Selenium and Appium",
       "API Testing using Postman",
@@ -1321,12 +1321,12 @@ const courses = {
       "Continuous Integration with Jenkins",
       "Test Management and Reporting Tools"
     ],
-    "Skills Gained": [
+    "SkillsGained": [
       "End-to-end QA testing knowledge",
       "Ability to automate web and mobile testing",
       "Perform API and database testing"
     ],
-    "Career Benefits": [
+    "CareerBenefits": [
       "Full Stack QA Engineer",
       "Automation Tester",
       "Software Quality Analyst"
@@ -1340,7 +1340,7 @@ const courses = {
 ]},
 "Graphic & Creative Design": {
   "image":"/Courses/Graphic and Creative Design.jpg",
-  "description":"Bring ideas to life with stunning visual designs !\nLearn Photoshop, Illustrator, Canva, and creative design principles to craft logos, banners, and digital art.",
+  "description":"Bring ideas to life with stunning designs! Learn Photoshop, Illustrator, Canva, and create logos, banners, and digital art.",
   "subcourses":[
   {
     "name": "Graphic Design",
@@ -1349,7 +1349,7 @@ const courses = {
     "duration":"7 months",
     "enrolledStudents":657,
     "position":"center",
-    "Key Modules": [
+    "KeyModules": [
       "Principles of Graphic Design",
       "Color Theory and Typography",
       "Adobe Photoshop Basics and Advanced Techniques",
@@ -1357,12 +1357,12 @@ const courses = {
       "Branding and Logo Design",
       "Print and Digital Media Design"
     ],
-    "Skills Gained": [
+    "SkillsGained": [
       "Create visually appealing graphics",
       "Design logos, banners, and posters",
       "Work with both print and digital formats"
     ],
-    "Career Benefits": [
+    "CareerBenefits": [
       "Graphic Designer",
       "Visual Designer",
       "Brand Designer"
@@ -1380,7 +1380,7 @@ const courses = {
     "duration":"8 months",
     "enrolledStudents":827,
     "position":"center",
-    "Key Modules": [
+    "KeyModules": [
       "Introduction to Motion Graphics",
       "Adobe After Effects Basics",
       "Animation Principles and Keyframes",
@@ -1388,12 +1388,12 @@ const courses = {
       "Video Editing and Post-Production",
       "Integrating Graphics in Video Content"
     ],
-    "Skills Gained": [
+    "SkillsGained": [
       "Animate logos and graphics",
       "Produce video content with motion effects",
       "Use motion graphics for marketing and branding"
     ],
-    "Career Benefits": [
+    "CareerBenefits": [
       "Motion Graphics Designer",
       "Video Animator",
       "Digital Content Creator"
@@ -1411,7 +1411,7 @@ const courses = {
     "duration":"12 months",
     "enrolledStudents":657,
     "position":"center",
-    "Key Modules": [
+    "KeyModules": [
       "Graphic Design Principles",
       "Adobe Photoshop, Illustrator, and InDesign",
       "Motion Graphics and Animation",
@@ -1419,12 +1419,12 @@ const courses = {
       "Branding and Corporate Identity",
       "Print and Web Design"
     ],
-    "Skills Gained": [
+    "SkillsGained": [
       "Professional-level design expertise",
       "Motion graphics and animation skills",
       "Full knowledge of branding and marketing design"
     ],
-    "Career Benefits": [
+    "CareerBenefits": [
       "Senior Graphic Designer",
       "Motion Graphics Specialist",
       "Creative Director"
@@ -1438,7 +1438,7 @@ const courses = {
 ]},
 "CAD Training": {
   "image":"/Courses/cad training.webp",
-  "description":"Design with precision using industry-standard CAD tools !\nLearn 2D drafting, 3D modeling, and engineering design techniques for architecture, mechanical, and manufacturing projects.",
+  "description":"Design with precision using CAD tools! Learn 2D drafting, 3D modeling, and engineering techniques for architecture and manufacturing.",
   "subcourses":[
   {
     "name": "AutoCAD & 3D Design",
@@ -1447,7 +1447,7 @@ const courses = {
     "duration":"7 months",
     "enrolledStudents":651,
     "position":"top",
-    "Key Modules": [
+    "KeyModules": [
       "AutoCAD Interface and Tools",
       "2D Drawing and Drafting Techniques",
       "3D Modeling and Visualization",
@@ -1455,12 +1455,12 @@ const courses = {
       "Layers, Blocks, and Hatching",
       "Printing and Plotting Designs"
     ],
-    "Skills Gained": [
+    "SkillsGained": [
       "Create precise 2D and 3D designs",
       "Draft architectural and engineering plans",
-      "Produce technical drawings for projects"
+      "Produce technical drawings for Projects"
     ],
-    "Career Benefits": [
+    "CareerBenefits": [
       "CAD Designer",
       "3D Modeling Specialist",
       "Draftsman"
@@ -1473,12 +1473,12 @@ const courses = {
   },
   {
     "name": "3D Max",
-    "overview": "Learn 3D modeling, animation, and rendering using Autodesk 3ds Max for architectural and visual effects projects.",
+    "overview": "Learn 3D modeling, animation, and rendering using Autodesk 3ds Max for architectural and visual effects Projects.",
        "image":"/Courses/CAD/3ds max.png",
     "duration":"8 months",
     "enrolledStudents":751,
     "position":"top",
-    "Key Modules": [
+    "KeyModules": [
       "3D Modeling Techniques",
       "Texturing and Materials",
       "Lighting and Camera Setup",
@@ -1486,12 +1486,12 @@ const courses = {
       "Rendering with V-Ray",
       "Architectural Visualization"
     ],
-    "Skills Gained": [
+    "SkillsGained": [
       "Create realistic 3D models",
       "Animate objects and characters",
       "Produce high-quality renders for presentations"
     ],
-    "Career Benefits": [
+    "CareerBenefits": [
       "3D Animator",
       "Visualizer",
       "3D Designer"
@@ -1509,7 +1509,7 @@ const courses = {
     "duration":"5 months",
     "enrolledStudents":421,
     "position":"top",
-    "Key Modules": [
+    "KeyModules": [
       "Revit Interface and Tools",
       "Building Modeling and Components",
       "Floor Plans, Elevations, and Sections",
@@ -1517,12 +1517,12 @@ const courses = {
       "Collaboration and Worksharing",
       "Construction Documentation"
     ],
-    "Skills Gained": [
+    "SkillsGained": [
       "Design accurate architectural models",
       "Create detailed floor plans and layouts",
       "Produce construction-ready documentation"
     ],
-    "Career Benefits": [
+    "CareerBenefits": [
       "Revit Designer",
       "Architectural Draftsman",
       "BIM Modeler"
@@ -1540,7 +1540,7 @@ const courses = {
     "duration":"6 months",
     "enrolledStudents":841,
     "position":"top",
-    "Key Modules": [
+    "KeyModules": [
       "V-Ray Setup and Interface",
       "Lighting and Camera Techniques",
       "Material Creation and Mapping",
@@ -1548,12 +1548,12 @@ const courses = {
       "Photorealistic Visualization",
       "Post-Production Techniques"
     ],
-    "Skills Gained": [
+    "SkillsGained": [
       "Produce realistic renders",
       "Apply textures and materials accurately",
       "Create professional visual presentations"
     ],
-    "Career Benefits": [
+    "CareerBenefits": [
       "3D Visualization Artist",
       "Architectural Renderer",
       "Interior Designer"
@@ -1571,7 +1571,7 @@ const courses = {
     "duration":"6 months",
     "enrolledStudents":628,
     "position":"top",
-    "Key Modules": [
+    "KeyModules": [
       "SolidWorks Interface and Tools",
       "3D Part Modeling",
       "Assembly and Mates",
@@ -1579,12 +1579,12 @@ const courses = {
       "Simulation and Analysis",
       "Rendering and Visualization"
     ],
-    "Skills Gained": [
+    "SkillsGained": [
       "Design mechanical parts and assemblies",
       "Perform simulations for engineering validation",
       "Create professional technical drawings"
     ],
-    "Career Benefits": [
+    "CareerBenefits": [
       "Mechanical Designer",
       "Product Engineer",
       "CAD Engineer"
@@ -1602,7 +1602,7 @@ const courses = {
     "duration":"5 months",
     "enrolledStudents":521,
     "position":"top",
-    "Key Modules": [
+    "KeyModules": [
       "CATIA Interface and Tools",
       "Part and Assembly Design",
       "Surface Modeling",
@@ -1610,12 +1610,12 @@ const courses = {
       "Drafting and Documentation",
       "Product Lifecycle Management"
     ],
-    "Skills Gained": [
+    "SkillsGained": [
       "Build advanced 3D models",
       "Perform surface and sheet metal designs",
       "Create production-ready drawings"
     ],
-    "Career Benefits": [
+    "CareerBenefits": [
       "CATIA Designer",
       "Mechanical Design Engineer",
       "Product Development Specialist"
@@ -1633,7 +1633,7 @@ const courses = {
     "duration":"8 months",
     "enrolledStudents":841,
     "position":"top",
-    "Key Modules": [
+    "KeyModules": [
       "STAAD.Pro Interface and Tools",
       "Structural Modeling and Load Application",
       "Analysis of Beams, Frames, and Trusses",
@@ -1641,12 +1641,12 @@ const courses = {
       "Steel and Concrete Design",
       "Reporting and Documentation"
     ],
-    "Skills Gained": [
+    "SkillsGained": [
       "Analyze and design structures",
       "Apply loads and interpret results",
-      "Generate design reports for projects"
+      "Generate design reports for Projects"
     ],
-    "Career Benefits": [
+    "CareerBenefits": [
       "Structural Engineer",
       "Civil Design Engineer",
       "Project Analyst"
@@ -1664,7 +1664,7 @@ const courses = {
     "duration":"10 months",
     "enrolledStudents":684,
     "position":"top",
-    "Key Modules": [
+    "KeyModules": [
       "Interior Design Principles",
       "Space Planning and Layouts",
       "Color Theory and Material Selection",
@@ -1672,12 +1672,12 @@ const courses = {
       "3D Visualization with CAD Tools",
       "Project Documentation and Presentation"
     ],
-    "Skills Gained": [
+    "SkillsGained": [
       "Create functional and aesthetic interiors",
       "Use 3D tools for visualization",
-      "Plan and execute interior projects"
+      "Plan and execute interior Projects"
     ],
-    "Career Benefits": [
+    "CareerBenefits": [
       "Interior Designer",
       "Space Planner",
       "3D Interior Visualization Expert"
@@ -1692,7 +1692,7 @@ const courses = {
 },
 "Network & Security": {
   "image":"/Courses/network and security.png",
-  "description":"Protect and manage modern networks like a pro !\nLearn networking fundamentals, cybersecurity, firewalls, and protocols to secure systems and data effectively.",
+  "description":"Protect and manage networks like a pro! Learn networking, cybersecurity, firewalls, and protocols to secure systems.",
   "subcourses":[
   {
     "name": "CCNA (Cisco Certified Network Associate)",
@@ -1701,7 +1701,7 @@ const courses = {
     "duration":"9 months",
     "enrolledStudents":622,
     "position":"center",
-    "Key Modules": [
+    "KeyModules": [
       "Networking Basics and OSI Model",
       "IP Addressing and Subnetting",
       "Cisco Router and Switch Configuration",
@@ -1709,12 +1709,12 @@ const courses = {
       "Network Security Fundamentals",
       "Troubleshooting and Network Management"
     ],
-    "Skills Gained": [
+    "SkillsGained": [
       "Configure and troubleshoot networks",
       "Understand routing and switching",
       "Apply network security measures"
     ],
-    "Career Benefits": [
+    "CareerBenefits": [
       "Network Engineer",
       "Network Administrator",
       "IT Support Specialist"
@@ -1732,7 +1732,7 @@ const courses = {
     "duration":"9 months",
     "enrolledStudents":471,
     "position":"center",
-    "Key Modules": [
+    "KeyModules": [
       "Advanced Routing Protocols (OSPF, EIGRP, BGP)",
       "LAN and WAN Optimization",
       "Network Security and VPN Configuration",
@@ -1740,12 +1740,12 @@ const courses = {
       "Cisco Device Management",
       "Network Automation Basics"
     ],
-    "Skills Gained": [
+    "SkillsGained": [
       "Design and manage large-scale networks",
       "Secure network infrastructure",
       "Solve advanced network issues"
     ],
-    "Career Benefits": [
+    "CareerBenefits": [
       "Senior Network Engineer",
       "Network Consultant",
       "IT Infrastructure Specialist"
@@ -1763,19 +1763,19 @@ const courses = {
     "duration":"10 months",
     "enrolledStudents":647,
     "position":"center",
-    "Key Modules": [
+    "KeyModules": [
       "Windows Server Installation and Configuration",
       "Active Directory Management",
       "File and Print Services",
       "Network Services and DNS Configuration",
       "Backup, Restore, and Security"
     ],
-    "Skills Gained": [
+    "SkillsGained": [
       "Manage Windows Server environments",
       "Administer user access and security",
       "Troubleshoot server and network issues"
     ],
-    "Career Benefits": [
+    "CareerBenefits": [
       "System Administrator",
       "Network Administrator",
       "IT Support Engineer"
@@ -1788,18 +1788,18 @@ const courses = {
     "duration":"9 months",
     "enrolledStudents":457,
     "position":"center",
-    "Key Modules": [
+    "KeyModules": [
       "Windows Server Fundamentals",
       "Networking and Security Basics",
       "Active Directory and User Management",
       "Server Storage and Backup Solutions"
     ],
-    "Skills Gained": [
+    "SkillsGained": [
       "Configure and manage server environments",
       "Perform basic network administration",
       "Understand Microsoft server services"
     ],
-    "Career Benefits": [
+    "CareerBenefits": [
       "System Administrator",
       "IT Support Engineer",
       "Network Support Specialist"
@@ -1812,7 +1812,7 @@ const courses = {
     "duration":"10 months",
     "enrolledStudents":647,
     "position":"center",
-    "Key Modules": [
+    "KeyModules": [
       "Introduction to Cyber Security",
       "Network Security Fundamentals",
       "Security Threats and Vulnerabilities",
@@ -1820,12 +1820,12 @@ const courses = {
       "Security Policies and Best Practices",
       "Penetration Testing Basics"
     ],
-    "Skills Gained": [
+    "SkillsGained": [
       "Identify and mitigate cyber threats",
       "Implement network and system security",
       "Conduct vulnerability assessments"
     ],
-    "Career Benefits": [
+    "CareerBenefits": [
       "Cyber Security Analyst",
       "Security Consultant",
       "Network Security Specialist"
@@ -1843,7 +1843,7 @@ const courses = {
     "duration":"9 months",
     "enrolledStudents":357,
     "position":"center",
-    "Key Modules": [
+    "KeyModules": [
       "Introduction to Ethical Hacking",
       "Footprinting and Reconnaissance",
       "Scanning and Vulnerability Analysis",
@@ -1851,12 +1851,12 @@ const courses = {
       "Web Application and Network Hacking",
       "Reporting and Remediation"
     ],
-    "Skills Gained": [
+    "SkillsGained": [
       "Perform ethical hacking safely",
       "Identify and fix security vulnerabilities",
       "Understand hacker techniques for defense"
     ],
-    "Career Benefits": [
+    "CareerBenefits": [
       "Ethical Hacker",
       "Penetration Tester",
       "Cyber Security Specialist"
@@ -1874,7 +1874,7 @@ const courses = {
     "duration":"12 months",
     "enrolledStudents":647,
     "position":"center",
-    "Key Modules": [
+    "KeyModules": [
       "Networking Basics and Advanced Networking",
       "Cyber Security Principles and Practices",
       "Ethical Hacking and Penetration Testing",
@@ -1882,12 +1882,12 @@ const courses = {
       "System Hardening and Threat Management",
       "Real-time Projects and Case Studies"
     ],
-    "Skills Gained": [
+    "SkillsGained": [
       "Design and manage secure networks",
       "Conduct ethical hacking and security audits",
       "Implement enterprise-level security strategies"
     ],
-    "Career Benefits": [
+    "CareerBenefits": [
       "Cyber Security Analyst",
       "Network Security Engineer",
       "Ethical Hacker"
@@ -1901,7 +1901,7 @@ const courses = {
 ]},
 "Cloud Computing": {
   "image":"/Courses/cloud computing.jpg",
-  "description":"Unlock the power of scalable and flexible cloud solutions !\nLearn AWS, Azure, Google Cloud, virtualization, and cloud deployment for modern applications and infrastructure.",
+  "description":"Unlock scalable cloud solutions! Learn AWS, Azure, Google Cloud, virtualization, and cloud deployment.",
   "subcourses":[
   {
     "name": "Linux Administration",
@@ -1910,7 +1910,7 @@ const courses = {
     "duration":"9 months",
     "enrolledStudents":622,
     "position":"center",
-    "Key Modules": [
+    "KeyModules": [
       "Linux Basics and Commands",
       "File System Management",
       "User and Group Management",
@@ -1918,12 +1918,12 @@ const courses = {
       "Shell Scripting Basics",
       "System Monitoring and Performance"
     ],
-    "Skills Gained": [
+    "SkillsGained": [
       "Administer Linux servers efficiently",
       "Automate tasks using scripts",
       "Troubleshoot server issues"
     ],
-    "Career Benefits": [
+    "CareerBenefits": [
       "Linux System Administrator",
       "Cloud Engineer",
       "DevOps Engineer"
@@ -1941,19 +1941,19 @@ const courses = {
     "duration":"8 months",
     "enrolledStudents":542,
     "position":"center",
-    "Key Modules": [
+    "KeyModules": [
       "Salesforce Platform Overview",
       "User Management and Security",
       "Data Management and Reports",
       "Workflow and Automation",
       "Dashboard and Analytics"
     ],
-    "Skills Gained": [
+    "SkillsGained": [
       "Configure and manage Salesforce CRM",
       "Automate business processes",
       "Analyze business data using dashboards"
     ],
-    "Career Benefits": [
+    "CareerBenefits": [
       "Salesforce Administrator",
       "CRM Consultant",
       "Business Process Analyst"
@@ -1971,7 +1971,7 @@ const courses = {
     "duration":"7 months",
     "enrolledStudents":356,
     "position":"center",
-    "Key Modules": [
+    "KeyModules": [
       "AWS Core Services (EC2, S3, RDS)",
       "VPC and Networking",
       "High Availability and Scalability",
@@ -1979,12 +1979,12 @@ const courses = {
       "Cloud Architecture Design",
       "Cost Optimization"
     ],
-    "Skills Gained": [
+    "SkillsGained": [
       "Architect cloud solutions on AWS",
       "Implement best practices for security and reliability",
       "Optimize cloud infrastructure for cost and performance"
     ],
-    "Career Benefits": [
+    "CareerBenefits": [
       "AWS Solutions Architect",
       "Cloud Consultant",
       "DevOps Engineer"
@@ -2002,7 +2002,7 @@ const courses = {
     "duration":"6 months",
     "enrolledStudents":471,
     "position":"center",
-    "Key Modules": [
+    "KeyModules": [
       "Azure Architecture and Services Overview",
       "Virtual Machines and Storage",
       "Networking in Azure",
@@ -2010,12 +2010,12 @@ const courses = {
       "Azure Monitoring and Analytics",
       "Deployment and Management"
     ],
-    "Skills Gained": [
+    "SkillsGained": [
       "Manage cloud applications and infrastructure",
       "Configure Azure networking and security",
       "Monitor and optimize cloud resources"
     ],
-    "Career Benefits": [
+    "CareerBenefits": [
       "Azure Cloud Administrator",
       "Cloud Engineer",
       "DevOps Engineer"
@@ -2033,7 +2033,7 @@ const courses = {
     "duration":"8 months",
     "enrolledStudents":742,
     "position":"center",
-    "Key Modules": [
+    "KeyModules": [
       "Introduction to Cloud Computing",
       "Cloud Service Models (IaaS, PaaS, SaaS)",
       "Cloud Deployment Models",
@@ -2041,12 +2041,12 @@ const courses = {
       "Security in Cloud Computing",
       "Cloud Service Providers Overview"
     ],
-    "Skills Gained": [
+    "SkillsGained": [
       "Understand cloud concepts and architecture",
       "Differentiate cloud service models",
       "Apply cloud computing solutions for businesses"
     ],
-    "Career Benefits": [
+    "CareerBenefits": [
       "Cloud Support Engineer",
       "Cloud Consultant",
       "IT Infrastructure Analyst"
@@ -2059,7 +2059,7 @@ const courses = {
     "duration":"5 months",
     "enrolledStudents":532,
     "position":"center",
-    "Key Modules": [
+    "KeyModules": [
       "GCP Core Services",
       "Compute Engine and Storage",
       "Networking and Security",
@@ -2067,12 +2067,12 @@ const courses = {
       "Monitoring and Logging",
       "Deployment and Best Practices"
     ],
-    "Skills Gained": [
+    "SkillsGained": [
       "Use GCP for cloud solutions",
       "Deploy and manage applications on GCP",
       "Ensure security and performance"
     ],
-    "Career Benefits": [
+    "CareerBenefits": [
       "Google Cloud Engineer",
       "Cloud Solutions Architect",
       "DevOps Engineer"
@@ -2085,7 +2085,7 @@ const courses = {
     "duration":"8 months",
     "enrolledStudents":542,
     "position":"center",
-    "Key Modules": [
+    "KeyModules": [
       "Microservices Fundamentals",
       "REST APIs and Service Communication",
       "Containers and Docker Basics",
@@ -2093,12 +2093,12 @@ const courses = {
       "Microservices Security",
       "Deployment and Monitoring"
     ],
-    "Skills Gained": [
+    "SkillsGained": [
       "Design and deploy microservices",
       "Use containers for microservice deployment",
       "Implement security in distributed systems"
     ],
-    "Career Benefits": [
+    "CareerBenefits": [
       "Microservices Developer",
       "Cloud Engineer",
       "Software Architect"
@@ -2111,19 +2111,19 @@ const courses = {
     "duration":"7 months",
     "enrolledStudents":638,
     "position":"center",
-    "Key Modules": [
+    "KeyModules": [
       "Azure Resource Management",
       "Virtual Machines and Networking",
       "Storage Accounts and Backup",
       "Security and Access Control",
       "Monitoring and Troubleshooting"
     ],
-    "Skills Gained": [
+    "SkillsGained": [
       "Administer Azure environments",
       "Ensure secure and reliable cloud services",
       "Monitor cloud performance and usage"
     ],
-    "Career Benefits": [
+    "CareerBenefits": [
       "Azure Administrator",
       "Cloud Operations Engineer",
       "IT Support Specialist"
@@ -2136,7 +2136,7 @@ const courses = {
     "duration":"8 months",
     "enrolledStudents":631,
     "position":"center",
-    "Key Modules": [
+    "KeyModules": [
       "Salesforce Development Basics",
       "Apex Programming Language",
       "Visualforce Pages",
@@ -2144,12 +2144,12 @@ const courses = {
       "Integrating Salesforce with External Services",
       "Application Deployment"
     ],
-    "Skills Gained": [
+    "SkillsGained": [
       "Develop custom Salesforce applications",
       "Automate business workflows",
       "Integrate external services"
     ],
-    "Career Benefits": [
+    "CareerBenefits": [
       "Salesforce Developer",
       "CRM Application Developer",
       "Salesforce Technical Consultant"
@@ -2162,19 +2162,19 @@ const courses = {
     "duration":"8 months",
     "enrolledStudents":642,
     "position":"center",
-    "Key Modules": [
+    "KeyModules": [
       "AWS Deployment and Management",
       "EC2, S3, RDS Management",
       "Monitoring and Logging",
       "Security and Compliance",
       "Automation and Backup Strategies"
     ],
-    "Skills Gained": [
+    "SkillsGained": [
       "Administer AWS cloud services",
       "Monitor and optimize infrastructure",
       "Implement backup and recovery solutions"
     ],
-    "Career Benefits": [
+    "CareerBenefits": [
       "AWS SysOps Administrator",
       "Cloud Operations Engineer",
       "DevOps Engineer"
@@ -2187,7 +2187,7 @@ const courses = {
     "duration":"6 months",
     "enrolledStudents":542,
     "position":"center",
-    "Key Modules": [
+    "KeyModules": [
       "Introduction to IoT Concepts",
       "Sensors and Data Collection",
       "IoT Protocols and Communication",
@@ -2195,12 +2195,12 @@ const courses = {
       "Data Visualization and Analytics",
       "IoT Security"
     ],
-    "Skills Gained": [
+    "SkillsGained": [
       "Build IoT devices and applications",
       "Integrate IoT with cloud services",
       "Analyze and visualize IoT data"
     ],
-    "Career Benefits": [
+    "CareerBenefits": [
       "IoT Developer",
       "Embedded Systems Engineer",
       "Cloud IoT Specialist"
@@ -2213,7 +2213,7 @@ const courses = {
     "duration":"6 months",
     "enrolledStudents":759,
     "position":"center",
-    "Key Modules": [
+    "KeyModules": [
       "DevOps Fundamentals",
       "Continuous Integration and Delivery",
       "Version Control with Git",
@@ -2221,12 +2221,12 @@ const courses = {
       "Containerization with Docker",
       "Monitoring and Logging"
     ],
-    "Skills Gained": [
+    "SkillsGained": [
       "Automate software deployment",
       "Implement CI/CD pipelines",
       "Manage cloud-based applications"
     ],
-    "Career Benefits": [
+    "CareerBenefits": [
       "DevOps Engineer",
       "Cloud Automation Specialist",
       "Release Manager"
@@ -2239,7 +2239,7 @@ const courses = {
     "duration":"8 months",
     "enrolledStudents":502,
     "position":"center",
-    "Key Modules": [
+    "KeyModules": [
       "Kubernetes Architecture",
       "Pods, Deployments, and Services",
       "ConfigMaps and Secrets",
@@ -2247,12 +2247,12 @@ const courses = {
       "Scaling and Monitoring",
       "Security Best Practices"
     ],
-    "Skills Gained": [
+    "SkillsGained": [
       "Deploy and manage containerized applications",
       "Scale applications efficiently",
       "Ensure secure Kubernetes environments"
     ],
-    "Career Benefits": [
+    "CareerBenefits": [
       "Kubernetes Administrator",
       "Cloud Engineer",
       "DevOps Specialist"
@@ -2265,7 +2265,7 @@ const courses = {
     "duration":"11 months",
     "enrolledStudents":874,
     "position":"center",
-    "Key Modules": [
+    "KeyModules": [
       "AWS DevOps Tools Overview",
       "Continuous Integration and Delivery on AWS",
       "Infrastructure as Code with CloudFormation",
@@ -2273,12 +2273,12 @@ const courses = {
       "Security and Compliance",
       "Deployment Strategies"
     ],
-    "Skills Gained": [
+    "SkillsGained": [
       "Implement DevOps pipelines in AWS",
       "Monitor cloud applications efficiently",
       "Automate infrastructure and deployments"
     ],
-    "Career Benefits": [
+    "CareerBenefits": [
       "AWS DevOps Engineer",
       "Cloud Automation Specialist",
       "Release Engineer"
@@ -2291,7 +2291,7 @@ const courses = {
     "duration":"9 months",
     "enrolledStudents":620,
     "position":"center",
-    "Key Modules": [
+    "KeyModules": [
       "Docker Fundamentals",
       "Docker Images and Containers",
       "Docker Compose and Networking",
@@ -2299,12 +2299,12 @@ const courses = {
       "Container Orchestration Basics",
       "Deployment of Applications"
     ],
-    "Skills Gained": [
+    "SkillsGained": [
       "Build and manage Docker containers",
       "Deploy applications in isolated environments",
       "Integrate Docker with DevOps pipelines"
     ],
-    "Career Benefits": [
+    "CareerBenefits": [
       "Docker Engineer",
       "DevOps Specialist",
       "Cloud Application Developer"
@@ -2313,7 +2313,7 @@ const courses = {
 ]},
 "Database & MIS": {
   "image":"/Courses/database.jpg",
-  "description":"Organize, manage, and analyze data efficiently !\nLearn SQL, database management, and Management Information Systems (MIS) to support data-driven business decisions.",
+  "description":"Organize and analyze data efficiently! Learn SQL, database management, and MIS for data-driven decisions.",
   "subcourses":[
   {
     "name": "MySQL",
@@ -2322,7 +2322,7 @@ const courses = {
     "duration":"5 months",
     "enrolledStudents":817,
     "position":"center",
-    "Key Modules": [
+    "KeyModules": [
       "Introduction to MySQL and Database Concepts",
       "Creating and Managing Databases",
       "Tables, Indexes, and Constraints",
@@ -2331,12 +2331,12 @@ const courses = {
       "Stored Procedures, Triggers, and Functions",
       "Database Security and Backup"
     ],
-    "Skills Gained": [
+    "SkillsGained": [
       "Design and maintain relational databases",
       "Write efficient SQL queries for data retrieval",
       "Perform database administration tasks"
     ],
-    "Career Benefits": [
+    "CareerBenefits": [
       "Database Administrator (DBA)",
       "Data Analyst",
       "Backend Developer"
@@ -2354,7 +2354,7 @@ const courses = {
     "duration":"4 months",
     "enrolledStudents":677,
     "position":"center",
-    "Key Modules": [
+    "KeyModules": [
       "Introduction to NoSQL and MongoDB",
       "Database, Collections, and Documents",
       "CRUD Operations",
@@ -2363,12 +2363,12 @@ const courses = {
       "Data Security and Backup",
       "Integration with Web Applications"
     ],
-    "Skills Gained": [
+    "SkillsGained": [
       "Manage and query NoSQL databases",
       "Handle large volumes of unstructured data",
       "Integrate MongoDB with applications"
     ],
-    "Career Benefits": [
+    "CareerBenefits": [
       "NoSQL Database Developer",
       "Backend Developer",
       "Data Engineer"
@@ -2386,7 +2386,7 @@ const courses = {
     "duration":"6 months",
     "enrolledStudents":912,
     "position":"center",
-    "Key Modules": [
+    "KeyModules": [
       "Advanced Excel Functions and Formulas",
       "Pivot Tables and Charts",
       "Data Validation and Conditional Formatting",
@@ -2394,12 +2394,12 @@ const courses = {
       "Introduction to Power BI and Dashboard Creation",
       "Data Analysis and Reporting Techniques"
     ],
-    "Skills Gained": [
+    "SkillsGained": [
       "Analyze and visualize business data",
       "Create interactive dashboards",
       "Automate reporting tasks using Excel and BI tools"
     ],
-    "Career Benefits": [
+    "CareerBenefits": [
       "MIS Executive",
       "Business Analyst",
       "Data Reporting Specialist"

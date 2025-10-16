@@ -27,6 +27,7 @@ import AboutUs from './components/About/AboutUs';
 import Placement from './components/Placements/PlacementPage';
 import SubCourses from './components/Courses/SubCourses';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
+import DetailedCourse from './components/Courses/DetailedCourse';
 
 function App() {
 
@@ -61,6 +62,7 @@ function App() {
 
     <Route path='/courses' element={<CareerPrograms/>}/>
     <Route path='/courses/:courseslug' element={<SubCourses/>}/>
+    <Route path='/courses/:courseslug/:subcourseslug' element={<DetailedCourse/>}/>
     <Route path='/profile' element={<UserProfile/>}/>
     <Route path='/onlineregistration' element={<OnlineRegistration/>}/>
    <Route path="/certificates" element={<Certificates/>} />

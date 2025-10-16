@@ -312,27 +312,27 @@ export default function CareerPrograms() {
         ref={exploreRef}
         className="bg-[#f4f4fb] py-12 px-4 md:px-8 lg:px-16"
       >
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-8xl mx-auto">
           <h2 className="text-[#099f4e] font-bold text-3xl text-center mb-10">
             Explore Career Program
           </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {Object.keys(courses).map((course, idx) => (
               <div
                 key={""}
-                className="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-200 flex flex-col overflow-hidden"
+                className="bg-white h-95 w-80 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-200 flex flex-col overflow-hidden"
               >
                 <img
                   src={courses[course].image}
                   alt={course.title}
-                  className="w-full h-48 object-cover rounded-t-xl"
+                  className="w-full h-40 object-cover rounded-t-xl"
                   loading="lazy"
                 />
-                <div className="flex-1 flex flex-col p-5">
+                <div className="flex-1 flex flex-col p-4">
                   <div className="text-lg font-semibold text-[#0c1818] mb-2">
                     {course}
                   </div>
-                  <div className="text-[#808098] mb-4 flex-1 whitespace-pre-line">
+                  <div className="text-[#808098] mb-4 flex-1 whitespace-pre-line text-sm">
                     {courses[course].description}
                   </div>
                   <div className="flex items-center justify-between mt-2 text-sm gap-3">

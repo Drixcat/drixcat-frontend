@@ -46,7 +46,7 @@ export default function SubCourses() {
                     {sub.overview}
                   </div>
                   <div className="flex items-center justify-between mt-2 text-sm gap-3">
-                    <Link to={`/courses/About`} className="flex-1">
+                    <Link to={`/courses/${courseName}/${sub.name.replace(/\s+/g,'-')}`} className="flex-1">
                       <motion.button
                         initial="hidden"
                         animate="visible"
