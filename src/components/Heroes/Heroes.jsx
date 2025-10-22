@@ -51,7 +51,7 @@ export default function Heroes() {
            <main className="w-full min-h-[480px] bg-[linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(/Heroes/first.png)] bg-cover bg-center py-12 px-4 md:px-8 lg:px-16 shadow-sm ">
             <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-10">
                 {/* Left Side */}
-                <div className="w-full lg:w-1/2 flex flex-col justify-center">
+                <div className="w-full lg:w-1/2 flex flex-col justify-center mt-7">
                   
                     {/* Headline */}
 
@@ -124,7 +124,7 @@ export default function Heroes() {
            <main className="w-full min-h-[480px] bg-[linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(/Heroes/second.png)] bg-cover bg-center py-12 px-4 md:px-8 lg:px-16 shadow-sm ">
             <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-10">
                 {/* Left Side */}
-                <div className="w-full lg:w-1/2 flex flex-col justify-center">
+                <div className="w-full mt-7 lg:w-1/2 flex flex-col justify-center">
                     {/* Badge */}
                     {/* <span className="inline-block bg-blue-50 text-blue-700 text-xs font-semibold px-3 py-1 rounded-full mb-4 w-max shadow-sm">
                         Get 30% Off on First Enroll
@@ -199,7 +199,7 @@ export default function Heroes() {
            <main className="w-full min-h-[480px] bg-[linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(/Heroes/third.png)] bg-cover bg-center py-12 px-4 md:px-8 lg:px-16 shadow-sm ">
             <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-10">
                 {/* Left Side */}
-                <div className="w-full lg:w-1/2 flex flex-col justify-center">
+                <div className="w-full mt-7 lg:w-1/2 flex flex-col justify-center">
                     {/* Badge */}
                     {/* <span className="inline-block bg-blue-50 text-blue-700 text-xs font-semibold px-3 py-1 rounded-full mb-4 w-max shadow-sm">
                         Get 30% Off on First Enroll
