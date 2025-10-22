@@ -2,16 +2,11 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { HiCheckCircle, HiXCircle } from "react-icons/hi2";
 
+import subcourses from '../Courses/courses'
 
-const courses = [
-  "Web Development",
-  "Data Science",
-  "AI/ML",
-  "Business Management",
-  "Digital Marketing",
-  "Graphic Designing",
-  "Cyber Security",
-];
+
+
+
 
 
 
@@ -32,17 +27,34 @@ const centers = [
   },
 ];
 
+const selectCenters = ["Ghaziabad", "Noida"];
+
+
+
 export default function ContactUs() {
 
   const [formData,setFormData] = useState({name:'',email:'',phone:'',center:'',course:'',message:''})
   const [sendSuccess,setSendSuccess] = useState(false)
   const [sendFailure,setSendFailure] = useState(false)
+  const [courses,setCourses] = useState([])
+  const [isLoading,setIsLoading] = useState(false)
 
+  useEffect(()=>{
+    document.title = "Contact Us - Drixca Tech"
+ const allSubNames = Object.values(subcourses)
+  .flatMap(course => course.subcourses.map(sub => sub.name));
+
+ setCourses(allSubNames)
+
+
+
+  },[])
 
   const sendMail = async (e) => {
     e.preventDefault();
     // Implement mail sending logic here
 
+    setIsLoading(true);
  
     const res = await axios.post('http://localhost:3000/contact/mail',formData,{
       headers:{
@@ -50,15 +62,17 @@ export default function ContactUs() {
       }
     })
 
-    console.log(res)
+    
 
     if(res.data.success){
       setSendSuccess(true)
       
       setFormData({name:'',email:'',phone:'',center:'',course:'',message:''})
+      setIsLoading(false)
     }else if(!res.success){
        setSendFailure(true)
        setFormData({name:'',email:'',phone:'',center:'',course:'',message:''})
+       setIsLoading(false);
      
     }
 
@@ -113,6 +127,7 @@ export default function ContactUs() {
       <label className="block text-[#808098] font-medium mb-1">Full Name</label>
       <input
         type="text"
+        required
         placeholder="Enter your full name"
         className="border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-[#0999f4] outline-none w-full bg-transparent"
         name="name"
@@ -124,6 +139,7 @@ export default function ContactUs() {
       <label className="block text-[#808098] font-medium mb-1">Email ID</label>
       <input
         type="email"
+        required
         placeholder="Enter your email"
         className="border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-[#0999f4] outline-none w-full bg-transparent"
         name="email"
@@ -138,6 +154,7 @@ export default function ContactUs() {
       <label className="block text-[#808098] font-medium mb-1">Phone Number</label>
       <input
         type="tel"
+        required
         placeholder="Enter your phone number"
         className="border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-[#0999f4] outline-none w-full bg-transparent"
         pattern="[6-9][0-9]{9}"
@@ -148,14 +165,22 @@ export default function ContactUs() {
     </div>
     <div className="flex-1 min-w-[200px]">
       <label className="block text-[#808098] font-medium mb-1">Center</label>
-      <input
-        type="text"
-        placeholder="Enter center name"
-        className="border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-[#0999f4] outline-none w-full bg-transparent"
+        <select
         name="center"
+        required
+        className="border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-[#0999f4] outline-none w-full bg-transparent"
         value={formData.center}
         onChange={handleChange}
-      />
+      >
+        <option value="" disabled>
+          Select a Center
+        </option>
+        {selectCenters.map((center) => (
+          <option key={center} value={center}>
+            {center}
+          </option>
+        ))}
+      </select>
     </div>
     <div className="flex-1 min-w-[200px]">
       <label className="block text-[#808098] font-medium mb-1">Course Applied For</label>
@@ -182,6 +207,7 @@ export default function ContactUs() {
     <label className="block text-[#808098] font-medium mb-1">How can we help you?</label>
     <textarea
       rows={4}
+      required
       placeholder="Type your message"
       className="border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-[#0999f4] outline-none w-full resize-none bg-transparent"
       name="message"
@@ -192,9 +218,10 @@ export default function ContactUs() {
 
   <button
     type="submit"
+    disabled={isLoading}
     className="flex items-center justify-center gap-2 bg-gradient-to-r from-[#50F48A] to-[#099F4E] text-white font-bold rounded-lg w-full py-3 shadow transition-all duration-300 hover:from-[#43d97a] hover:to-[#077d3b] focus:outline-none cursor-pointer"
   >
-    Send Message
+    {isLoading ?"Sending...":"Send Message"}
   </button>
 </form>
 

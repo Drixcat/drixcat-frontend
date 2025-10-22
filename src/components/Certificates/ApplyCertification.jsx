@@ -1,29 +1,29 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import courses from "../Courses/courses";
+import axios from "axios";
+import { HiCheckCircle, HiXCircle } from "react-icons/hi2";
+
 
 const initialForm = {
-    fullName: "",
+    name: "",
     email: "",
     phone: "",
     course: "",
-    center: "",
-    faculty: "",
-    studentId: "",
+    mode:"",
+    facultyName: "",
+    drixcatID: "",
     startDate: "",
     endDate: "",
 };
 
-const courseOptions = [
-    "Web Development",
-    "Data Science",
-    "AI/ML",
-    "UI/UX Design",
-    "Cybersecurity",
-    "Cloud Computing",
-];
+
 
 export default function ApplyCertification() {
     const [form, setForm] = useState(initialForm);
-
+    const [courseOptions,setCourseOptions] = useState([])
+    const [sendSuccess,setSendSuccess] = useState(false)
+    const [sendFailure,setSendFailure] = useState(false)
+    const [isLoading,setIsLoading] = useState(false)
     const handleChange = (e) => {
         const { name, value } = e.target;
         setForm((prev) => ({ ...prev, [name]: value }));
@@ -31,10 +31,61 @@ export default function ApplyCertification() {
 
     const handleReset = () => setForm(initialForm);
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async(e) => {
         e.preventDefault();
         // Submit logic here
+        setIsLoading(true)
+        const res = await axios.post('http://localhost:3000/contact/applycertificate',form,{
+            headers:{
+                'Content-Type':'application/json'
+            }
+        })
+
+
+       if(res.data.success){
+      setSendSuccess(true)
+        setForm(initialForm)
+        setIsLoading(false)
+    }else if(!res.success){
+       setSendFailure(true)
+         setForm(initialForm)
+         setIsLoading(false)
+     
+     
+    }
+
     };
+
+    useEffect(()=>{
+        document.title = "Apply for Certificate - Drixcat Tech"
+ const allCourseNames = Object.values(courses)
+  .flatMap(course => course.subcourses.map(sub => sub.name));
+
+    setCourseOptions(allCourseNames)
+
+    },[])
+
+      useEffect(()=>{
+    
+    
+        if(sendSuccess)
+        {
+       setTimeout(() => {
+          setSendSuccess(false)
+        }, 3000);
+        }else if(sendFailure)
+        {
+       setTimeout(() => {
+          setSendFailure(false)
+        }, 3000);
+        }
+        
+      
+       
+    
+      
+    
+      },[sendSuccess,sendFailure])
 
     return (
         <div className="min-h-screen bg-white flex items-center justify-center py-8 px-2">
@@ -54,8 +105,8 @@ export default function ApplyCertification() {
                                 </label>
                                 <input
                                     type="text"
-                                    name="fullName"
-                                    value={form.fullName}
+                                    name="name"
+                                    value={form.name}
                                     onChange={handleChange}
                                     className="block w-full border border-gray-300 rounded-lg p-2 focus:ring-blue-500 focus:border-blue-500 outline-none"
                                     required
@@ -116,16 +167,16 @@ export default function ApplyCertification() {
                                      Mode of Training
                                 </label>
                                  <select
-                                    name="course"
-                                    value={form.course}
+                                    name="mode"
+                                    value={form.mode}
                                     onChange={handleChange}
                                     className="block w-full border border-gray-300 rounded-lg p-2 focus:ring-blue-500 focus:border-blue-500 outline-none bg-transparent text-[#808098]"
                                     required
                                 >
                                     <option value="" disabled>Select Mode</option>
 
-                                    <option value="">Offline</option>
-                                    <option value="">Online</option>
+                                    <option value="offline">Offline</option>
+                                    <option value="online">Online</option>
                                    
                                 </select>
                                
@@ -137,8 +188,8 @@ export default function ApplyCertification() {
                                 </label>
                                 <input
                                     type="text"
-                                    name="faculty"
-                                    value={form.faculty}
+                                    name="facultyName"
+                                    value={form.facultyName}
                                     onChange={handleChange}
                                     className="block w-full border border-gray-300 rounded-lg p-2 focus:ring-blue-500 focus:border-blue-500 outline-none"
                                     required
@@ -182,8 +233,8 @@ export default function ApplyCertification() {
                                 </label>
                                 <input
                                     type="text"
-                                    name="studentId"
-                                    value={form.studentId}
+                                    name="drixcatID"
+                                    value={form.drixcatID}
                                     onChange={handleChange}
                                     className="block w-full border border-gray-300 rounded-lg p-2 focus:ring-blue-500 focus:border-blue-500 outline-none"
                                     required
@@ -193,14 +244,19 @@ export default function ApplyCertification() {
                         <div className="flex flex-col md:flex-row gap-4 mt-4">
                             <button
                                 type="submit"
-                                className="w-full md:w-auto bg-gradient-to-r from-[#50F48A] to-[#099F4E] text-white font-bold rounded-lg px-6 py-2 transition hover:from-[#099F4E] hover:to-[#077C3A]"
+                                disabled={isLoading}
+                                className="w-full md:w-auto bg-gradient-to-r from-[#50F48A] to-[#099F4E] 
+                                cursor-pointer text-white font-bold rounded-lg px-6 py-2 transition hover:from-[#099F4E] hover:to-[#077C3A]"
                             >
-                                Send Request
+                                {isLoading ? 'Sending...' : ' Send Request' }
+                                
                             </button>
                             <button
                                 type="button"
                                 onClick={handleReset}
-                                className="w-full md:w-auto bg-white border border-[#099F4E] text-[#099F4E] font-bold rounded-lg px-6 py-2 transition hover:bg-[#50F48A] hover:text-white"
+                                disabled={isLoading}
+                                className="w-full md:w-auto
+                                cursor-pointer bg-white border border-[#099F4E] text-[#099F4E] font-bold rounded-lg px-6 py-2 transition hover:bg-[#50F48A] hover:text-white"
                             >
                                 Reset Form
                             </button>
@@ -244,6 +300,31 @@ export default function ApplyCertification() {
                     </div>
                 </div>
             </div>
+
+            
+                 {sendSuccess && (
+                <div
+              className={`fixed top-20 right-4 flex z-50 items-center gap-2 bg-green-500 text-white px-3 py-5 rounded shadow-lg transition-opacity ${
+                sendSuccess ? 'opacity-100' : 'opacity-0'
+              }`}
+            >
+              <HiCheckCircle className="w-6 h-6" />
+              <span>Applied Successfully</span>
+            </div>
+            
+                 )}
+            
+                 {sendFailure && (
+                <div
+              className={`fixed top-20 right-4 flex z-60 items-center gap-2 bg-red-500 text-white px-3 py-5 rounded shadow-lg transition-opacity ${
+                sendFailure ? 'opacity-100' : 'opacity-0'
+              }`}
+            >
+              <HiXCircle className="w-6 h-6" />
+              <span>Something went wrong</span>
+            </div>
+            
+                 )}
         </div>
     );
 }
