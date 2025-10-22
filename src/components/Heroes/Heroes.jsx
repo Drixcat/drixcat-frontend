@@ -114,7 +114,7 @@ export default function Heroes() {
              
             </div>
 
-            <div className="absolute top-[-30px] right-7 flex items-center justify-center gap-6 mt-10">
+            <div className="absolute top-[-30px] right-5 flex items-center justify-center gap-3 mt-10">
                 <img src="/Students_Work/ibm.webp" alt="IBM" width={100}/>
                 <img src="/Companies/microsoft_certification_acc.webp" alt="microsoft" width={100}/>
             </div>
@@ -189,7 +189,7 @@ export default function Heroes() {
                 {/* Right Side */}
              
             </div>
-              <div className="absolute top-[-30px] right-7 flex items-center justify-center gap-6 mt-10">
+              <div className="absolute top-[-30px] right-5 flex items-center justify-center gap-3 mt-10">
                 <img src="/Students_Work/ibm.webp" alt="IBM" width={100}/>
                 <img src="/Companies/microsoft_certification_acc.webp" alt="microsoft" width={100}/>
             </div>
@@ -264,7 +264,7 @@ export default function Heroes() {
                 {/* Right Side */}
              
             </div>
-           <div className="absolute top-[-30px] right-7 flex items-center justify-center gap-6 mt-10">
+           <div className="absolute top-[-30px] right-5 flex items-center justify-center gap-3 mt-10">
                 <img src="/Students_Work/ibm.webp" alt="IBM" width={100}/>
                 <img src="/Companies/microsoft_certification_acc.webp" alt="microsoft" width={100}/>
             </div>
