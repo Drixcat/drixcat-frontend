@@ -5,7 +5,7 @@ import {motion} from 'framer-motion'
 export default function SubCourses() {
   const { courseslug } = useParams();
 
-  console.log(courseslug)
+  
 
   // Convert slug back to course name format
   const courseName = Object.keys(courses).find(

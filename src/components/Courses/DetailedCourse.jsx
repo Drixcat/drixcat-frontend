@@ -125,13 +125,14 @@ const DetailedCourse = () => {
         {/* Back Button */}
         <div className="text-center flex gap-5">
           <Link
-            to={`/courses/${courseslug}`}
+            to={`/courses/${courseslug.toLowerCase()}`}
             className="inline-block bg-[#50f48a] hover:bg-[#099f4e] text-[#0c1818] font-semibold rounded-lg py-2 px-6 shadow-md transition-colors"
           >
             Back to Courses
           </Link>
           <Link
             to={`/contact`}
+            state={{ course: deslug }}
             className="inline-block bg-[#50f48a] hover:bg-[#099f4e] text-[#0c1818] font-semibold rounded-lg py-2 px-6 shadow-md transition-colors"
           >
             Contact

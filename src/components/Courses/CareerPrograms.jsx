@@ -164,13 +164,10 @@ function scrollToSection(ref) {
 export default function CareerPrograms() {
   const exploreRef = useRef(null);
 
-  Object.keys(courses).map((n)=>{
 
-      console.log(courses[n].image)
-  }
 
   
-  )
+
 
   // Form state
   const [form, setForm] = React.useState({

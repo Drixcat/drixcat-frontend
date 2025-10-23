@@ -3,6 +3,7 @@ import axios from "axios";
 import { HiCheckCircle, HiXCircle } from "react-icons/hi2";
 
 import subcourses from '../Courses/courses'
+import { useLocation } from "react-router-dom";
 
 
 
@@ -33,11 +34,15 @@ const selectCenters = ["Ghaziabad", "Noida"];
 
 export default function ContactUs() {
 
+  const location = useLocation();
+  const {course} = location.state || '' ;
+  console.log(course)
   const [formData,setFormData] = useState({name:'',email:'',phone:'',center:'',course:'',message:''})
   const [sendSuccess,setSendSuccess] = useState(false)
   const [sendFailure,setSendFailure] = useState(false)
   const [courses,setCourses] = useState([])
   const [isLoading,setIsLoading] = useState(false)
+ 
 
   useEffect(()=>{
     document.title = "Contact Us - Drixca Tech"
@@ -45,6 +50,8 @@ export default function ContactUs() {
   .flatMap(course => course.subcourses.map(sub => sub.name));
 
  setCourses(allSubNames)
+
+ setFormData({...formData,course:course?course:''})
 
 
 

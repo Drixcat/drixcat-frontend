@@ -40,7 +40,7 @@ const courses = {
       "image":"/Courses/python/python-django.png",
        "duration":"8 months",
       "enrolledStudents":465,
-      "keyModules": [
+      "KeyModules": [
         "Introduction to Django and MVC architecture",
         "Models, Views, and Templates",
         "Database integration with Django ORM",
@@ -48,12 +48,12 @@ const courses = {
         "Building REST APIs with Django",
         "Deployment of Django applications"
       ],
-      "skillsGained": [
+      "SkillsGained": [
         "Web application development with Python",
         "Database management and ORM",
         "REST API creation and integration"
       ],
-      "careerBenefits": [
+      "CareerBenefits": [
         "Python Django Developer",
         "Backend Web Developer",
         "Full-Stack Developer (with frontend skills)"
@@ -70,19 +70,19 @@ const courses = {
       "image":"/Courses/python/react-python-AI.jpg",
        "duration":"12 months",
       "enrolledStudents":1082,
-      "keyModules": [
+      "KeyModules": [
         "Python Backend with Flask/Django",
         "Frontend Development using React.js",
         "Integrating Python and React for full-stack applications",
         "AI basics: Machine Learning integration",
         "Deployment on cloud platforms (Heroku, AWS)"
       ],
-      "skillsGained": [
+      "SkillsGained": [
         "Full-stack web development",
         "Frontend and backend integration",
         "Basic AI implementation in applications"
       ],
-      "careerBenefits": [
+      "CareerBenefits": [
         "Full-Stack Developer",
         "AI-enabled Web Developer",
         "Junior Python Developer"
@@ -99,19 +99,19 @@ const courses = {
       "image":"/Courses/python/DA-python.png",
        "duration":"6 months",
       "enrolledStudents":545,
-      "keyModules": [
+      "KeyModules": [
         "Data Analysis with Pandas and NumPy",
         "Data Visualization with Matplotlib and Seaborn",
         "Statistical Analysis and Hypothesis Testing",
         "Introduction to Machine Learning",
         "AI-powered Data Analytics tools"
       ],
-      "skillsGained": [
+      "SkillsGained": [
         "Data cleaning, processing, and analysis",
         "Creating meaningful visualizations",
         "Applying AI for predictive analysis"
       ],
-      "careerBenefits": [
+      "CareerBenefits": [
         "Data Analyst",
         "Business Analyst",
         "Junior Data Scientist"
@@ -128,7 +128,7 @@ const courses = {
       "image":"/Courses/python/DS-python.jpg",
        "duration":"8 months",
       "enrolledStudents":661,
-      "keyModules": [
+      "KeyModules": [
         "Python for Data Science",
         "Data Preprocessing and Cleaning",
         "Exploratory Data Analysis (EDA)",
@@ -136,12 +136,12 @@ const courses = {
         "AI and Deep Learning basics",
         "Model deployment and real-time predictions"
       ],
-      "skillsGained": [
+      "SkillsGained": [
         "Handling real-world data problems",
         "Building machine learning models",
         "Using AI for intelligent data insights"
       ],
-      "careerBenefits": [
+      "CareerBenefits": [
         "Data Scientist",
         "ML Engineer",
         "AI Developer"
@@ -158,19 +158,19 @@ const courses = {
       "image":"/Courses/python/AI-python.jpg",
        "duration":"9 months",
       "enrolledStudents":899,
-      "keyModules": [
+      "KeyModules": [
         "Introduction to AI and Machine Learning",
         "Python Libraries for AI: Scikit-learn, TensorFlow, Keras",
         "Regression, Classification, and Clustering",
         "Neural Networks and Deep Learning Basics",
         "AI in real-world applications"
       ],
-      "skillsGained": [
+      "SkillsGained": [
         "Building AI and ML models",
         "Solving real-world problems with AI",
         "Understanding neural networks and deep learning"
       ],
-      "careerBenefits": [
+      "CareerBenefits": [
         "AI Developer",
         "Machine Learning Engineer",
         "Data Scientist"
