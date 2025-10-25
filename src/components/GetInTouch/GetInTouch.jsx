@@ -70,7 +70,7 @@ const GetInTouch = () => {
                     >
                         <a href="mailto:info@drixcat.com" className="text-blue-200 hover:text-white underline mr-4">info@drixcat.com</a>
                         <span className="text-blue-200">|</span>
-                        <a href="tel:+919876543210" className="text-blue-200 hover:text-white underline ml-4">+91 9876543210</a>
+                        <a href="tel:+91-9953356262" className="text-blue-200 hover:text-white underline ml-4">+91-9953356262</a>
                     </motion.div>
                     <motion.button
                         initial="hidden"
