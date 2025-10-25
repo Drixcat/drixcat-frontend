@@ -45,7 +45,7 @@ export default function ContactUs() {
  
 
   useEffect(()=>{
-    document.title = "Contact Us - Drixca Tech"
+   
  const allSubNames = Object.values(subcourses)
   .flatMap(course => course.subcourses.map(sub => sub.name));
 
