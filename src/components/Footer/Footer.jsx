@@ -7,6 +7,9 @@ FaLinkedinIn,
 FaInstagram,
 FaYoutube,
 } from "react-icons/fa";
+import { HiUserGroup, HiBuildingOffice2, HiInformationCircle,HiPhone } from "react-icons/hi2";
+
+
 
 const footerLinks = [
 {
@@ -14,7 +17,7 @@ const footerLinks = [
     links: [
         { name: "Home", href: "/" },
         { name: "Courses", href: "/courses" },
-        { name: "Mentors", href: "/mentors" },
+        
         { name: "Certificates", href: "/certificates" },
         { name: "About Us", href: "/about" },
         { name: "Contact", href: "/contact" },
@@ -32,7 +35,8 @@ const socialLinks = [
     icon: <FaTwitter />,
     href: "https://twitter.com",
     label: "Twitter",
-},
+}
+,
 {
     icon: <FaLinkedinIn />,
     href: "https://linkedin.com",
@@ -42,12 +46,7 @@ const socialLinks = [
     icon: <FaInstagram />,
     href: "https://www.instagram.com/drixcat_education?igsh=dGc3dzd4YWViZWtl&utm_source=qr",
     label: "Instagram",
-},
-{
-    icon: <FaYoutube />,
-    href: "https://youtube.com",
-    label: "YouTube",
-},
+}
 ];
 
 const Footer = () => {
@@ -72,7 +71,7 @@ return (
                 <div className="flex flex-col items-start md:items-center">
                     {footerLinks.map((group) => (
                         <div key={group.title}>
-                            <h4 className="text-lg font-semibold mb-2 text-primary-400">
+                            <h4 className="text-lg font-semibold mb-2 text-primary-400 underline">
                                 {group.title}
                             </h4>
                             <ul className="space-y-1">
@@ -93,7 +92,7 @@ return (
 
                 {/* Right: Social Media */}
                 <div className="flex flex-col items-start md:items-end">
-                    <h4 className="text-lg font-semibold mb-2 text-primary-400">
+                    <h4 className="text-lg font-semibold mb-2 text-primary-400 underline">
                         Follow Us
                     </h4>
                     <div className="flex space-x-3 mb-4">
@@ -115,15 +114,35 @@ return (
                         <div className="mt-4">
                            Registered Office : 9/1 261, Vashundhra, Ghaziabad, Uttar Pradesh - 201012
                         </div>
-                        <div>
+                        <div className="flex gap-3 mt-2">
+                             <HiUserGroup className="text-xl " />
                             <a
-                                href="mailto:drixcatofficial@gmail.com"
-                                className="hover:text-primary-400 transition-colors"
+                                href="mailto:hr@drixcat.com"
+                                className="hover:text-primary-400 transition-colors underline border-r border-gray-500 pr-2"
                             >
-                                drixcatofficial@gmail.com
+                                hr@drixcat.com 
+                            </a>
+                       
+                              
+                             <HiBuildingOffice2 className="text-xl " />
+                            <a
+                                href="mailto:corporate@drixcat.com"
+                                className="hover:text-primary-400 transition-colors underline border-r border-gray-500 pr-2"
+                            >
+                               corporate@drixcat.com
+                            </a>
+                       
+                             
+                             <HiInformationCircle className="text-xl" />
+                            <a
+                                href="mailto:info@drixcat.com"
+                                className="hover:text-primary-400 transition-colors underline "
+                            >
+                                info@drixcat.com
                             </a>
                         </div>
-                        <div>
+                        <div className="mt-2">
+                            <HiPhone className="inline-block text-l mr-2" />
                             <a
                                 href="tel:+9199533 56262"
                                 className="hover:text-primary-400 transition-colors"
