@@ -16,14 +16,14 @@ const centers = [
     name: "Registered office address",
     phone: "+91-9953366262",
     whatsapp: "+91-9953366262",
-    email: "drixcatofficial@gmail.com",
+    email: "info@drixcat.com",
     address: "9/1 261, Vashundhra, Ghaziabad, Uttar Pradesh - 201012",
   },
   {
     name: "Noida office address",
     phone: "+91-9953366262",
     whatsapp: "+91-9953366262",
-    email: "drixcatofficial@gmail.com",
+    email: "info@drixcat.com",
     address: "1ST & 3RD FLOOR, BLOCK-B-40/B-3,SECTOR-1,NEAR LEMON TREE HOTEL, NOIDA - 201301",
   },
 ];

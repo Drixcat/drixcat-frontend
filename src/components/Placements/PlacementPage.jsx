@@ -659,10 +659,10 @@ const Placement = () => {
             </a>
             <span className="mx-2 text-white">|</span>
             <a
-              href="tel:+919876543210"
+              href="tel:+91-9953356262"
               className="underline text-white hover:text-[#808098]"
             >
-              +91 9876543210
+              +91-9953356262
             </a>
           </div>
           <button

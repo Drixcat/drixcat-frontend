@@ -620,14 +620,14 @@ export default function CareerPrograms() {
               <span role="img" aria-label="email">
                 ✉️
               </span>
-              contact@drixcat.com
+              info@drixcat.com
             </span>
             <span className="hidden md:inline-block">|</span>
             <span className="flex items-center gap-2">
               <span role="img" aria-label="phone">
                 ☎️
               </span>
-              +91-9876543210
+              +91-9953356262
             </span>
           </div>
           <div className="flex gap-4 mt-2">
