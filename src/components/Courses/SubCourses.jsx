@@ -56,7 +56,7 @@ export default function SubCourses() {
                        Explore
                       </motion.button>
                     </Link>
-                    <span className="flex items-center gap-1 text-[#808098] shrink-0">
+                    {/* <span className="flex items-center gap-1 text-[#808098] shrink-0">
                       <svg
                         width="18"
                         height="18"
@@ -75,7 +75,7 @@ export default function SubCourses() {
 
      
 
-                    </span>
+                    </span> */}
                     <span className="flex items-center gap-1 text-[#808098]">
                       <svg
                         width="18"

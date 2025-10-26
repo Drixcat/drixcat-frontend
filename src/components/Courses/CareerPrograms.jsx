@@ -313,7 +313,7 @@ export default function CareerPrograms() {
           <h2 className="text-[#099f4e] font-bold text-3xl text-center mb-10">
             Explore Career Program
           </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
             {Object.keys(courses).map((course, idx) => (
               <div
                 key={""}

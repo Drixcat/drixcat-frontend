@@ -39,7 +39,7 @@ const DetailedCourse = () => {
           <h1 className="text-3xl md:text-4xl font-bold text-[#099f4e]">{course.name}</h1>
           <p className="text-[#808098]">{course.overview}</p>
           <p><span className="font-semibold">Duration:</span> {course.duration}</p>
-          <p><span className="font-semibold">Enrolled Students:</span> {course.enrolledStudents}</p>
+          {/* <p><span className="font-semibold">Enrolled Students:</span> {course.enrolledStudents}</p> */}
         </motion.div>
 
         {/* Key Modules */}

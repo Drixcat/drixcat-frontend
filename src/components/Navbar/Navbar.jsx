@@ -12,7 +12,7 @@ const navLinks = [
   { name: "Online Registration", href: "/onlineregistration" },
   { name: "Certificates", href: "/certificates" },
   { name: "Blog", href: "/blog" },
-  { name: "Contact", href: "/contact" },
+  { name: "ContactUs", href: "/contact" },
   { name: "About", href: "/about" },
 ];
 
