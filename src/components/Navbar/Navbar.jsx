@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 const navLinks = [
@@ -9,6 +9,7 @@ const navLinks = [
     
   },
   { name: "Placements", href: "/placements" },
+  {name:"Corporate Training", href:"/corporatetraining"},
   { name: "Online Registration", href: "/onlineregistration" },
   { name: "Certificates", href: "/certificates" },
   { name: "Blog", href: "/blog" },
@@ -18,6 +19,22 @@ const navLinks = [
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+
+// useEffect(() => {
+//   const handleResize = () => {
+//     if (window.innerWidth >= 1020) {
+//       // Close mobile menu on desktop
+//       setMenuOpen(false);
+//     }
+//   };
+
+//   window.addEventListener("resize", handleResize);
+//   return () => window.removeEventListener("resize", handleResize);
+// }, []);
+
+
+
+  
 
   return (
     <nav className="bg-white shadow-md w-full z-50 sticky top-0 left-0">
@@ -31,7 +48,7 @@ export default function Navbar() {
           </div>
 
           {/* Desktop Nav Links */}
-          <div className="hidden md:flex md:items-center md:space-x-6 relative">
+          <div className="hidden lg:flex lg:items-center md:space-x-6 relative">
             {navLinks.map((link) =>
               link.dropdown ? (
                 <div key={link.name} className="relative group">
@@ -78,7 +95,7 @@ export default function Navbar() {
           </div>
 
           {/* Mobile Hamburger */}
-          <div className="md:hidden flex items-center">
+          <div className="lg:hidden flex items-center">
             <button
               onClick={() => setMenuOpen(!menuOpen)}
               className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-[#099F4E] hover:bg-blue-50 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500"
@@ -103,7 +120,7 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <div className="md:hidden bg-white shadow-md">
+        <div className="lg:hidden bg-white shadow-md">
           <ul className="flex flex-col px-4 py-2 space-y-2">
             {navLinks.map((link) =>
               link.dropdown ? (

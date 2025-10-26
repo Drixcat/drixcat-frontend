@@ -28,6 +28,7 @@ import Placement from './components/Placements/PlacementPage';
 import SubCourses from './components/Courses/SubCourses';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 import DetailedCourse from './components/Courses/DetailedCourse';
+import CorporateTraining from './components/CorporateTraining/CorporateTraining';
 
 function App() {
 
@@ -72,6 +73,7 @@ function App() {
    <Route path='/download-certificate' element={<DownloadCertificate/>}/>
     <Route path="/about" element={<AboutUs/>} /> 
     <Route path='/placements' element={<Placement/>}/>   
+    <Route path="/corporatetraining" element={<CorporateTraining/>}/>
        
 
     </Routes>
