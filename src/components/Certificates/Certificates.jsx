@@ -59,7 +59,7 @@ const Certificates = () => {
                 </div>
 
                 {/* Right Side: Certificate Preview */}
-               <div className="md:w-1/2 relative min-h-[650px] flex items-center justify-center">
+               <div className="w-full lg:w-1/2 relative min-h-[650px] flex items-center justify-center">
                     <div className="absolute inset-0 bg-gradient-to-br from-[#099F4E]/80 to-[#1A1A2E]/90 z-10 rounded-tr-2xl rounded-br-2xl" />
                     <img
                         src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80"
@@ -87,7 +87,7 @@ const Certificates = () => {
                         <img
                             src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/portrait-certificate-template-design-5f452092bb7cdc699d1536c1023e6025_screen.jpg?ts=1637050294"
                             alt="Certificate Preview"
-                            className="rounded-lg shadow-lg w-3/5 max-w-xs min-w-[180px] hover:scale-105 transition-transform duration-300 bg-white"
+                            className="rounded-lg shadow-lg w-4/5 md:w-11/12 lg:w-3/5 max-w-sm hover:scale-105 transition-transform duration-300 bg-white"
                         />
                         <span className="block mt-6 text-white text-base font-medium text-center opacity-90">
                             Your success deserves recognition.
