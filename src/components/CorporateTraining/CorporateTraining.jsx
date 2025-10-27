@@ -2,6 +2,7 @@ import React from "react";
 import { FaUserTie, FaChalkboardTeacher, FaLaptopCode, FaAward,FaUserCog, FaUsers  } from "react-icons/fa";
 
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 // List of logo objects
 const logos = [
   {
@@ -403,9 +404,10 @@ const CorporateTraining = () => {
             </div>
           ))}
         </div>
-        <button className="mt-6 bg-gradient-to-r from-[#099f4e] to-[#50f48a] text-white px-6 py-3 rounded-full shadow-md hover:opacity-90">
+        <Link to="/courses">
+        <button className="mt-6 bg-gradient-to-r from-[#099f4e] to-[#50f48a] text-white px-6 cursor-pointer py-3 rounded-full shadow-md hover:opacity-90">
           View All Courses
-        </button>
+        </button></Link>
        </div>
       </section>
 

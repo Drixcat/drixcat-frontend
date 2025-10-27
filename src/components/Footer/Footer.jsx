@@ -153,7 +153,7 @@ const Footer = () => {
               </div>
 
               {/* Phone */}
-              <div className="flex justify-end space-x-2 mt-2">
+              <div className="flex justify-start sm:justify-end  space-x-2 mt-2">
                 <HiPhone className="text-lg" />
                 <a
                   href="tel:+919953356262"

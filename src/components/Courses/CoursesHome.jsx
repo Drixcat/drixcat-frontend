@@ -25,13 +25,7 @@ const course = [
     },
    
     
-    {
-      "name": "Artificial Intelligence Using Python",
-      "overview": "Learn the concepts of AI and machine learning using Python. This course focuses on building intelligent applications and understanding the AI workflow.",
-      "image":"/Courses/python/AI-python.jpg",
-       "duration":"9 months",
-       "course":"Python"
-    },
+  
     {
  "name": "Web Full Stack with Node.js",
     "overview": "Complete full-stack development course focusing on Node.js backend and frontend technologies. Covers building modern web applications.",
@@ -41,11 +35,13 @@ const course = [
     
     },
     {
-      "name": "MERN Stack",
-    "overview": "Full-stack development using MongoDB, Express.js, React.js, and Node.js. Learn to build complete web applications with database integration and REST APIs.",
-    "image":"/Courses/web dev/Mern stack.png",
-    "duration":"9 months",
-    "course":"Web Development & Full Stack Development"
+      "name": "Java Expert",
+    "overview": "An advanced Java course designed to strengthen your Java knowledge and prepare you for professional development roles.",
+    "image":"/Courses/java/java-expert.png",
+     
+    "duration":"6 months",
+    "position":"center",
+    "course":"Java"
     },{
       "name": "AWS Certified DevOps Engineer",
     "overview": "Advanced course on implementing DevOps practices on AWS cloud for automation, CI/CD, and monitoring.",
@@ -54,6 +50,14 @@ const course = [
    
     "position":"center",
     "course":"Cloud Computing"
+    },
+    {
+      "name": "Advanced Digital Marketing",
+    "overview": "Advanced course for students who want to specialize in digital marketing and learn strategies to increase ROI, engagement, and conversions.",
+    "image":"/Courses/digital marketing/advanced DM.png",
+    "duration":"12 months",
+    "position":"top",
+    "course":"Digital Marketing"
     }
     
 
