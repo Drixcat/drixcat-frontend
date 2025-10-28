@@ -36,7 +36,7 @@ export default function ContactUs() {
 
   const location = useLocation();
   const {course} = location.state || '' ;
-  console.log(course)
+  
   const [formData,setFormData] = useState({name:'',email:'',phone:'',center:'',course:'',message:''})
   const [sendSuccess,setSendSuccess] = useState(false)
   const [sendFailure,setSendFailure] = useState(false)
@@ -214,7 +214,7 @@ export default function ContactUs() {
     <label className="block text-[#808098] font-medium mb-1">How can we help you?</label>
     <textarea
       rows={4}
-      required
+ 
       placeholder="Type your message"
       className="border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-[#0999f4] outline-none w-full resize-none bg-transparent"
       name="message"
