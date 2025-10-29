@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { FaUserTie, FaChalkboardTeacher, FaLaptopCode, FaAward,FaUserCog, FaUsers  } from "react-icons/fa";
 
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import axios from "axios";
+import { HiCheckCircle, HiXCircle } from "react-icons/hi2";
 // List of logo objects
 const logos = [
   {
@@ -153,8 +155,62 @@ const fadeIn = {
 };
 
 const CorporateTraining = () => {
+
+  const [formData,setFormData]=React.useState({name:'',email:'',phone:'',center:'',company:'',query:''})
+  const selectCenters = ["Ghaziabad", "Noida"];
+
+  const [sendSuccess,setSendSuccess]=React.useState(false)
+  const [sendFailure,setSendFailure]=React.useState(false)
+  const[isLoading,setIsLoading]=React.useState(false);
+
+  const handleFormChange = (e)=>{
+
+    setFormData({...formData,[e.target.name]:e.target.value})
+
+  }
+
+
+  const handleSubmitQuery =async (e)=>{
+    e.preventDefault();
+    setIsLoading(true);
+
+
+    const res = await axios.post('http://localhost:3000/contact/corporateenquiry',formData,{
+      headers:{
+        'Content-Type':'application/json'
+      }
+    })
+
+      if(res.data.success){
+      setSendSuccess(true)
+      setFormData({name:'',email:'',course:'',phone:'',center:'',company:'',query:''})
+     setIsLoading(false);
+    }else{
+        setSendFailure(true)
+      setFormData({name:'',email:'',course:'',phone:'',center:'',company:'',query:''})  
+      setIsLoading(false);
+    }
+  }
+
+  useEffect(()=>{
+
+    if(sendSuccess)
+    {
+   setTimeout(() => {
+      setSendSuccess(false)
+    }, 3000);
+    }else if(sendFailure)
+    {
+   setTimeout(() => {
+      setSendFailure(false)
+    }, 3000);
+    }
+
+  },[sendSuccess,sendFailure])
+
+
   return (
-    <div className="font-sans text-[#0c1818]">
+    <div className="font-sans text-[#0c1818] relative">
       {/* Section 1: Hero + Enquiry Form */}
 
      {/* Section 1: Hero + Enquiry Form */}
@@ -182,7 +238,7 @@ const CorporateTraining = () => {
       <h2 className="text-xl font-semibold mb-6 text-[#0c1818]">
         Enquiry Now
       </h2>
-      <form className="space-y-4 text-sm">
+      <form className="space-y-4 text-sm" onSubmit={handleSubmitQuery}>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
             <label className="block text-[#808098] mb-1">Name</label>
@@ -190,6 +246,9 @@ const CorporateTraining = () => {
               type="text"
               className="w-full p-2 border rounded-md focus:ring-2 focus:ring-[#50f48a] outline-none"
               placeholder="Enter Name"
+              name="name"
+              value={formData.name}
+              onChange={handleFormChange}
             />
           </div>
           <div>
@@ -198,6 +257,9 @@ const CorporateTraining = () => {
               type="email"
               className="w-full p-2 border rounded-md focus:ring-2 focus:ring-[#50f48a] outline-none"
               placeholder="Enter Email"
+              name="email"
+              value={formData.email}
+              onChange={handleFormChange}
             />
           </div>
           <div>
@@ -206,15 +268,30 @@ const CorporateTraining = () => {
               type="text"
               className="w-full p-2 border rounded-md focus:ring-2 focus:ring-[#50f48a] outline-none"
               placeholder="Enter Phone"
+              pattern="[6-9][0-9]{9}"
+               name="phone"
+              value={formData.phone}
+              onChange={handleFormChange}
             />
           </div>
           <div>
             <label className="block text-[#808098] mb-1">Center</label>
-            <input
-              type="text"
-              className="w-full p-2 border rounded-md focus:ring-2 focus:ring-[#50f48a] outline-none"
-              placeholder="Enter Center"
-            />
+               <select
+        name="center"
+        required
+        className="border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-[#50f48a] outline-none w-full bg-transparent"
+        value={formData.center}
+        onChange={handleFormChange}
+      >
+        <option value="" disabled>
+          Select a Center
+        </option>
+        {selectCenters.map((center) => (
+          <option key={center} value={center}>
+            {center}
+          </option>
+        ))}
+      </select>
           </div>
           <div>
             <label className="block text-[#808098] mb-1">Course</label>
@@ -222,6 +299,9 @@ const CorporateTraining = () => {
               type="text"
               className="w-full p-2 border rounded-md focus:ring-2 focus:ring-[#50f48a] outline-none"
               placeholder="Enter Course"
+               name="course"
+              value={formData.course}
+              onChange={handleFormChange}
             />
           </div>
           <div>
@@ -230,6 +310,9 @@ const CorporateTraining = () => {
               type="text"
               className="w-full p-2 border rounded-md focus:ring-2 focus:ring-[#50f48a] outline-none"
               placeholder="Enter Company Name"
+               name="company"
+              value={formData.company}
+              onChange={handleFormChange}
             />
           </div>
         </div>
@@ -240,6 +323,9 @@ const CorporateTraining = () => {
             className="w-full p-2 border rounded-md focus:ring-2 focus:ring-[#50f48a] outline-none resize-none"
             placeholder="Write your message"
             rows="3"
+             name="query"
+              value={formData.query}
+              onChange={handleFormChange}
           ></textarea>
         </div>
 
@@ -248,7 +334,7 @@ const CorporateTraining = () => {
             type="submit"
             className="bg-[#099f4e] cursor-pointer text-white px-6 py-2 rounded-full shadow-md hover:opacity-90 transition"
           >
-            Submit
+          {isLoading ? 'Sending...' : 'Submit'}
           </button>
           <button
             type="reset"
@@ -436,6 +522,30 @@ const CorporateTraining = () => {
           </p>
         </div>
       </section>
+
+        {sendSuccess && (
+          <div
+        className={`absolute top-4 right-4 flex items-center gap-2 bg-white text-green-500 px-3 py-5 rounded shadow-lg transition-opacity z-20 ${
+          sendSuccess ? 'opacity-100' : 'opacity-0'
+        }`}
+      >
+        <HiCheckCircle className="w-6 h-6" />
+        <span>Email Sent Successfully</span>
+      </div>
+      
+           )}
+      
+           {sendFailure && (
+          <div
+        className={`absolute top-4 right-4 flex items-center gap-2 bg-red-500 text-white px-3 py-5 rounded shadow-lg transition-opacity ${
+          sendFailure ? 'opacity-100' : 'opacity-0'
+        }`}
+      >
+        <HiXCircle className="w-6 h-6" />
+        <span>Something went wrong</span>
+      </div>
+      
+           )}
     </div>
   );
 };

@@ -136,9 +136,10 @@ export default function ApplyCertification() {
                                     name="phone"
                                     value={form.phone}
                                     onChange={handleChange}
-                                    placeholder="+91-9876543210"
+                                    placeholder="9876543210"
                                     className="block w-full border border-gray-300 rounded-lg p-2 focus:ring-blue-500 focus:border-blue-500 outline-none"
                                     required
+                                    pattern="[6-9][0-9]{9}"
                                 />
                             </div>
                             {/* Course Name */}

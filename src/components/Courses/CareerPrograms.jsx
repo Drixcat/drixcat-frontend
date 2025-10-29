@@ -1,8 +1,9 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import  courses  from "./courses";
 import { FaAward,FaGlobe,FaHandshake  } from "react-icons/fa";
+import axios from "axios";
 
 
 
@@ -173,37 +174,84 @@ export default function CareerPrograms() {
 
 
   // Form state
-  const [form, setForm] = React.useState({
+  const [formData, setFormData] = React.useState({
     name: "",
     email: "",
     phone: "",
     qualification: "",
-    profile: "",
-    graduation: "",
-    languages: "",
+    currentProfile: "",
+    graduationYear: "",
+    languageSpoken: "",
   });
   const [formSent, setFormSent] = React.useState(false);
+const[isLoading,setIsLoading] = useState(false)
 
   function handleFormChange(e) {
-    setForm({ ...form, [e.target.name]: e.target.value });
+    setFormData({ ...formData, [e.target.name]: e.target.value });
   }
   function handleFormReset() {
-    setForm({
+    setFormData({
       name: "",
       email: "",
       phone: "",
       qualification: "",
-      profile: "",
-      graduation: "",
-      languages: "",
+      currentProfile: "",
+      graduationYear: "",
+      languageSpoken: "",
     });
     setFormSent(false);
   }
-  function handleFormSubmit(e) {
+  async function handleFormSubmit(e) {
     e.preventDefault();
-    setFormSent(true);
+     setIsLoading(true)
     // Here you would send the form data to your backend
+
+    const res = await axios.post('http://localhost:3000/contact/talktoexpert',formData,{
+      headers:{
+        "Content-Type":"application/json"
+      }
+    })
+
+    if(res.data.success){
+      // setSendSuccess(true)
+         setFormSent(true);
+          setIsLoading(false)
+       setFormData({
+      name: "",
+      email: "",
+      phone: "",
+      qualification: "",
+      currentProfile: "",
+      graduationYear: "",
+      languageSpoken: "",
+    });
+
+    }else{
+      alert('something went wrong!')
+      setIsLoading(false)
+       setFormData({
+      name: "",
+      email: "",
+      phone: "",
+      qualification: "",
+      currentProfile: "",
+      graduationYear: "",
+      languageSpoken: "",
+    });
+    }
+
+   
   }
+
+  useEffect(()=>{
+
+    if(formSent){
+      setTimeout(()=>{
+        setFormSent(false)
+
+      },3000)
+    }
+  },[formSent])
 
   return (
     <div
@@ -423,7 +471,7 @@ export default function CareerPrograms() {
               <input
                 type="text"
                 name="name"
-                value={form.name}
+                value={formData.name}
                 onChange={handleFormChange}
                 required
                 className="w-full rounded-lg border border-[#e0e0f0] px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#50f48a] bg-white transition"
@@ -436,7 +484,7 @@ export default function CareerPrograms() {
               <input
                 type="email"
                 name="email"
-                value={form.email}
+                value={formData.email}
                 onChange={handleFormChange}
                 required
                 className="w-full rounded-lg border border-[#e0e0f0] px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#50f48a] bg-white transition"
@@ -449,10 +497,11 @@ export default function CareerPrograms() {
               <input
                 type="tel"
                 name="phone"
-                value={form.phone}
+                value={formData.phone}
                 onChange={handleFormChange}
                 required
                 className="w-full rounded-lg border border-[#e0e0f0] px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#50f48a] bg-white transition"
+                pattern="[6-9][0-9]{9}"
               />
             </div>
             <div>
@@ -462,7 +511,7 @@ export default function CareerPrograms() {
               <input
                 type="text"
                 name="qualification"
-                value={form.qualification}
+                value={formData.qualification}
                 onChange={handleFormChange}
                 className="w-full rounded-lg border border-[#e0e0f0] px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#50f48a] bg-white transition"
               />
@@ -473,10 +522,11 @@ export default function CareerPrograms() {
               </label>
               <input
                 type="text"
-                name="profile"
-                value={form.profile}
+                name="currentProfile"
+                value={formData.currentProfile}
                 onChange={handleFormChange}
                 className="w-full rounded-lg border border-[#e0e0f0] px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#50f48a] bg-white transition"
+                placeholder="e.g., Student"
               />
             </div>
             <div>
@@ -484,9 +534,9 @@ export default function CareerPrograms() {
                 Year of Graduation
               </label>
               <input
-                type="text"
-                name="graduation"
-                value={form.graduation}
+                type="month"
+                name="graduationYear"
+                value={formData.graduationYear}
                 onChange={handleFormChange}
                 className="w-full rounded-lg border border-[#e0e0f0] px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#50f48a] bg-white transition"
               />
@@ -497,8 +547,8 @@ export default function CareerPrograms() {
               </label>
               <input
                 type="text"
-                name="languages"
-                value={form.languages}
+                name="languageSpoken"
+                value={formData.languageSpoken}
                 onChange={handleFormChange}
                 className="w-full rounded-lg border border-[#e0e0f0] px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#50f48a] bg-white transition"
               />
@@ -508,7 +558,7 @@ export default function CareerPrograms() {
                 type="submit"
                 className="bg-[#50f48a] hover:bg-[#099f4e] text-[#0C1818] font-semibold rounded-lg py-2 px-6 transition-colors duration-200 shadow"
               >
-                Send Request
+                {!isLoading ? "Send Request" : "Sending..."}
               </button>
               <button
                 type="button"

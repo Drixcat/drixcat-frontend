@@ -76,7 +76,7 @@ export default function ContactUs() {
       
       setFormData({name:'',email:'',phone:'',center:'',course:'',message:''})
       setIsLoading(false)
-    }else if(!res.success){
+    }else {
        setSendFailure(true)
        setFormData({name:'',email:'',phone:'',center:'',course:'',message:''})
        setIsLoading(false);
