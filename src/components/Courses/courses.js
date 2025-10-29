@@ -8,8 +8,8 @@ const courses = {
       "name": "Core Python",
       "overview": "This course covers the fundamentals of Python programming from scratch. You will learn how to write Python code efficiently and solve problems using programming logic.",
       "image":"/Courses/python/python-core.png",
-      "duration":"6 months",
-      "enrolledStudents":765,
+      "duration":"2 months",
+  
       "KeyModules": [
         "Python Basics: Variables, Data Types, Operators",
         "Control Flow: Conditional Statements, Loops",
@@ -38,8 +38,8 @@ const courses = {
       "name": "Python Django Framework",
       "overview": "Learn to build full-fledged web applications using the Django framework. This course focuses on backend development, database integration, and creating dynamic websites.",
       "image":"/Courses/python/python-django.png",
-       "duration":"8 months",
-      "enrolledStudents":465,
+       "duration":"3 months",
+      
       "KeyModules": [
         "Introduction to Django and MVC architecture",
         "Models, Views, and Templates",
@@ -68,8 +68,8 @@ const courses = {
       "name": "Python Full Stack Development + React.js + AI",
       "overview": "A comprehensive full-stack course combining Python backend, React.js frontend, and basic AI integration. Students will learn to build modern web applications with smart features.",
       "image":"/Courses/python/react-python-AI.jpg",
-       "duration":"12 months",
-      "enrolledStudents":1082,
+       "duration":"6 months",
+     
       "KeyModules": [
         "Python Backend with Flask/Django",
         "Frontend Development using React.js",
@@ -126,8 +126,8 @@ const courses = {
       "name": "Data Science Using Python (Professional) + AI",
       "overview": "A complete data science program with Python and AI applications. Learn the full data science workflow, from data collection to model deployment.",
       "image":"/Courses/python/DS-python.jpg",
-       "duration":"8 months",
-      "enrolledStudents":661,
+       "duration":"6 months",
+      
       "KeyModules": [
         "Python for Data Science",
         "Data Preprocessing and Cleaning",
@@ -156,8 +156,8 @@ const courses = {
       "name": "Artificial Intelligence Using Python",
       "overview": "Learn the concepts of AI and machine learning using Python. This course focuses on building intelligent applications and understanding the AI workflow.",
       "image":"/Courses/python/AI-python.jpg",
-       "duration":"9 months",
-      "enrolledStudents":899,
+       "duration":"6 months",
+     
       "KeyModules": [
         "Introduction to AI and Machine Learning",
         "Python Libraries for AI: Scikit-learn, TensorFlow, Keras",
@@ -193,8 +193,8 @@ const courses = {
     "overview": "This course introduces the fundamentals of Java programming. Learn to write clean, efficient Java code and develop problem-solving skills through practical exercises.",
     "image":"/Courses/java/java-beginners.webp",
      "position":"top",
-    "duration":"3 months",
-    "enrolledStudents":562,
+    "duration":"2 months",
+   
     "KeyModules": [
       "Java Basics: Variables, Data Types, Operators",
       "Control Statements: Loops, Conditions",
@@ -225,7 +225,7 @@ const courses = {
     "image":"/Courses/java/java-expert.png",
      "position":"top",
     "duration":"6 months",
-    "enrolledStudents":862,
+  
     "KeyModules": [
       "Advanced OOP Concepts",
       "Multithreading and Concurrency",
@@ -255,8 +255,8 @@ const courses = {
     "overview": "Learn to develop full-stack applications with Java backend, React.js frontend, and AI integration. This course bridges Java web development with modern UI and intelligent features.",
     "image":"/Courses/java/java-full-stack-AI.png",
      "position":"top",
-    "duration":"9 months",
-    "enrolledStudents":1462,
+    "duration":"6 months",
+    
     "KeyModules": [
       "Java Spring Boot for Backend",
       "REST API Development",
@@ -285,8 +285,8 @@ const courses = {
     "overview": "A comprehensive program combining full-stack Java development, React.js frontend, Data Structures & Algorithms, and AI applications. Perfect for mastering end-to-end development.",
     "image":"/Courses/java/java-full-stack-dsa.png",
     "position":"top",
-    "duration":"12 months",
-    "enrolledStudents":802,
+    "duration":"8 months",
+  
     "KeyModules": [
       "Java Backend Development with Spring Boot",
       "Frontend with React.js",
@@ -315,8 +315,8 @@ const courses = {
     "overview": "Learn backend development using Spring Boot, build microservices, and secure applications with Hibernate & JPA for database operations.",
       "image":"/Courses/java/spring-boot.png",
     "position":"right",
-    "duration":"7 months",
-    "enrolledStudents":762,
+    "duration":"2 months",
+   
     
     "KeyModules": [
       "Spring Boot Fundamentals",
@@ -358,8 +358,8 @@ const courses = {
     "name": "Web Designing",
     "overview": "Learn to design responsive and visually appealing websites using HTML, CSS, and JavaScript. Focuses on creating modern layouts and interactive web pages.",
     "image":"/Courses/web dev/web designing.png",
-    "duration":"6 months",
-    "enrolledStudents":987,
+    "duration":"4 months",
+    
     "KeyModules": [
       "HTML5 and CSS3 basics",
       "CSS Flexbox and Grid",
@@ -388,8 +388,8 @@ const courses = {
     "name": "React.js",
     "overview": "Master frontend web development with React.js. Learn component-based architecture, state management, and building dynamic web applications.",
     "image":"/Courses/web dev/react.png",
-    "duration":"6 months",
-    "enrolledStudents":987,
+    "duration":"2 months",
+
     "KeyModules": [
       "React Components and Props",
       "State Management and Hooks",
@@ -417,8 +417,8 @@ const courses = {
     "name": "Angular",
     "overview": "Learn Angular for creating scalable and maintainable web applications. Focuses on TypeScript, components, services, and routing.",
     "image":"/Courses/web dev/Angular.png",
-    "duration":"7 months",
-    "enrolledStudents":691,
+    "duration":"2 months",
+    
     "KeyModules": [
       "Angular Components and Modules",
       "Services and Dependency Injection",
@@ -447,8 +447,8 @@ const courses = {
     "name": "MERN Stack",
     "overview": "Full-stack development using MongoDB, Express.js, React.js, and Node.js. Learn to build complete web applications with database integration and REST APIs.",
     "image":"/Courses/web dev/Mern stack.png",
-    "duration":"9 months",
-    "enrolledStudents":1087,
+    "duration":"4 months",
+    
     "KeyModules": [
       "MongoDB for NoSQL Databases",
       "Express.js for backend APIs",
@@ -477,8 +477,8 @@ const courses = {
     "name": "MEAN Stack",
     "overview": "Learn full-stack web development with Angular frontend, Node.js backend, Express.js framework, and MongoDB database.",
     "image":"/Courses/web dev/Mean stack.png",
-    "duration":"8 months",
-    "enrolledStudents":987,
+    "duration":"4 months",
+   
     "KeyModules": [
       "MongoDB database operations",
       "Express.js API development",
@@ -508,7 +508,7 @@ const courses = {
     "overview": "Complete full-stack development course focusing on Node.js backend and frontend technologies. Covers building modern web applications.",
     "image":"/Courses/web dev/web full stack with node.png",
     "duration":"6 months",
-    "enrolledStudents":1210,
+   
     "KeyModules": [
       "Node.js Fundamentals",
       "Express.js Framework",
@@ -538,7 +538,7 @@ const courses = {
     "overview": "Learn the principles of user interface (UI) and user experience (UX) design. Focus on creating visually appealing and user-friendly applications.",
     "image":"/Courses/web dev/ui-ux.png",
     "duration":"6 months",
-    "enrolledStudents":497,
+   
     "KeyModules": [
       "UI Design Principles and Typography",
       "UX Research and Wireframing",
@@ -571,8 +571,8 @@ const courses = {
     "name": "C Programming",
     "overview": "Learn the foundational programming language, C, which is the base for many modern languages. This course emphasizes problem-solving and logical thinking.",
      "image":"/Courses/programming/C-programming.png",
-    "duration":"6 months",
-    "enrolledStudents":497,
+    "duration":"2 months",
+ 
     "KeyModules": [
       "Introduction to C Programming",
       "Variables, Data Types, and Operators",
@@ -601,8 +601,8 @@ const courses = {
     "name": "C++ Programming",
     "overview": "An object-oriented extension of C, this course introduces OOP concepts and advanced programming techniques using C++.",
        "image":"/Courses/programming/cpp-programming.webp",
-    "duration":"6 months",
-    "enrolledStudents":497,
+    "duration":"2 months",
+ 
     "KeyModules": [
       "C++ Basics and Syntax",
       "Classes, Objects, and Constructors",
@@ -631,8 +631,8 @@ const courses = {
     "name": "DSA with C",
     "overview": "Learn Data Structures and Algorithms using C. This course is essential for problem-solving and coding interviews.",
          "image":"/Courses/programming/dsa-C.jpg",
-    "duration":"6 months",
-    "enrolledStudents":497,
+    "duration":"4 months",
+   
     "KeyModules": [
       "Arrays, Strings, and Linked Lists",
       "Stacks and Queues",
@@ -662,7 +662,7 @@ const courses = {
     "overview": "Master Data Structures and Algorithms using Java, combining OOP principles with problem-solving skills.",
      "image":"/Courses/programming/dsa-java.png",
     "duration":"6 months",
-    "enrolledStudents":497,
+   
     "KeyModules": [
       "Arrays, Linked Lists, Stacks, Queues",
       "Trees and Graphs",
@@ -696,8 +696,8 @@ const courses = {
     "name": "Android Development",
     "overview": "Learn to develop native Android applications using Java and Kotlin. This course covers all essential concepts required to build robust Android apps.",
     "image":"/Courses/app dev/android development.png",
-    "duration":"8 months",
-    "enrolledStudents":963,
+    "duration":"6 months",
+   
     "position":"top",
     "KeyModules": [
       "Android Studio Setup and IDE Overview",
@@ -728,8 +728,8 @@ const courses = {
     "name": "Flutter Development",
     "overview": "Learn cross-platform mobile development using Flutter. Build high-performance apps that run on both Android and iOS with a single codebase.",
       "image":"/Courses/app dev/flutter development.png",
-    "duration":"9 months",
-    "enrolledStudents":683,
+    "duration":"3 months",
+  
     "position":"top",
     "KeyModules": [
       "Flutter Basics and Widgets",
@@ -760,8 +760,8 @@ const courses = {
     "name": "Kotlin Development",
     "overview": "Learn Kotlin programming and use it to develop modern Android applications. Focus on clean, concise code with advanced Android features.",
       "image":"/Courses/app dev/kotlin development.png",
-    "duration":"7 months",
-    "enrolledStudents":661,
+    "duration":"3 months",
+ 
     "position":"top",
     "KeyModules": [
       "Kotlin Syntax and Basics",
@@ -791,8 +791,8 @@ const courses = {
     "name": "App Development with Flutter (6 Months)",
     "overview": "An extended, professional course to master Flutter development for cross-platform mobile applications with real-world Projects.",
       "image":"/Courses/app dev/flutter 6 months.png",
-    "duration":"10 months",
-    "enrolledStudents":1023,
+    "duration":"6 months",
+    
     "position":"top",
     "KeyModules": [
       "Complete Flutter Widget Library",
@@ -823,8 +823,8 @@ const courses = {
     "name": "App Development with Kotlin (6 Months)",
     "overview": "Comprehensive professional course for developing Android applications using Kotlin. Covers end-to-end app development for commercial use.",
       "image":"/Courses/app dev/kotlin 6 months.png",
-    "duration":"8 months",
-    "enrolledStudents":575,
+    "duration":"6 months",
+ 
     "position":"top",
     "KeyModules": [
       "Kotlin Advanced Concepts",
@@ -855,8 +855,8 @@ const courses = {
     "name": "iOS Development",
     "overview": "Learn to build native iOS applications using Swift and Xcode. Covers all fundamental concepts to develop apps for iPhones and iPads.",
       "image":"/Courses/app dev/ios development.png",
-    "duration":"9 months",
-    "enrolledStudents":863,
+    "duration":"4 months",
+  
     "position":"top",
     "KeyModules": [
       "Swift Programming Basics",
@@ -887,8 +887,8 @@ const courses = {
     "name": "React Native Development",
     "overview": "Learn cross-platform mobile app development using React Native. Build apps for both Android and iOS with a single codebase.",
       "image":"/Courses/app dev/react native.png",
-    "duration":"6 months",
-    "enrolledStudents":901,
+    "duration":"4 months",
+ 
     "position":"top",
     "KeyModules": [
       "React Native Basics and Components",
@@ -924,8 +924,8 @@ const courses = {
     "name": "Digital Marketing Training",
     "overview": "This course covers the basics of digital marketing and introduces students to online marketing strategies used by businesses to grow their online presence.",
     "image":"/Courses/digital marketing/digital marketing.png",
-    "duration":"9 months",
-    "enrolledStudents":584,
+    "duration":"3 months",
+ 
     "position":"top",
     "KeyModules": [
       "Introduction to Digital Marketing",
@@ -956,8 +956,8 @@ const courses = {
     "name": "Advanced Digital Marketing",
     "overview": "Advanced course for students who want to specialize in digital marketing and learn strategies to increase ROI, engagement, and conversions.",
     "image":"/Courses/digital marketing/advanced DM.png",
-    "duration":"12 months",
-    "enrolledStudents":683,
+    "duration":"5 months",
+   
     "position":"top",
     "KeyModules": [
       "Advanced SEO Techniques",
@@ -987,8 +987,8 @@ const courses = {
     "name": "Advanced Digital Marketing with AI",
     "overview": "This course integrates AI technologies into digital marketing for smarter, data-driven campaigns. Learn to use AI tools to enhance marketing strategy and automation.",
         "image":"/Courses/digital marketing/Advanced DM with AI.png",
-    "duration":"14 months",
-    "enrolledStudents":919,
+    "duration":"6 months",
+   
     "position":"top",
     "KeyModules": [
       "AI in Digital Marketing: Concepts and Tools",
@@ -1025,7 +1025,7 @@ const courses = {
     "overview": "Learn how to manage Human Resource processes using ERP software. This course focuses on automating HR tasks and integrating employee data efficiently.",
     "image":"/Courses/ERP/ERP HR.png",
     "duration":"3 months",
-    "enrolledStudents":319,
+ 
     "position":"center",
     "KeyModules": [
       "Introduction to ERP and HR Module",
@@ -1055,8 +1055,8 @@ const courses = {
     "name": "ERP S4 HANA FICO",
     "overview": "Master the Financial Accounting (FI) and Controlling (CO) modules in SAP S4 HANA. This course prepares students for finance-related ERP roles.",
     "image":"/Courses/ERP/ERP s4 hana fico.png",
-    "duration":"4 months",
-    "enrolledStudents":519,
+    "duration":"3 months",
+
     "position":"center",
     "KeyModules": [
       "SAP S4 HANA Overview",
@@ -1086,8 +1086,8 @@ const courses = {
     "name": "ERP S4 HANA MM",
     "overview": "Learn the Materials Management (MM) module in SAP S4 HANA for procurement and inventory management in organizations.",
     "image":"/Courses/ERP/ERP hana mm.png",
-    "duration":"4 months",
-    "enrolledStudents":471,
+    "duration":"3 months",
+
     "position":"center",
     "KeyModules": [
       "Material Master Data Management",
@@ -1117,8 +1117,8 @@ const courses = {
     "name": "ERP S4 HANA PP",
     "overview": "Master Production Planning (PP) in SAP S4 HANA. This module helps in planning and controlling manufacturing processes.",
     "image":"/Courses/ERP/ERP hana pp.png",
-    "duration":"5 months",
-    "enrolledStudents":612,
+    "duration":"3 months",
+   
     "position":"center",
     "KeyModules": [
       "Production Planning and Scheduling",
@@ -1148,8 +1148,8 @@ const courses = {
     "name": "ERP S4 HANA SD",
     "overview": "Learn Sales and Distribution (SD) in SAP S4 HANA for managing sales processes, orders, and distribution channels.",
     "image":"/Courses/ERP/ERP hana SD.png",
-    "duration":"5 months",
-    "enrolledStudents":321,
+    "duration":"3 months",
+   
     "position":"center",
     "KeyModules": [
       "Sales Order Management",
@@ -1179,8 +1179,8 @@ const courses = {
     "name": "ERP S4 HANA ABAP",
     "overview": "Learn ABAP programming in SAP S4 HANA to customize ERP applications and create reports or forms.",
     "image":"/Courses/ERP/ERP ABAP.png",
-    "duration":"4 months",
-    "enrolledStudents":819,
+    "duration":"3 months",
+    
     "position":"bottom",
     "KeyModules": [
       "ABAP Basics and Syntax",
@@ -1210,8 +1210,8 @@ const courses = {
     "name": "ERP S4 HANA BASIS",
     "overview": "Learn SAP BASIS for system administration, installation, and configuration of SAP systems.",
     "image":"/Courses/ERP/ERP hana basis.png",
-    "duration":"4 months",
-    "enrolledStudents":541,
+    "duration":"3 months",
+   
     "position":"center",
     "KeyModules": [
       "SAP System Architecture",
@@ -1242,7 +1242,7 @@ const courses = {
     "overview": "Learn SAP SuccessFactors for human capital management and talent management in organizations.",
     "image":"/Courses/ERP/ERP hana successfactors.png",
     "duration":"3 months",
-    "enrolledStudents":311,
+    
     "position":"center",
     "KeyModules": [
       "Employee Central Configuration",
@@ -1278,8 +1278,8 @@ const courses = {
     "name": "Manual Testing + Selenium",
     "overview": "Learn the fundamentals of software testing with practical exposure to manual testing and automation using Selenium. This course is ideal for quality assurance (QA) professionals.",
        "image":"/Courses/software testing/manual testing and selenium.png",
-    "duration":"6 months",
-    "enrolledStudents":711,
+    "duration":"4 months",
+   
     "position":"top",
     "KeyModules": [
       "Introduction to Software Testing",
@@ -1310,8 +1310,8 @@ const courses = {
     "name": "QA Full Stack",
     "overview": "A complete course covering both manual and automation testing, including full-stack QA practices. Learn to test web, mobile, and database applications effectively.",
        "image":"/Courses/software testing/QA full stack.png",
-    "duration":"7 months",
-    "enrolledStudents":657,
+    "duration":"6 months",
+   
     "position":"top",
     "KeyModules": [
       "Manual Testing Concepts",
@@ -1346,8 +1346,8 @@ const courses = {
     "name": "Graphic Design",
     "overview": "Learn the fundamentals of graphic design, including visual communication, typography, and creating appealing designs using industry-standard software.",
      "image":"/Courses/graphic design/Graphic design.png",
-    "duration":"7 months",
-    "enrolledStudents":657,
+    "duration":"4 months",
+ 
     "position":"center",
     "KeyModules": [
       "Principles of Graphic Design",
@@ -1377,8 +1377,8 @@ const courses = {
     "name": "Motion Graphics Design",
     "overview": "Learn to create engaging animated graphics for videos, advertisements, and social media using motion graphics tools.",
      "image":"/Courses/graphic design/motion graphics.png",
-    "duration":"8 months",
-    "enrolledStudents":827,
+    "duration":"6 months",
+  
     "position":"center",
     "KeyModules": [
       "Introduction to Motion Graphics",
@@ -1409,7 +1409,7 @@ const courses = {
     "overview": "A comprehensive diploma covering all aspects of graphic and digital design, suitable for professional careers in creative industries.",
      "image":"/Courses/graphic design/one yr program.png",
     "duration":"12 months",
-    "enrolledStudents":657,
+  
     "position":"center",
     "KeyModules": [
       "Graphic Design Principles",
@@ -1444,8 +1444,8 @@ const courses = {
     "name": "AutoCAD & 3D Design",
     "overview": "Learn 2D and 3D drafting, modeling, and design using AutoCAD. Ideal for engineers, architects, and designers.",
     "image":"/Courses/CAD/AutoCAD.png",
-    "duration":"7 months",
-    "enrolledStudents":651,
+    "duration":"4 months",
+ 
     "position":"top",
     "KeyModules": [
       "AutoCAD Interface and Tools",
@@ -1475,8 +1475,8 @@ const courses = {
     "name": "3D Max",
     "overview": "Learn 3D modeling, animation, and rendering using Autodesk 3ds Max for architectural and visual effects Projects.",
        "image":"/Courses/CAD/3ds max.png",
-    "duration":"8 months",
-    "enrolledStudents":751,
+    "duration":"3 months",
+    
     "position":"top",
     "KeyModules": [
       "3D Modeling Techniques",
@@ -1506,8 +1506,8 @@ const courses = {
     "name": "Revit Architecture",
     "overview": "Learn building design and construction modeling using Autodesk Revit Architecture. Ideal for architects and interior designers.",
        "image":"/Courses/CAD/revit architecture.png",
-    "duration":"5 months",
-    "enrolledStudents":421,
+    "duration":"2 months",
+    
     "position":"top",
     "KeyModules": [
       "Revit Interface and Tools",
@@ -1537,7 +1537,7 @@ const courses = {
     "name": "V-Ray",
     "overview": "Master rendering and visualization using V-Ray for realistic images and architectural presentations.",
        "image":"/Courses/CAD/V-Ray.png",
-    "duration":"6 months",
+    "duration":"1 months",
     "enrolledStudents":841,
     "position":"top",
     "KeyModules": [
@@ -1568,8 +1568,8 @@ const courses = {
     "name": "SolidWorks",
     "overview": "Learn 3D mechanical design, modeling, and simulation using SolidWorks. Ideal for mechanical engineers and product designers.",
        "image":"/Courses/CAD/SolidWorks.png",
-    "duration":"6 months",
-    "enrolledStudents":628,
+    "duration":"2 months",
+    
     "position":"top",
     "KeyModules": [
       "SolidWorks Interface and Tools",
@@ -1599,8 +1599,8 @@ const courses = {
     "name": "CATIA",
     "overview": "Learn 3D product design, modeling, and manufacturing using CATIA. Focuses on complex mechanical and industrial designs.",
        "image":"/Courses/CAD/catia.png",
-    "duration":"5 months",
-    "enrolledStudents":521,
+    "duration":"2 months",
+    
     "position":"top",
     "KeyModules": [
       "CATIA Interface and Tools",
@@ -1630,8 +1630,8 @@ const courses = {
     "name": "StaadPro",
     "overview": "Learn structural analysis and design using STAAD.Pro software. Ideal for civil engineers and structural designers.",
        "image":"/Courses/CAD/Staad pro.jpeg",
-    "duration":"8 months",
-    "enrolledStudents":841,
+    "duration":"2 months",
+    
     "position":"top",
     "KeyModules": [
       "STAAD.Pro Interface and Tools",
@@ -1661,8 +1661,8 @@ const courses = {
     "name": "Diploma in Interior Designing",
     "overview": "Comprehensive interior design course covering conceptualization, 3D visualization, and design execution.",
        "image":"/Courses/CAD/diploma.png",
-    "duration":"10 months",
-    "enrolledStudents":684,
+    "duration":"6 months",
+    
     "position":"top",
     "KeyModules": [
       "Interior Design Principles",
@@ -1698,8 +1698,8 @@ const courses = {
     "name": "CCNA (Cisco Certified Network Associate)",
     "overview": "Learn the fundamentals of networking and Cisco technologies. This course covers network design, configuration, and troubleshooting.",
         "image":"/Courses/Network&Security/CCNA.png",
-    "duration":"9 months",
-    "enrolledStudents":622,
+    "duration":"2 months",
+  
     "position":"center",
     "KeyModules": [
       "Networking Basics and OSI Model",
@@ -1729,8 +1729,8 @@ const courses = {
     "name": "CCNP (Cisco Certified Network Professional)",
     "overview": "Advanced networking course for professionals aiming to manage complex network infrastructures.",
         "image":"/Courses/Network&Security/CCNP.png",
-    "duration":"9 months",
-    "enrolledStudents":471,
+    "duration":"4 months",
+    
     "position":"center",
     "KeyModules": [
       "Advanced Routing Protocols (OSPF, EIGRP, BGP)",
@@ -1760,8 +1760,8 @@ const courses = {
     "name": "MCSE (Microsoft Certified Solutions Expert)",
     "overview": "Learn to implement and manage Microsoft server infrastructures and services.",
       "image":"/Courses/Network&Security/MCSE.png",
-    "duration":"10 months",
-    "enrolledStudents":647,
+    "duration":"2 months",
+  
     "position":"center",
     "KeyModules": [
       "Windows Server Installation and Configuration",
@@ -1785,8 +1785,8 @@ const courses = {
     "name": "MCSA (Microsoft Certified Solutions Associate)",
     "overview": "Foundation course to manage Microsoft systems and prepare for advanced certifications.",
       "image":"/Courses/Network&Security/MCSA.png",
-    "duration":"9 months",
-    "enrolledStudents":457,
+    "duration":"2 months",
+   
     "position":"center",
     "KeyModules": [
       "Windows Server Fundamentals",
@@ -1809,8 +1809,8 @@ const courses = {
     "name": "Cyber Security",
     "overview": "Learn to protect systems, networks, and applications from cyber threats. Covers defensive strategies and security tools.",
      "image":"/Courses/Network&Security/cyber security.png",
-    "duration":"10 months",
-    "enrolledStudents":647,
+    "duration":"6 months",
+    
     "position":"center",
     "KeyModules": [
       "Introduction to Cyber Security",
@@ -1840,8 +1840,8 @@ const courses = {
     "name": "Ethical Hacking",
     "overview": "Learn ethical hacking techniques to test and secure systems legally. Focuses on real-world security challenges.",
     "image":"/Courses/Network&Security/ethical hacking.png",
-    "duration":"9 months",
-    "enrolledStudents":357,
+    "duration":"4 months",
+  
     "position":"center",
     "KeyModules": [
       "Introduction to Ethical Hacking",
@@ -1872,7 +1872,7 @@ const courses = {
     "overview": "Comprehensive course covering networking fundamentals, advanced cyber security, and practical applications over one year.",
      "image":"/Courses/Network&Security/diploma.png",
     "duration":"12 months",
-    "enrolledStudents":647,
+   
     "position":"center",
     "KeyModules": [
       "Networking Basics and Advanced Networking",
@@ -1907,8 +1907,8 @@ const courses = {
     "name": "Linux Administration",
     "overview": "Learn to manage Linux servers and systems, a critical skill for cloud and enterprise environments.",
     "image":"/Courses/cloud computing/linux admin.png",
-    "duration":"9 months",
-    "enrolledStudents":622,
+    "duration":"2 months",
+   
     "position":"center",
     "KeyModules": [
       "Linux Basics and Commands",
@@ -1938,8 +1938,8 @@ const courses = {
     "name": "Salesforce Administrator",
     "overview": "Learn Salesforce platform basics and administration, including managing users, data, and security in CRM.",
     "image":"/Courses/cloud computing/salesforce admin.png",
-    "duration":"8 months",
-    "enrolledStudents":542,
+    "duration":"2 months",
+  
     "position":"center",
     "KeyModules": [
       "Salesforce Platform Overview",
@@ -1968,7 +1968,7 @@ const courses = {
     "name": "AWS Solution Architect",
     "overview": "Learn to design and deploy scalable, reliable, and secure applications on AWS.",
     "image":"/Courses/cloud computing/aws.png",
-    "duration":"7 months",
+    "duration":"2 months",
     "enrolledStudents":356,
     "position":"center",
     "KeyModules": [
@@ -1999,8 +1999,8 @@ const courses = {
     "name": "Azure",
     "overview": "Learn Microsoft Azure cloud platform to deploy and manage cloud applications and services.",
     "image":"/Courses/cloud computing/azure.png",
-    "duration":"6 months",
-    "enrolledStudents":471,
+    "duration":"2 months",
+   
     "position":"center",
     "KeyModules": [
       "Azure Architecture and Services Overview",
@@ -2030,8 +2030,8 @@ const courses = {
     "name": "Cloud Computing Fundamentals",
     "overview": "Learn the core concepts of cloud computing, deployment models, and service models.",
     "image":"/Courses/cloud computing/cloud computing.png",
-    "duration":"8 months",
-    "enrolledStudents":742,
+    "duration":"2 months",
+  
     "position":"center",
     "KeyModules": [
       "Introduction to Cloud Computing",
@@ -2056,8 +2056,8 @@ const courses = {
     "name": "Google Cloud Platform (GCP)",
     "overview": "Learn Google Cloud services and tools for deploying and managing applications.",
     "image":"/Courses/cloud computing/GCP.png",
-    "duration":"5 months",
-    "enrolledStudents":532,
+    "duration":"2 months",
+    
     "position":"center",
     "KeyModules": [
       "GCP Core Services",
@@ -2082,8 +2082,8 @@ const courses = {
     "name": "Microservices Training",
     "overview": "Learn microservices architecture for designing scalable and independent services in cloud environments.",
     "image":"/Courses/cloud computing/microservices training.png",
-    "duration":"8 months",
-    "enrolledStudents":542,
+    "duration":"2 months",
+   
     "position":"center",
     "KeyModules": [
       "Microservices Fundamentals",
@@ -2108,8 +2108,8 @@ const courses = {
     "name": "Microsoft Azure Administrator",
     "overview": "Learn to manage Azure cloud infrastructure, including virtual networks, storage, and monitoring.",
     "image":"/Courses/cloud computing/microsoft azure admin.png",
-    "duration":"7 months",
-    "enrolledStudents":638,
+    "duration":"2 months",
+  
     "position":"center",
     "KeyModules": [
       "Azure Resource Management",
@@ -2133,8 +2133,8 @@ const courses = {
     "name": "Salesforce Platform Developer",
     "overview": "Learn to develop applications on Salesforce platform using Apex and Visualforce.",
     "image":"/Courses/cloud computing/salesforce platform.png",
-    "duration":"8 months",
-    "enrolledStudents":631,
+    "duration":"2 months",
+   
     "position":"center",
     "KeyModules": [
       "Salesforce Development Basics",
@@ -2159,8 +2159,8 @@ const courses = {
     "name": "AWS SysOps Administrator",
     "overview": "Learn AWS system administration, including deployment, management, and operational tasks.",
     "image":"/Courses/cloud computing/AWS sysops.png",
-    "duration":"8 months",
-    "enrolledStudents":642,
+    "duration":"2 months",
+   
     "position":"center",
     "KeyModules": [
       "AWS Deployment and Management",
@@ -2185,7 +2185,7 @@ const courses = {
     "overview": "Learn to connect devices, collect data, and create IoT applications using cloud platforms.",
     "image":"/Courses/cloud computing/iot.png",
     "duration":"6 months",
-    "enrolledStudents":542,
+   
     "position":"center",
     "KeyModules": [
       "Introduction to IoT Concepts",
@@ -2210,8 +2210,8 @@ const courses = {
     "name": "DevOps Certification",
     "overview": "Learn DevOps practices for CI/CD, automation, and cloud deployment.",
     "image":"/Courses/cloud computing/devops.png",
-    "duration":"6 months",
-    "enrolledStudents":759,
+    "duration":"2 months",
+    
     "position":"center",
     "KeyModules": [
       "DevOps Fundamentals",
@@ -2236,8 +2236,8 @@ const courses = {
     "name": "Kubernetes Certification",
     "overview": "Learn Kubernetes to manage containerized applications in production environments.",
     "image":"/Courses/cloud computing/kubernetes.png",
-    "duration":"8 months",
-    "enrolledStudents":502,
+    "duration":"2 months",
+   
     "position":"center",
     "KeyModules": [
       "Kubernetes Architecture",
@@ -2262,8 +2262,8 @@ const courses = {
     "name": "AWS Certified DevOps Engineer",
     "overview": "Advanced course on implementing DevOps practices on AWS cloud for automation, CI/CD, and monitoring.",
     "image":"/Courses/cloud computing/aws certified.png",
-    "duration":"11 months",
-    "enrolledStudents":874,
+    "duration":"2 months",
+   
     "position":"center",
     "KeyModules": [
       "AWS DevOps Tools Overview",
@@ -2288,8 +2288,8 @@ const courses = {
     "name": "Docker Certification",
     "overview": "Learn containerization using Docker to build, deploy, and manage applications efficiently.",
     "image":"/Courses/cloud computing/docker certification.png",
-    "duration":"9 months",
-    "enrolledStudents":620,
+    "duration":"2 months",
+ 
     "position":"center",
     "KeyModules": [
       "Docker Fundamentals",
@@ -2319,8 +2319,8 @@ const courses = {
     "name": "MySQL",
     "overview": "Learn MySQL, a powerful relational database management system, to design, manage, and query databases efficiently.",
      "image":"/Courses/database/MySQL.png",
-    "duration":"5 months",
-    "enrolledStudents":817,
+    "duration":"1 months",
+
     "position":"center",
     "KeyModules": [
       "Introduction to MySQL and Database Concepts",
@@ -2351,8 +2351,8 @@ const courses = {
     "name": "MongoDB",
     "overview": "Learn MongoDB, a NoSQL database, to manage unstructured data and build scalable applications.",
          "image":"/Courses/database/MongoDB.png",
-    "duration":"4 months",
-    "enrolledStudents":677,
+    "duration":"1 months",
+  
     "position":"center",
     "KeyModules": [
       "Introduction to NoSQL and MongoDB",
@@ -2383,8 +2383,8 @@ const courses = {
     "name": "MIS: Advanced Excel & BI Tools",
     "overview": "Learn to analyze business data and create reports using Excel and business intelligence tools.",
          "image":"/Courses/database/MIS.png",
-    "duration":"6 months",
-    "enrolledStudents":912,
+    "duration":"3 months",
+ 
     "position":"center",
     "KeyModules": [
       "Advanced Excel Functions and Formulas",

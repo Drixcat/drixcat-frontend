@@ -2,7 +2,10 @@ import React, { useRef } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import  courses  from "./courses";
-console.log("hii")
+import { FaAward,FaGlobe,FaHandshake  } from "react-icons/fa";
+
+
+
 
 // Dummy data for courses, accreditations, achievements, mentors, benefits
 const ACCREDITATIONS = [
@@ -100,17 +103,17 @@ const ACCREDITATIONS = [
 
 const ACHIEVEMENTS = [
   {
-    img: "/assets/awards/award1.png",
+    icons:<FaAward/>,
     title: "Best EdTech Startup 2023",
     desc: "Recognized for innovation in tech education by EdTech India.",
   },
   {
-    img: "/assets/awards/award2.png",
+   icons:<FaGlobe/>,
     title: "Global Impact Award",
     desc: "Awarded for empowering 10,000+ students globally.",
   },
   {
-    img: "/assets/awards/award3.png",
+    icons:<FaHandshake/>,
     title: "Top Industry Collaboration",
     desc: "Partnered with 50+ leading tech companies for real-world projects.",
   },
@@ -535,12 +538,9 @@ export default function CareerPrograms() {
               key={a.title}
               className="bg-[#f4f4fb] rounded-xl shadow-md hover:shadow-lg transition-shadow duration-200 flex flex-col items-center p-6"
             >
-              <img
-                src={a.img}
-                alt={a.title}
-                className="h-20 w-auto object-contain mb-4"
-                loading="lazy"
-              />
+              <span className="text-3xl text-[#808098] mb-4">
+                {a.icons}
+              </span>
               <div className="font-semibold text-lg text-[#0c1818] mb-2 text-center">
                 {a.title}
               </div>
