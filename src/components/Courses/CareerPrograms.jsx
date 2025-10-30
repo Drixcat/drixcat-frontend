@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import  courses  from "./courses";
 import { FaAward,FaGlobe,FaHandshake  } from "react-icons/fa";
 import axios from "axios";
+import API_BASE_URL from "../../config";
 
 
 
@@ -206,7 +207,7 @@ const[isLoading,setIsLoading] = useState(false)
      setIsLoading(true)
     // Here you would send the form data to your backend
 
-    const res = await axios.post('http://localhost:3000/contact/talktoexpert',formData,{
+    const res = await axios.post(`${API_BASE_URL}/contact/talktoexpert`,formData,{
       headers:{
         "Content-Type":"application/json"
       }
