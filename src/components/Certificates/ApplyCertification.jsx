@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import courses from "../Courses/courses";
 import axios from "axios";
 import { HiCheckCircle, HiXCircle } from "react-icons/hi2";
+import API_BASE_URL from "../../config";
 
 
 const initialForm = {
@@ -35,7 +36,7 @@ export default function ApplyCertification() {
         e.preventDefault();
         // Submit logic here
         setIsLoading(true)
-        const res = await axios.post('http://localhost:3000/contact/applycertificate',form,{
+        const res = await axios.post(`${API_BASE_URL}/contact/applycertificate`,form,{
             headers:{
                 'Content-Type':'application/json'
             }

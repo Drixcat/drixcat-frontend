@@ -4,6 +4,7 @@ import { HiCheckCircle, HiXCircle } from "react-icons/hi2";
 
 import subcourses from '../Courses/courses'
 import { useLocation } from "react-router-dom";
+import API_BASE_URL from "../../config";
 
 
 
@@ -63,7 +64,7 @@ export default function ContactUs() {
 
     setIsLoading(true);
  
-    const res = await axios.post('http://localhost:3000/contact/mail',formData,{
+    const res = await axios.post(`${API_BASE_URL}/contact/mail`,formData,{
       headers:{
         'Content-Type':'application/json'
       }

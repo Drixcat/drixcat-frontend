@@ -4,6 +4,7 @@ import { FaUserTie, FaChalkboardTeacher, FaLaptopCode, FaAward,FaUserCog, FaUser
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import axios from "axios";
+import API_BASE_URL from "../../config";
 import { HiCheckCircle, HiXCircle } from "react-icons/hi2";
 // List of logo objects
 const logos = [
@@ -175,7 +176,7 @@ const CorporateTraining = () => {
     setIsLoading(true);
 
 
-    const res = await axios.post('http://localhost:3000/contact/corporateenquiry',formData,{
+    const res = await axios.post(`${API_BASE_URL}/contact/corporateenquiry`,formData,{
       headers:{
         'Content-Type':'application/json'
       }
