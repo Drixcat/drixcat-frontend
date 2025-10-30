@@ -19,7 +19,7 @@ const course = [
       "name": "Data Science Using Python (Professional) + AI",
       "overview": "A complete data science program with Python and AI applications. Learn the full data science workflow, from data collection to model deployment.",
       "image":"/Courses/python/DS-python.jpg",
-       "duration":"8 months",
+       "duration":"6 months",
        "course":"Python",
    
     },
@@ -46,7 +46,7 @@ const course = [
       "name": "AWS Certified DevOps Engineer",
     "overview": "Advanced course on implementing DevOps practices on AWS cloud for automation, CI/CD, and monitoring.",
     "image":"/Courses/cloud computing/aws certified.png",
-    "duration":"11 months",
+    "duration":"2 months",
    
     "position":"center",
     "course":"Cloud Computing"
@@ -55,7 +55,7 @@ const course = [
       "name": "Advanced Digital Marketing",
     "overview": "Advanced course for students who want to specialize in digital marketing and learn strategies to increase ROI, engagement, and conversions.",
     "image":"/Courses/digital marketing/advanced DM.png",
-    "duration":"12 months",
+    "duration":"5 months",
     "position":"top",
     "course":"Digital Marketing"
     }
