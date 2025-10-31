@@ -7,8 +7,7 @@ const DownloadCertificate = () => {
 
   const navigate = useNavigate();
   const handleApply = () => {
-    // setShowConfirmation(true);
-    // setTimeout(() => setShowConfirmation(false), 3000);
+  
 
     navigate("/applycertification");
   };
