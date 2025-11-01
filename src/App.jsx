@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import { useLocation } from "react-router-dom";
 import Navbar from './components/Navbar/Navbar'
 import Heroes from './components/Heroes/Heroes'
 import TrustedCompanies from './components/TrustedCompanies/TrustedCompanies'
@@ -29,8 +30,10 @@ import SubCourses from './components/Courses/SubCourses';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 import DetailedCourse from './components/Courses/DetailedCourse';
 import CorporateTraining from './components/CorporateTraining/CorporateTraining';
+import PopUp from './components/PopUp/PopUp';
 
 function App() {
+
 
   const logos = [
   { src: "https://via.placeholder.com/140x48?text=Logo+1", alt: "Company 1" },
@@ -40,13 +43,35 @@ function App() {
   { src: "https://via.placeholder.com/140x48?text=Logo+5", alt: "Company 5" },
   { src: "https://via.placeholder.com/140x48?text=Logo+6", alt: "Company 6" },
 ];
+
+
+   const [showPopup, setShowPopup] = useState(false);
+  const [submitted, setSubmitted] = useState(false); // new flag
+  const location = useLocation();
+
+  useEffect(() => {
+    let timer;
+  
+    console.log(showPopup)
+    // Only start the timer if the user has NOT submitted yet
+    if (!showPopup && !submitted) {
+      timer = setTimeout(() => setShowPopup(true), 10000); // show after 30s
+    }
+
+    return () => clearTimeout(timer);
+  }, [showPopup, submitted, location.pathname]);
+
+
+
+
+
   return (
     <>
     <header className='sticky top-0 z-50'>
       <Navbar/>
     </header>
      <ScrollToTop/>
-    <main>
+    <main >
       <Routes>
      
     <Route path="/" element={<>
@@ -80,9 +105,25 @@ function App() {
     
     </main>
 
+    <aside>
+     {showPopup && (
+        <PopUp
+          onClose={() => setShowPopup(false)}
+          onSubmitSuccess={() => {
+            setSubmitted(true); // user has submitted successfully
+            setShowPopup(false); // close popup
+          }}
+        />
+      )}
+
+
+      
+    </aside>
+
   
 
   <footer>
+    
     <Footer/>
   </footer>
 

@@ -124,7 +124,7 @@ const Recoginitions = () => {
             <div
               className="flex items-center gap-8 animate-marquee group/marquee"
               style={{
-                animation: "marquee 25s linear infinite",
+                animation: "marquee 18s linear infinite",
                 // Pause on hover
                 animationPlayState: "running",
               }}
