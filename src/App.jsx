@@ -52,7 +52,7 @@ function App() {
   useEffect(() => {
     let timer;
   
-    console.log(showPopup)
+   
     // Only start the timer if the user has NOT submitted yet
     if (!showPopup && !submitted) {
       timer = setTimeout(() => setShowPopup(true), 10000); // show after 30s
