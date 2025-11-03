@@ -55,7 +55,7 @@ function App() {
    
     // Only start the timer if the user has NOT submitted yet
     if (!showPopup && !submitted) {
-      timer = setTimeout(() => setShowPopup(true), 10000); // show after 30s
+      timer = setTimeout(() => setShowPopup(true), 15000); // show after 15s
     }
 
     return () => clearTimeout(timer);
