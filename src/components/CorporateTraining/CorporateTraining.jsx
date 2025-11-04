@@ -157,8 +157,9 @@ const fadeIn = {
 
 const CorporateTraining = () => {
 
-  const [formData,setFormData]=React.useState({name:'',email:'',phone:'',center:'',company:'',query:''})
-  const selectCenters = ["Ghaziabad", "Noida"];
+  const [formData,setFormData]=React.useState({name:'',email:'',phone:'',trainingMode:'',currentProfile:'',query:''})
+  const selectMode = ["Online", "Offline"];
+  const selectProfile = ["Student","Working Professional","Looking For Job"]
 
   const [sendSuccess,setSendSuccess]=React.useState(false)
   const [sendFailure,setSendFailure]=React.useState(false)
@@ -184,11 +185,11 @@ const CorporateTraining = () => {
 
       if(res.data.success){
       setSendSuccess(true)
-      setFormData({name:'',email:'',course:'',phone:'',center:'',company:'',query:''})
+      setFormData({name:'',email:'',course:'',phone:'',currentProfile:'',trainingMode:'',query:''})
      setIsLoading(false);
     }else{
         setSendFailure(true)
-      setFormData({name:'',email:'',course:'',phone:'',center:'',company:'',query:''})  
+       setFormData({name:'',email:'',course:'',phone:'',currentProfile:'',trainingMode:'',query:''})
       setIsLoading(false);
     }
   }
@@ -276,20 +277,20 @@ const CorporateTraining = () => {
             />
           </div>
           <div>
-            <label className="block text-[#808098] mb-1">Center</label>
+            <label className="block text-[#808098] mb-1">Training Mode</label>
                <select
-        name="center"
+        name="trainingMode"
         required
         className="border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-[#50f48a] outline-none w-full bg-transparent"
-        value={formData.center}
+        value={formData.trainingMode}
         onChange={handleFormChange}
       >
         <option value="" disabled>
-          Select a Center
+          Select a Mode
         </option>
-        {selectCenters.map((center) => (
-          <option key={center} value={center}>
-            {center}
+        {selectMode.map((mode) => (
+          <option key={mode} value={mode}>
+            {mode}
           </option>
         ))}
       </select>
@@ -305,16 +306,24 @@ const CorporateTraining = () => {
               onChange={handleFormChange}
             />
           </div>
-          <div>
-            <label className="block text-[#808098] mb-1">Company Name</label>
-            <input
-              type="text"
-              className="w-full p-2 border rounded-md focus:ring-2 focus:ring-[#50f48a] outline-none"
-              placeholder="Enter Company Name"
-               name="company"
-              value={formData.company}
-              onChange={handleFormChange}
-            />
+     <div>
+            <label className="block text-[#808098] mb-1">Current Profile </label>
+               <select
+        name="currentProfile"
+        required
+        className="border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-[#50f48a] outline-none w-full bg-transparent"
+        value={formData.currentProfile}
+        onChange={handleFormChange}
+      >
+        <option value="" disabled>
+          Select a Profile
+        </option>
+        {selectProfile.map((profile) => (
+          <option key={profile} value={profile}>
+            {profile}
+          </option>
+        ))}
+      </select>
           </div>
         </div>
 

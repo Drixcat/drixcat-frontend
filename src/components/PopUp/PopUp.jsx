@@ -14,13 +14,14 @@ function PopUp({onClose,onSubmitSuccess}) {
     name: '',
     email: '',
     phone: '',
-    center: '',
-    company: '',
+    trainingMode: '',
+    currentProfile: '',
     course: '',
     query: ''
   });
 
-  const selectCenters = ["Ghaziabad", "Noida"];
+  const selectMode = ["Online", "Offline"];
+  const selectCurrentProfile = ["Student","Working Professional","Looking For Job"]
 
   const [sendSuccess, setSendSuccess] = React.useState(false);
   const [sendFailure, setSendFailure] = React.useState(false);
@@ -47,7 +48,7 @@ function PopUp({onClose,onSubmitSuccess}) {
         setSendFailure(true);
       }
 
-      setFormData({ name: '', email: '', phone: '', center: '', company: '', course: '', query: '' });
+      setFormData({ name: '', email: '', phone: '', trainingMode: '', currentProfile:'', course: '', query: '' });
       setIsLoading(false);
       setTimeout(()=>{
         onSubmitSuccess()
@@ -125,17 +126,17 @@ function PopUp({onClose,onSubmitSuccess}) {
               />
             </div>
             <div>
-              <label className="block text-[#808098] mb-1">Center</label>
+              <label className="block text-[#808098] mb-1">Training Mode</label>
               <select
-                name="center"
+                name="trainingMode"
                 required
                 className="border border-gray-300 rounded-lg p-2 focus:ring-2 focus:ring-[#50f48a] outline-none w-full bg-transparent"
-                value={formData.center}
+                value={formData.trainingMode}
                 onChange={handleFormChange}
               >
-                <option value="" disabled>Select a Center</option>
-                {selectCenters.map((center) => (
-                  <option key={center} value={center}>{center}</option>
+                <option value="" disabled>Select a Mode</option>
+                {selectMode.map((mode) => (
+                  <option key={mode} value={mode}>{mode}</option>
                 ))}
               </select>
             </div>
@@ -150,16 +151,20 @@ function PopUp({onClose,onSubmitSuccess}) {
                 onChange={handleFormChange}
               />
             </div>
-            <div>
-              <label className="block text-[#808098] mb-1">Company Name</label>
-              <input
-                type="text"
-                className="w-full p-2 border rounded-md focus:ring-2 focus:ring-[#50f48a] outline-none"
-                placeholder="Enter Company Name"
-                name="company"
-                value={formData.company}
+           <div>
+              <label className="block text-[#808098] mb-1">Current Profile </label>
+              <select
+                name="currentProfile"
+                required
+                className="border border-gray-300 rounded-lg p-2 focus:ring-2 focus:ring-[#50f48a] outline-none w-full bg-transparent"
+                value={formData.currentProfile}
                 onChange={handleFormChange}
-              />
+              >
+                <option value="" disabled>Select a Profile</option>
+                {selectCurrentProfile.map((profile) => (
+                  <option key={profile} value={profile}>{profile}</option>
+                ))}
+              </select>
             </div>
           </div>
 
