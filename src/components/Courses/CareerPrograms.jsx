@@ -19,10 +19,10 @@ const ACCREDITATIONS = [
     img: "/Companies/anna_university_chennai_acc.webp",
     alt: "anna_university_chennai Logo",
   },
-  {
-    img: "/Companies/autodesk.webp",
-    alt: "autodesk Logo",
-  },
+  // {
+  //   img: "/Companies/autodesk.webp",
+  //   alt: "autodesk Logo",
+  // },
   {
     img: "/Companies/Google_Acc.webp",
     alt: "Google Logo",
@@ -47,22 +47,22 @@ const ACCREDITATIONS = [
     img: "/Companies/iit_kanpur_acc.webp",
     alt: "IIT Kanpur Logo",
   },
-  {
-    img: "/Companies/iit_ropar_acc.webp",
-    alt: "IIT Ropar Logo",
-  },
-  {
-    img: "/Companies/iitm_pravartak_acc.webp",
-    alt: "IITM Pravartak Logo",
-  },
+  // {
+  //   img: "/Companies/iit_ropar_acc.webp",
+  //   alt: "IIT Ropar Logo",
+  // },
+  // {
+  //   img: "/Companies/iitm_pravartak_acc.webp",
+  //   alt: "IITM Pravartak Logo",
+  // },
   {
     img: "/Companies/ISO_acc.jfif",
     alt: "ISO Logo",
   },
-  {
-    img: "/Companies/itt_gandhinagar_acc.webp",
-    alt: "ITT Gandhinagar Logo",
-  },
+  // {
+  //   img: "/Companies/itt_gandhinagar_acc.webp",
+  //   alt: "ITT Gandhinagar Logo",
+  // },
   {
     img: "/Companies/mca_acc.png",
     alt: "MCA Logo",
@@ -75,10 +75,10 @@ const ACCREDITATIONS = [
     img: "/Companies/msde.png",
     alt: "MSDE Logo",
   },
-  {
-    img: "/Companies/nasscom_acc.webp",
-    alt: "nasscom Logo",
-  },
+  // {
+  //   img: "/Companies/nasscom_acc.webp",
+  //   alt: "nasscom Logo",
+  // },
   {
     img: "/Companies/nsdc_acc.webp",
     alt: "nsdc Logo",
