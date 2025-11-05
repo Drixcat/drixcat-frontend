@@ -124,7 +124,7 @@ const ACHIEVEMENTS = [
 const MENTOR_COMPANIES = [
   { name: "Google", img: "Google_2015_logo.svg.webp" },
   { name: "Amazon", img: "Amazon_logo.svg.webp" },
-  { name: "Microsoft", img: "Microsoft_logo.webp" },
+  { name: "Microsoft", img: "/Microsoft_logo_original.webp" },
   { name: "Tech Mahindra", img: "Tech_Mahindra_New_Logo.svg.png" },
 ];
 
@@ -168,6 +168,18 @@ function scrollToSection(ref) {
 
 export default function CareerPrograms() {
   const exploreRef = useRef(null);
+  const [width,setWidth] = useState(window.innerWidth)
+
+ 
+
+  useEffect(() => {
+    const handleResize = () => setWidth(window.innerWidth);
+
+    window.addEventListener("resize", handleResize);
+
+    // cleanup on unmount
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
 
 
@@ -342,17 +354,32 @@ const[isLoading,setIsLoading] = useState(false)
           <div className="text-[#0c1818] font-semibold mb-4 text-lg">
             We Are Accredited By
           </div>
-          <div className="flex flex-wrap justify-center items-center gap-16">
+         {width>768 ? ( <div className="flex flex-wrap justify-center items-center gap-16">
+       
             {ACCREDITATIONS.map((a) => (
               <img
                 key={a.name}
                 src={a.img}
                 alt={a.name}
-                className="max-w-[220px] h-14 w-auto object-contain  transition"
+                className="w-35 h-14 min-w-10 object-contain  transition"
                 loading="lazy"
               />
             ))}
-          </div>
+          </div>):(<div className="flex flex-nowrap">
+ <marquee behavior="scroll" direction="left" scrollamount="10">
+  {ACCREDITATIONS.map((a) => (
+    <img
+      key={a.name}
+      src={a.img}
+      alt={a.name}
+      className="w-35 h-14 min-w-15 max-w-30 object-contain inline-block mx-6 transition"
+      loading="lazy"
+    />
+  ))}
+</marquee>
+
+
+          </div>)}
         </div>
       </section>
 
@@ -617,7 +644,7 @@ const[isLoading,setIsLoading] = useState(false)
                 key={c.name}
                 src={c.img}
                 alt={c.name}
-                className="h-14 w-auto object-contain hover:scale-105 transition duration-200"
+                className="w-35 object-contain hover:scale-105 transition duration-200"
                 loading="lazy"
               />
             ))}
@@ -697,6 +724,8 @@ const[isLoading,setIsLoading] = useState(false)
           </div>
         </div>
       </section>
+      
     </div>
+    
   );
 }
