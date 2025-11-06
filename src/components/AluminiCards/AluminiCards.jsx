@@ -6,39 +6,39 @@ const alumniData = [
         id: 1,
         name: "Aarav Sharma",
         batch: "Batch of 2021",
-        course: "B.Tech in Computer Science",
+        course: "Java Expert",
         image:
-            "https://randomuser.me/api/portraits/men/32.jpg",
+            "https://img.freepik.com/free-photo/closeup-young-hispanic-man-casuals-studio_662251-600.jpg?semt=ais_hybrid&w=740&q=80",
     },
     {
         id: 2,
         name: "Priya Singh",
         batch: "Batch of 2020",
-        course: "MBA in Marketing",
+        course: "Digital Marketing",
         image:
-            "https://randomuser.me/api/portraits/women/44.jpg",
+            "https://media.istockphoto.com/id/1702492633/photo/beautiful-and-happy-smiling-asian-young-girl-from-nepal-giving-several-gestures-in-a-formal.jpg?s=612x612&w=0&k=20&c=pP-SAJAR6BIzV2RwmPj_pke86r654DhQwsG0k1ygdd0=",
     },
     {
         id: 3,
         name: "Rahul Verma",
         batch: "Batch of 2022",
-        course: "B.Sc in Mathematics",
+        course: "MERN Stack",
         image:
-            "https://randomuser.me/api/portraits/men/65.jpg",
+            "https://media.istockphoto.com/id/628330148/photo/portrait-of-a-beautifull-smiling-man.jpg?s=612x612&w=0&k=20&c=3HlVTzZA4mFWonZtxu7xCYamgLxcb8zE3YMU9AGYXAc=",
     },
     {
         id: 4,
         name: "Sneha Patel",
         batch: "Batch of 2019",
-        course: "B.A. in Economics",
+        course: "Cloud Computing",
         image:
-            "https://randomuser.me/api/portraits/women/68.jpg",
+            "https://img.freepik.com/free-photo/account-executive-multitasking-her-desk-working-business-goals_482257-123842.jpg?semt=ais_hybrid&w=740&q=80",
     },
     {
         id: 5,
         name: "Vikram Desai",
         batch: "Batch of 2021",
-        course: "B.Tech in Mechanical Engineering",
+        course: "DSA with C++",
         image:
             "https://randomuser.me/api/portraits/men/76.jpg",
     },
@@ -46,7 +46,7 @@ const alumniData = [
         id: 6,
         name: "Meera Nair",
         batch: "Batch of 2020",
-        course: "M.Sc in Physics",
+        course: "MIS: Advanced Excel & BI Tools",
         image:
             "https://randomuser.me/api/portraits/women/12.jpg",
     },

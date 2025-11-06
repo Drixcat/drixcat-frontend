@@ -9,69 +9,69 @@ HiOutlineChevronRight,
 const testimonials = [
 {
     id: 1,
-    name: "Ava Johnson",
-    course: "Full Stack Web Development",
+    name: "Kanchan",
+    course: "Data Analytics Using Python",
     year: 2022,
     feedback:
         "The course was transformative! The mentors were supportive and the curriculum was up-to-date. I landed my dream job after graduating.",
     rating: 5,
     image:
-        "https://randomuser.me/api/portraits/women/44.jpg",
+        "https://img.freepik.com/free-photo/closeup-smiling-young-beautiful-indian-woman_1262-2261.jpg?semt=ais_hybrid&w=740&q=80",
 },
 {
     id: 2,
-    name: "Liam Smith",
-    course: "Data Science Bootcamp",
+    name: "Suyash Gautam",
+    course: "AWS Certified DevOps Engineer",
     year: 2023,
     feedback:
         "Amazing experience! The hands-on projects really helped me understand the concepts. Highly recommend to anyone looking to switch careers.",
     rating: 4,
     image:
-        "https://randomuser.me/api/portraits/men/32.jpg",
+        "https://static.vecteezy.com/system/resources/thumbnails/049/174/246/small/a-smiling-young-indian-man-with-formal-shirts-outdoors-photo.jpg",
 },
 {
     id: 3,
-    name: "Sophia Lee",
+    name: "Shreya Verma",
     course: "UI/UX Design",
     year: 2021,
     feedback:
         "Loved the interactive sessions and real-world assignments. The community is super helpful and encouraging.",
     rating: 5,
     image:
-        "https://randomuser.me/api/portraits/women/65.jpg",
+        "https://img.freepik.com/premium-photo/indian-girl-cheerful-studio-portrait_53876-55599.jpg?semt=ais_hybrid&w=740&q=80",
 },
 {
     id: 4,
-    name: "Noah Williams",
+    name: "Aditya Singh",
     course: "Cloud Computing",
     year: 2022,
     feedback:
         "The course content was very relevant and the instructors were industry experts. I feel confident in my new skills.",
     rating: 4,
     image:
-        "https://randomuser.me/api/portraits/men/43.jpg",
+        "https://static.vecteezy.com/system/resources/thumbnails/006/859/348/small/young-boy-indian-student-portrait-photo.jpg",
 },
 {
     id: 5,
-    name: "Emma Brown",
+    name: "Vidhisha Sahu",
     course: "Digital Marketing",
     year: 2023,
     feedback:
         "A fantastic learning journey! The feedback from mentors was invaluable and helped me grow professionally.",
     rating: 5,
     image:
-        "https://randomuser.me/api/portraits/women/68.jpg",
+        "https://t3.ftcdn.net/jpg/06/20/73/04/360_F_620730419_9cf73do9dxGaNJCztZPETHdB5bdrbW5D.jpg",
 },
 {
     id: 6,
-    name: "Oliver Davis",
-    course: "Cybersecurity Essentials",
+    name: "Shivam Shrivastav",
+    course: "Web Full Stack with Node.js",
     year: 2022,
     feedback:
         "Great structure and practical labs. I appreciated the career support after graduation.",
     rating: 4,
     image:
-        "https://randomuser.me/api/portraits/men/51.jpg",
+        "https://media.istockphoto.com/id/1136413215/photo/young-man-at-street-market.jpg?s=612x612&w=0&k=20&c=obnaR5III0jRxHKd4ZPl3LRC2pI792KbHYR2eBzKKe8=",
 },
 ];
 
@@ -161,7 +161,7 @@ return (
                     {visibleTestimonials.map((t) => (
                         <div
                             key={t.id}
-                            className={`flex-1 min-w-0 ${cardBg} ${cardShadow} ${cardBorder} ${cardHover} rounded-2xl p-7 flex flex-col items-center text-center`}
+                            className={`flex-1 min-w-0 ${cardBg} ${cardShadow} ${cardBorder} ${cardHover} rounded-2xl p-7 h-80 flex flex-col items-center text-center`}
                         >
                             <img
                                 src={t.image}
