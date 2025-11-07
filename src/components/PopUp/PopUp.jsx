@@ -100,6 +100,7 @@ function PopUp({onClose,onSubmitSuccess}) {
                 name="name"
                 value={formData.name}
                 onChange={handleFormChange}
+                required
               />
             </div>
             <div>
@@ -111,6 +112,7 @@ function PopUp({onClose,onSubmitSuccess}) {
                 name="email"
                 value={formData.email}
                 onChange={handleFormChange}
+                required
               />
             </div>
             <div>
@@ -123,6 +125,7 @@ function PopUp({onClose,onSubmitSuccess}) {
                 name="phone"
                 value={formData.phone}
                 onChange={handleFormChange}
+                required
               />
             </div>
             <div>
@@ -149,6 +152,7 @@ function PopUp({onClose,onSubmitSuccess}) {
                 name="course"
                 value={formData.course}
                 onChange={handleFormChange}
+                required
               />
             </div>
            <div>

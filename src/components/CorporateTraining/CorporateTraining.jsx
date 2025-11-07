@@ -251,6 +251,7 @@ const CorporateTraining = () => {
               name="name"
               value={formData.name}
               onChange={handleFormChange}
+              required
             />
           </div>
           <div>
@@ -262,6 +263,7 @@ const CorporateTraining = () => {
               name="email"
               value={formData.email}
               onChange={handleFormChange}
+              required
             />
           </div>
           <div>
@@ -274,6 +276,7 @@ const CorporateTraining = () => {
                name="phone"
               value={formData.phone}
               onChange={handleFormChange}
+              required
             />
           </div>
           <div>
@@ -284,6 +287,7 @@ const CorporateTraining = () => {
         className="border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-[#50f48a] outline-none w-full bg-transparent"
         value={formData.trainingMode}
         onChange={handleFormChange}
+        
       >
         <option value="" disabled>
           Select a Mode
@@ -304,6 +308,7 @@ const CorporateTraining = () => {
                name="course"
               value={formData.course}
               onChange={handleFormChange}
+              required
             />
           </div>
      <div>
@@ -314,6 +319,7 @@ const CorporateTraining = () => {
         className="border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-[#50f48a] outline-none w-full bg-transparent"
         value={formData.currentProfile}
         onChange={handleFormChange}
+       
       >
         <option value="" disabled>
           Select a Profile
