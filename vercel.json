@@ -4,8 +4,8 @@
   ],
   "routes": [
     {
-      "src": "/Course_Brochure/(.*).pdf",
-      "dest": "/Course_Brochure/$1.pdf"
+      "src": "/public/Course_Brochure/(.*).pdf",
+      "dest": "/public/Course_Brochure/$1.pdf"
     }
   ]
 }
