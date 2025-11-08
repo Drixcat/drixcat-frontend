@@ -251,7 +251,7 @@ const courses = {
     ]
   },
   {
-    "name": "Java Full Stack Development + React.js #AI",
+    "name": "Java Full Stack Development + React.js AI",
     "overview": "Learn to develop full-stack applications with Java backend, React.js frontend, and AI integration. This course bridges Java web development with modern UI and intelligent features.",
     "image":"/Courses/java/java-full-stack-AI.png",
      "position":"top",
@@ -534,7 +534,7 @@ const courses = {
     ]
   },
   {
-    "name": "UI/UX Design",
+    "name": "UI UX Design",
     "overview": "Learn the principles of user interface (UI) and user experience (UX) design. Focus on creating visually appealing and user-friendly applications.",
     "image":"/Courses/web dev/ui-ux.png",
     "duration":"6 months",

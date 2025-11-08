@@ -31,6 +31,7 @@ import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 import DetailedCourse from './components/Courses/DetailedCourse';
 import CorporateTraining from './components/CorporateTraining/CorporateTraining';
 import PopUp from './components/PopUp/PopUp';
+import DownloadBrochure from './components/DownloadBrochure/DownloadBrochure';
 
 function App() {
 
@@ -48,14 +49,25 @@ function App() {
    const [showPopup, setShowPopup] = useState(false);
   const [submitted, setSubmitted] = useState(false); // new flag
   const location = useLocation();
+ 
+  const[count,setCount] = useState(15000)
 
+
+  const handleClose = ()=>{
+    setShowPopup(false)
+    setCount(count+15000)
+  }
+
+  
+  
   useEffect(() => {
     let timer;
+    
   
    
     // Only start the timer if the user has NOT submitted yet
     if (!showPopup && !submitted) {
-      timer = setTimeout(() => setShowPopup(true), 15000); // show after 15s
+      timer = setTimeout(() => setShowPopup(true), count); // show after 15s
     }
 
     return () => clearTimeout(timer);
@@ -99,6 +111,7 @@ function App() {
     <Route path="/about" element={<AboutUs/>} /> 
     <Route path='/placements' element={<Placement/>}/>   
     <Route path="/corporatetraining" element={<CorporateTraining/>}/>
+    {/* <Route path='/downloadbrochure' element={<DownloadBrochure/>}/> */}
        
 
     </Routes>
@@ -108,13 +121,17 @@ function App() {
     <aside>
      {showPopup && (
         <PopUp
-          onClose={() => setShowPopup(false)}
+          onClose={handleClose}
+          setCount={setCount}
           onSubmitSuccess={() => {
             setSubmitted(true); // user has submitted successfully
             setShowPopup(false); // close popup
           }}
         />
       )}
+
+
+
 
 
       

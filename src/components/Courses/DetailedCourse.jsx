@@ -2,10 +2,22 @@ import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { useParams, Link } from "react-router-dom";
 import courses from "./courses";
+import DownloadBrochure from "../DownloadBrochure/DownloadBrochure";
 
 const DetailedCourse = () => {
   const { courseslug, subcourseslug } = useParams();
     const [width, setWidth] = useState(window.innerWidth);
+       const[showDownloadBrochure,setShowDownloadBrochure] = useState(false)
+        const[submittedDownloadBrochure,setSubmittedDownloadBrochure]=useState(false)
+        const handleCloseDownloadBrochure = ()=>{
+            setShowDownloadBrochure(false)
+        }
+
+    const handleDownloadBrochure = ()=>{
+
+      setShowDownloadBrochure(true)
+
+    }
 
   useEffect(() => {
     const handleResize = () => setWidth(window.innerWidth);
@@ -130,13 +142,15 @@ const DetailedCourse = () => {
           >
             Back to Courses
           </Link>
-          <Link
-            to={`/contact`}
-            state={{ course: deslug }}
-            className="inline-block bg-[#50f48a] hover:bg-[#099f4e] text-[#0c1818] font-semibold rounded-lg py-2 px-6 shadow-md transition-colors"
+          <button
+
+          onClick={handleDownloadBrochure}
+            
+           
+            className="inline-block bg-[#50f48a] hover:bg-[#099f4e] text-[#0c1818] font-semibold rounded-lg py-2 px-6 shadow-md transition-colors cursor-pointer"
           >
-            Contact
-          </Link>
+            Download Brochure
+          </button>
         </div>
       </section>
 
@@ -156,6 +170,16 @@ const DetailedCourse = () => {
           />
         </motion.div>
       </section>}
+
+         {showDownloadBrochure && <DownloadBrochure
+          onClose={handleCloseDownloadBrochure}
+          slug={deslug}
+          actualCourse={courseslug}
+          onSubmitForm={() => {
+            setSubmittedDownloadBrochure(true); // user has submitted successfully
+            setShowDownloadBrochure(false); // close popup
+          }}
+        /> }
 
     </div>
   );
