@@ -2,5 +2,5 @@
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
   ],
-  "ignore": ["Course_Brochures/(.*).pdf"]
+  "ignore": ["Course_Brochure/(.*).pdf"]
 }
