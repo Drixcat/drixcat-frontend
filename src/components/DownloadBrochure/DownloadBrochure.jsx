@@ -37,7 +37,7 @@ function DownloadBrochure({onClose,onSubmitForm,actualCourse,slug}) {
 
   // 📄 downloadFile.js
 const downloadPDF = (fileName) => {
-  const filePath = `/public/Course_Brochure/${actualCourse}/${fileName}`;
+  const filePath = `/Course_Brochure/${actualCourse}/${fileName}`;
   const link = document.createElement("a");
   link.href = filePath;
   link.download = fileName;
