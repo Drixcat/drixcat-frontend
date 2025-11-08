@@ -1,12 +1,11 @@
 {
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ],
   "routes": [
     {
-      "src": "/Course_Brochure/(.*)",
-      "dest": "/Course_Brochure/$1"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/index.html"
+      "src": "/Course_Brochure/(.*).pdf",
+      "dest": "/Course_Brochure/$1.pdf"
     }
   ]
 }
