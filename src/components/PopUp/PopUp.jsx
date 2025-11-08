@@ -28,8 +28,8 @@ function PopUp({onClose,onSubmitSuccess}) {
     phone: '',
     trainingMode: '',
     currentProfile: '',
-    course: slug,
-    suggestedBy: ''
+    course: '',
+    query: ''
   })
 
   }
