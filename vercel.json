@@ -2,5 +2,10 @@
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
   ],
-  "ignore": ["Course_Brochure/(.*).pdf"]
+  "routes": [
+    {
+      "src": "/Course_Brochure/(.*).pdf",
+      "dest": "/Course_Brochure/$1.pdf"
+    }
+  ]
 }
