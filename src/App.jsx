@@ -55,7 +55,7 @@ function App() {
 
   const handleClose = ()=>{
     setShowPopup(false)
-    setCount(count+15000)
+    setCount(count+30000)
   }
 
   
