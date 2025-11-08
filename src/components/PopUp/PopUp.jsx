@@ -20,6 +20,20 @@ function PopUp({onClose,onSubmitSuccess}) {
     query: ''
   });
 
+    const handleReset = ()=>{
+
+    setFormData({
+    name: '',
+    email: '',
+    phone: '',
+    trainingMode: '',
+    currentProfile: '',
+    course: slug,
+    suggestedBy: ''
+  })
+
+  }
+
   const selectMode = ["Online", "Offline"];
   const selectCurrentProfile = ["Student","Working Professional","Looking For Job"]
 
@@ -192,7 +206,7 @@ function PopUp({onClose,onSubmitSuccess}) {
               {isLoading ? 'Sending...' : 'Submit'}
             </button>
             <button
-              type="reset"
+              onClick={handleReset}
               className="bg-gray-400 cursor-pointer text-white px-6 py-2 rounded-full shadow-md hover:opacity-90 transition"
             >
               Reset
