@@ -1,7 +1,8 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import API_BASE_URL from '../../config';
 import { motion } from 'framer-motion';
 import { FaTimes } from "react-icons/fa";
+import subcourses from '../Courses/courses'
 import axios from 'axios';
 
 const fadeInUp = {
@@ -19,6 +20,8 @@ function PopUp({onClose,onSubmitSuccess}) {
     course: '',
     query: ''
   });
+
+  const [courses,setCourses] = useState([])
 
     const handleReset = ()=>{
 
@@ -85,6 +88,21 @@ function PopUp({onClose,onSubmitSuccess}) {
   }, [sendSuccess, sendFailure]);
 
   if (!showPopup) return null; // hide if closed
+
+
+     useEffect(()=>{
+     
+   const allSubNames = Object.values(subcourses)
+    .flatMap(course => course.subcourses.map(sub => sub.name));
+  
+   setCourses(allSubNames)
+  
+   setFormData(prev => ({ ...prev, course: '' }));
+  
+  
+  
+  
+    },[])
 
   return (
     <div className="fixed inset-0 bg-black/50 flex justify-center items-center z-50 overflow-y-auto p-4 sm:p-6 md:p-8">
@@ -159,15 +177,22 @@ function PopUp({onClose,onSubmitSuccess}) {
             </div>
             <div>
               <label className="block text-[#808098] mb-1">Course</label>
-              <input
-                type="text"
-                className="w-full p-2 border rounded-md focus:ring-2 focus:ring-[#50f48a] outline-none"
-                placeholder="Enter Course"
-                name="course"
-                value={formData.course}
-                onChange={handleFormChange}
-                required
-              />
+               <select
+        name="course"
+        required
+        className="border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-[#0999f4] outline-none w-full bg-transparent"
+        value={formData.course}
+        onChange={handleFormChange}
+      >
+        <option value="" disabled>
+          Select a course
+        </option>
+        {courses.map((course) => (
+          <option key={course} value={course}>
+            {course}
+          </option>
+        ))}
+      </select>
             </div>
            <div>
               <label className="block text-[#808098] mb-1">Current Profile </label>

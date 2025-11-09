@@ -1,10 +1,11 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { FaUserTie, FaChalkboardTeacher, FaLaptopCode, FaAward,FaUserCog, FaUsers  } from "react-icons/fa";
 
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import API_BASE_URL from "../../config";
+import subcourses from '../Courses/courses'
 import { HiCheckCircle, HiXCircle } from "react-icons/hi2";
 // List of logo objects
 const logos = [
@@ -157,13 +158,14 @@ const fadeIn = {
 
 const CorporateTraining = () => {
 
-  const [formData,setFormData]=React.useState({name:'',email:'',phone:'',trainingMode:'',currentProfile:'',query:''})
+  const [formData,setFormData]=React.useState({name:'',email:'',phone:'',course:'',trainingMode:'',currentProfile:'',query:''})
   const selectMode = ["Online", "Offline"];
   const selectProfile = ["Student","Working Professional","Looking For Job"]
 
   const [sendSuccess,setSendSuccess]=React.useState(false)
   const [sendFailure,setSendFailure]=React.useState(false)
   const[isLoading,setIsLoading]=React.useState(false);
+  const [courses,setCourses]=useState([])
 
   const handleFormChange = (e)=>{
 
@@ -171,6 +173,20 @@ const CorporateTraining = () => {
 
   }
 
+
+   useEffect(()=>{
+   
+ const allSubNames = Object.values(subcourses)
+  .flatMap(course => course.subcourses.map(sub => sub.name));
+
+ setCourses(allSubNames)
+
+ setFormData(prev => ({ ...prev, course: '' }));
+
+
+
+
+  },[])
 
   const handleSubmitQuery =async (e)=>{
     e.preventDefault();
@@ -301,15 +317,22 @@ const CorporateTraining = () => {
           </div>
           <div>
             <label className="block text-[#808098] mb-1">Course</label>
-            <input
-              type="text"
-              className="w-full p-2 border rounded-md focus:ring-2 focus:ring-[#50f48a] outline-none"
-              placeholder="Enter Course"
-               name="course"
-              value={formData.course}
-              onChange={handleFormChange}
-              required
-            />
+            <select
+        name="course"
+        required
+        className="border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-[#0999f4] outline-none w-full bg-transparent"
+        value={formData.course}
+        onChange={handleFormChange}
+      >
+        <option value="" disabled>
+          Select a course
+        </option>
+        {courses.map((course) => (
+          <option key={course} value={course}>
+            {course}
+          </option>
+        ))}
+      </select>
           </div>
      <div>
             <label className="block text-[#808098] mb-1">Current Profile </label>
