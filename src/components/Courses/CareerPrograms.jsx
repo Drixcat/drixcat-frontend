@@ -436,7 +436,7 @@ const[isLoading,setIsLoading] = useState(false)
         key={a.name}
         src={a.img}
         alt={a.name}
-        className="h-14 object-contain inline-block"
+        className="h-14 min-w-30 max-w-40 object-contain inline-block"
       />
     ))}
   </div>
@@ -448,7 +448,7 @@ const[isLoading,setIsLoading] = useState(false)
         key={a.name + '-2'}
         src={a.img}
         alt={a.name}
-        className="h-14 object-contain inline-block"
+        className="h-14 min-w-30 max-w-40 object-contain inline-block"
       />
     ))}
   </div>
