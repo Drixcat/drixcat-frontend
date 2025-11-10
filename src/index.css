@@ -1,2 +1,37 @@
 @import "tailwindcss";
 
+@keyframes scroll-left {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-500%);
+  }
+}
+
+@keyframes scroll-right {
+  0% {
+    transform: translateX(-500%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.animate-scroll-left {
+  
+  animation: scroll-left 20s linear infinite;
+}
+
+.animate-scroll-right {
+      margin: 60px 0;
+  animation: scroll-right 20s linear infinite;
+}
+
+/* Make the speed slower on mobile screens */
+@media (max-width: 768px) {
+  .animate-scroll-left,
+  .animate-scroll-right {
+    animation-duration: 20s;
+  }
+}

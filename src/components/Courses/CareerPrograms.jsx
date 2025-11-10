@@ -19,10 +19,7 @@ const ACCREDITATIONS = [
     img: "/Companies/anna_university_chennai_acc.webp",
     alt: "anna_university_chennai Logo",
   },
-  // {
-  //   img: "/Companies/autodesk.webp",
-  //   alt: "autodesk Logo",
-  // },
+ 
   {
     img: "/Companies/Google_Acc.webp",
     alt: "Google Logo",
@@ -47,22 +44,12 @@ const ACCREDITATIONS = [
     img: "/Companies/iit_kanpur_acc.webp",
     alt: "IIT Kanpur Logo",
   },
-  // {
-  //   img: "/Companies/iit_ropar_acc.webp",
-  //   alt: "IIT Ropar Logo",
-  // },
-  // {
-  //   img: "/Companies/iitm_pravartak_acc.webp",
-  //   alt: "IITM Pravartak Logo",
-  // },
+ 
   {
     img: "/Companies/ISO_acc.jfif",
     alt: "ISO Logo",
   },
-  // {
-  //   img: "/Companies/itt_gandhinagar_acc.webp",
-  //   alt: "ITT Gandhinagar Logo",
-  // },
+  
   {
     img: "/Companies/mca_acc.png",
     alt: "MCA Logo",
@@ -75,10 +62,7 @@ const ACCREDITATIONS = [
     img: "/Companies/msde.png",
     alt: "MSDE Logo",
   },
-  // {
-  //   img: "/Companies/nasscom_acc.webp",
-  //   alt: "nasscom Logo",
-  // },
+
   {
     img: "/Companies/nsdc_acc.webp",
     alt: "nsdc Logo",
@@ -102,6 +86,84 @@ const ACCREDITATIONS = [
 ];
 
 
+
+const ACCREDITATIONS1 = [
+  {
+    img: "/Companies/aicte_acc.webp",
+    alt: "aicte Logo",
+  },
+  {
+    img: "/Companies/anna_university_chennai_acc.webp",
+    alt: "anna_university_chennai Logo",
+  },
+ 
+  {
+    img: "/Companies/Google_Acc.webp",
+    alt: "Google Logo",
+  },
+  {
+    img: "/Companies/google_analysis_acc.webp",
+    alt: "google analysis Logo",
+  }, {
+    img: "/Companies/iaf_acc.webp",
+    alt: "iaf Logo",
+  },
+  {
+    img: "/Companies/IBM_Acc.webp",
+    alt: "IBM Logo",
+  }
+
+];
+
+
+const ACCREDITATIONS2 = [
+   {
+    img: "/Companies/iit_delhi_acc.webp",
+    alt: "IIT Delhi Logo",
+  },
+  {
+    img: "/Companies/iit_kanpur_acc.webp",
+    alt: "IIT Kanpur Logo",
+  },
+ 
+  {
+    img: "/Companies/ISO_acc.jfif",
+    alt: "ISO Logo",
+  },
+  
+  {
+    img: "/Companies/mca_acc.png",
+    alt: "MCA Logo",
+  },
+  {
+    img: "/Companies/microsoft_certification_acc.webp",
+    alt: "Microsoft Certification Logo",
+  },
+]
+
+const ACCREDITATIONS3 = [
+   {
+    img: "/Companies/nsdc_acc.webp",
+    alt: "nsdc Logo",
+  },
+  {
+    img: "/Companies/otabu.webp",
+    alt: "otabu Logo",
+  },
+  {
+    img: "/Companies/skill_development_acc.webp",
+    alt: "skill development Logo",
+  },
+  {
+    img: "/Companies/Skill_India_Acc.png",
+    alt: "Skill India Logo",
+  },
+  {
+    img: "/Companies/swayam_plus.webp",
+    alt: "swayam plus Logo",
+  },
+
+]
 
 const ACHIEVEMENTS = [
   {
@@ -366,17 +428,44 @@ const[isLoading,setIsLoading] = useState(false)
               />
             ))}
           </div>):(<div className="flex flex-nowrap">
- <marquee behavior="scroll" direction="left" scrollamount="10">
-  {ACCREDITATIONS.map((a) => (
-    <img
-      key={a.name}
-      src={a.img}
-      alt={a.name}
-      className="w-35 h-14 min-w-15 max-w-30 object-contain inline-block mx-6 transition"
-      loading="lazy"
-    />
-  ))}
-</marquee>
+<div className="w-full overflow-hidden py-4">
+  {/* 1st marquee (Right ➜ Left) */}
+  <div className="whitespace-nowrap animate-scroll-left flex gap-10">
+    {[...ACCREDITATIONS1,...ACCREDITATIONS1,...ACCREDITATIONS1].map((a) => (
+      <img
+        key={a.name}
+        src={a.img}
+        alt={a.name}
+        className="h-14 object-contain inline-block"
+      />
+    ))}
+  </div>
+
+  {/* 2nd marquee (Left ➜ Right) */}
+  <div className="whitespace-nowrap animate-scroll-right flex gap-10 mt-4">
+    {[...ACCREDITATIONS2,...ACCREDITATIONS2,...ACCREDITATIONS2].map((a) => (
+      <img
+        key={a.name + '-2'}
+        src={a.img}
+        alt={a.name}
+        className="h-14 object-contain inline-block"
+      />
+    ))}
+  </div>
+
+  {/* 3rd marquee (Right ➜ Left again) */}
+  <div className="whitespace-nowrap animate-scroll-left flex gap-10 mt-4">
+    {[...ACCREDITATIONS3,...ACCREDITATIONS3,...ACCREDITATIONS3].map((a) => (
+      <img
+        key={a.name + '-3'}
+        src={a.img}
+        alt={a.name}
+        className="h-14 object-contain inline-block"
+      />
+    ))}
+  </div>
+</div>
+
 
 
           </div>)}
