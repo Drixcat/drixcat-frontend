@@ -70,7 +70,7 @@ const downloadPDF = (fileName) => {
     
 
     try {
-      const res = await axios.post(`http://localhost:5000/contact/downloadbrochure`, formData, {
+      const res = await axios.post(`${API_BASE_URL}/contact/downloadbrochure`, formData, {
         headers: { 'Content-Type': 'application/json' }
       });
 
