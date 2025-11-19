@@ -1,22 +1,84 @@
 import React from "react";
 import { FaCheckCircle } from "react-icons/fa";
+import subcourses from "../Courses/courses"
+import { useEffect } from "react";
 
-const courses = [
-  "Web Development",
-  "Data Science",
-  "AI/ML",
-  "Business Management",
-];
 
-const countries = [
-  "India",
-  "United States",
-  "United Kingdom",
-  "Canada",
-  "Australia",
+
+const mode = [
+  "Online",
+  "Offline"
 ];
 
 export default function OnlineRegistration() {
+
+ 
+
+  const [form, setForm] = React.useState({
+    name:"",
+    email:"",
+    phone:"",
+    course:"",
+    currentAddress:"",
+    permanentAddress:"",
+    mode:"",
+    fees:""
+
+  })
+  const [courses,setCourses] = React.useState([])
+  const {course} = location.state || '' ;
+
+
+   useEffect(()=>{
+     
+   const allSubNames = Object.values(subcourses)
+    .flatMap(course => course.subcourses.map(sub => sub.name));
+  
+   setCourses(allSubNames)
+  
+   setForm({...form,course:course?course:''})
+  
+  
+  
+    },[])
+
+    const handleChange = (e)=>{
+      const {name,value} = e.target;
+
+
+ 
+
+      setForm({...form,[name]:value})
+
+    }
+
+
+    const handleSubmit = (e)=>{
+      e.preventDefault();
+
+      if(form.fees < 2000){
+        alert("Minimum fees should be 2000")
+        return;
+      }
+
+      console.log(form)
+
+      setForm({
+    name:"",
+    email:"",
+    phone:"",
+    course:"",
+    currentAddress:"",
+    permanentAddress:"",
+    mode:"",
+    fees:""
+
+  })
+    }
+
+
+  
+
   return (
     <div className="min-h-screen flex items-center justify-center  py-8">
       <div className="max-w-5xl w-full flex flex-col md:flex-row shadow-xl rounded-2xl overflow-hidden ">
@@ -41,10 +103,12 @@ export default function OnlineRegistration() {
                 <input
                   type="text"
                   id="fullName"
-                  name="fullName"
+                  name="name"
                   required
                   className="block w-full border border-gray-300 rounded-lg p-2 focus:ring-blue-500 focus:border-blue-500 outline-none"
                   autoComplete="name"
+                  value={form.name}
+                  onChange={handleChange}
                 />
               </div>
               {/* Email */}
@@ -62,6 +126,8 @@ export default function OnlineRegistration() {
                   required
                   className="block w-full border border-gray-300 rounded-lg p-2 focus:ring-blue-500 focus:border-blue-500 outline-none"
                   autoComplete="email"
+                  value={form.email}
+                  onChange={handleChange}
                 />
               </div>
               {/* Phone */}
@@ -77,9 +143,12 @@ export default function OnlineRegistration() {
                   id="phone"
                   name="phone"
                   required
+                  pattern="[6-9][0-9]{9}"
                   placeholder="+91-9876543210"
                   className="block w-full border border-gray-300 rounded-lg p-2 focus:ring-blue-500 focus:border-blue-500 outline-none"
                   autoComplete="tel"
+                  value={form.phone}
+                  onChange={handleChange}
                 />
               </div>
               {/* Course */}
@@ -96,7 +165,8 @@ export default function OnlineRegistration() {
                   required
                   className="block w-full border border-gray-300 
                                     text-[#808098] rounded-lg p-2 focus:ring-blue-500 focus:border-blue-500 outline-none bg-transparent"
-                  defaultValue=""
+                 value={form.course}
+                 onChange={handleChange}
                 >
                   <option value="" disabled>
                     Select a course
@@ -121,6 +191,8 @@ export default function OnlineRegistration() {
                   name="currentAddress"
                   required
                   rows={2}
+                  value={form.currentAddress}
+                  onChange={handleChange}
                   className="block w-full border border-gray-300 rounded-lg p-2 focus:ring-blue-500 focus:border-blue-500 outline-none resize-none"
                 ></textarea>
               </div>
@@ -137,31 +209,35 @@ export default function OnlineRegistration() {
                   name="permanentAddress"
                   required
                   rows={2}
+                  value={form.permanentAddress}
+                  onChange={handleChange}
                   className="block w-full border border-gray-300 rounded-lg p-2 focus:ring-blue-500 focus:border-blue-500 outline-none resize-none"
                 ></textarea>
               </div>
-              {/* Country */}
+              {/* Training Mode */}
               <div>
                 <label
-                  htmlFor="country"
+                  htmlFor="mode"
                   className="block text-sm font-medium text-[#808098] mb-1"
                 >
-                  Country
+                  Training Mode
                 </label>
                 <select
-                  id="country"
-                  name="country"
+                  id="mode"
+                  name="mode"
                   required
+                  value={form.mode}
+                  onChange={handleChange}
                   className="block w-full border border-gray-300 
                                     text-[#808098] rounded-lg p-2 focus:ring-blue-500 focus:border-blue-500 outline-none bg-transparent"
                   defaultValue=""
                 >
                   <option value="" disabled>
-                    Select country
+                    Select Mode
                   </option>
-                  {countries.map((country) => (
-                    <option key={country} value={country}>
-                      {country}
+                  {mode.map((mode) => (
+                    <option key={mode} value={mode}>
+                      {mode}
                     </option>
                   ))}
                 </select>
@@ -179,7 +255,9 @@ export default function OnlineRegistration() {
                   id="fees"
                   name="fees"
                   required
-                  min="0"
+                  min="2000"
+                  value={form.fees}
+                  onChange={handleChange}
                   className="block w-full border border-gray-300 rounded-lg p-2 focus:ring-blue-500 focus:border-blue-500 outline-none"
                   placeholder="Enter amount"
                 />
@@ -189,6 +267,7 @@ export default function OnlineRegistration() {
             <button
               type="submit"
               className="w-full bg-[#50F48A] hover:bg-[#099F4E] cursor-pointer text-[#0C1818] font-semibold py-2 px-4 rounded-lg transition focus:outline-none focus:ring-2 focus:ring-[#50F48A] focus:ring-offset-2"
+              onClick={handleSubmit}
             >
               Submit Registration
             </button>
