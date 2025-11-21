@@ -61,7 +61,7 @@ export default function OnlineRegistration() {
         return;
       }
 
-      console.log(form)
+     
 
       setForm({
     name:"",

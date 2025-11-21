@@ -10,6 +10,8 @@ const fadeInUp = {
 };
 
 function DownloadBrochure({onClose,onSubmitForm,actualCourse,slug}) {
+
+ 
   const [formData, setFormData] = React.useState({
     name: '',
     email: '',
@@ -49,7 +51,7 @@ function DownloadBrochure({onClose,onSubmitForm,actualCourse,slug}) {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  console.log(actualCourse,slug)
+  
 
   // 📄 downloadFile.js
 const downloadPDF = (fileName) => {
