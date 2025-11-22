@@ -281,7 +281,7 @@ const[isLoading,setIsLoading] = useState(false)
      setIsLoading(true)
     // Here you would send the form data to your backend
 
-    const res = await axios.post(`${API_BASE_URL}/contact/talktoexpert`,formData,{
+    const res = await axios.post(`https://api.drixcat.com/contact/talktoexpert`,formData,{
       headers:{
         "Content-Type":"application/json"
       }

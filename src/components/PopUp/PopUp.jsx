@@ -55,7 +55,7 @@ function PopUp({onClose,onSubmitSuccess}) {
     
 
     try {
-      const res = await axios.post(`${API_BASE_URL}/contact/corporateenquiry`, formData, {
+      const res = await axios.post(`https://api.drixcat.com/contact/corporateenquiry`, formData, {
         headers: { 'Content-Type': 'application/json' }
       });
 

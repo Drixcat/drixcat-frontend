@@ -36,7 +36,7 @@ export default function ApplyCertification() {
         e.preventDefault();
         // Submit logic here
         setIsLoading(true)
-        const res = await axios.post(`${API_BASE_URL}/contact/applycertificate`,form,{
+        const res = await axios.post(`https://api.drixcat.com/contact/applycertificate`,form,{
             headers:{
                 'Content-Type':'application/json'
             }
