@@ -1,10 +1,9 @@
 import React from "react";
 import {
   FaFacebookF,
-  FaTwitter,
   FaLinkedinIn,
   FaInstagram,
-  FaYoutube,
+  
 } from "react-icons/fa";
 import {
   HiUserGroup,
@@ -32,8 +31,8 @@ const socialLinks = [
     href: "https://www.facebook.com/share/19C8eurvzR/?mibextid=wwXIfr",
     label: "Facebook",
   },
-  { icon: <FaTwitter />, href: "https://twitter.com", label: "Twitter" },
-  { icon: <FaLinkedinIn />, href: "https://linkedin.com", label: "LinkedIn" },
+ 
+  { icon: <FaLinkedinIn />, href: "https://www.linkedin.com/company/edutech-masters/posts/?feedView=all", label: "LinkedIn" },
   {
     icon: <FaInstagram />,
     href: "https://www.instagram.com/drixcat_education?igsh=dGc3dzd4YWViZWtl&utm_source=qr",

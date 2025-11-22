@@ -51,6 +51,8 @@ function DownloadBrochure({onClose,onSubmitForm,actualCourse,slug}) {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
+
+
   
 
   // 📄 downloadFile.js
