@@ -12,6 +12,7 @@ import {
   FaPhoneAlt,
   FaLinkedin,
   FaTwitter,
+  FaInstagram,
 } from "react-icons/fa";
 import { motion } from "framer-motion";
 
@@ -673,7 +674,7 @@ const Placement = () => {
           </button>
           <div className="flex justify-center gap-6 mt-6">
             <a
-              href="https://linkedin.com/company/drixcat"
+              href="https://www.linkedin.com/company/edutech-masters/posts/?feedView=all"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white hover:text-[#808098] text-2xl"
@@ -681,12 +682,12 @@ const Placement = () => {
               <FaLinkedin />
             </a>
             <a
-              href="https://twitter.com/drixcat"
+              href="https://www.instagram.com/drixcat_education?igsh=dGc3dzd4YWViZWtl&utm_source=qr"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white hover:text-[#808098] text-2xl"
             >
-              <FaTwitter />
+              <FaInstagram />
             </a>
           </div>
         </div>

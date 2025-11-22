@@ -1,5 +1,5 @@
 import React from "react";
-import { FaLightbulb, FaEye, FaRocket, FaChalkboardTeacher, FaLaptopCode, FaCloud, FaRobot, FaUserGraduate, FaHandsHelping, FaCertificate, FaAward, FaUsers, FaRegHandshake, FaRegCheckCircle, FaRegClock, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaLightbulb, FaEye, FaRocket, FaChalkboardTeacher, FaLaptopCode, FaCloud, FaRobot, FaUserGraduate, FaHandsHelping, FaCertificate, FaAward, FaUsers, FaRegHandshake, FaRegCheckCircle, FaRegClock, FaLinkedin, FaTwitter, FaInstagram } from "react-icons/fa";
 import { motion } from "framer-motion";
 
 // Dummy images (replace with real assets)
@@ -544,11 +544,11 @@ const AboutUs = () => {
                         Join Our Program
                     </motion.button>
                     <div className="flex gap-6 justify-center">
-                        <a href="https://linkedin.com/company/drixcat" target="_blank" rel="noopener noreferrer" className="text-blue-200 hover:text-white text-2xl transition">
+                        <a href="https://www.linkedin.com/company/edutech-masters/posts/?feedView=all" target="_blank" rel="noopener noreferrer" className="text-blue-200 hover:text-white text-2xl transition">
                             <FaLinkedin />
                         </a>
-                        <a href="https://twitter.com/drixcat" target="_blank" rel="noopener noreferrer" className="text-blue-200 hover:text-white text-2xl transition">
-                            <FaTwitter />
+                        <a href="https://www.instagram.com/drixcat_education?igsh=dGc3dzd4YWViZWtl&utm_source=qr" target="_blank" rel="noopener noreferrer" className="text-blue-200 hover:text-white text-2xl transition">
+                            <FaInstagram />
                         </a>
                     </div>
                 </div>
