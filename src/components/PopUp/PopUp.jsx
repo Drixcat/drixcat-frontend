@@ -239,9 +239,9 @@ function PopUp({onClose,onSubmitSuccess}) {
           </div> : <div className="">
             <p
               
-              className="text-xl text-[#099f4e] text-center px-6 py-2 hover:opacity-90 transition"
+              className="text-2xl text-[#099f4e] text-center px-6 py-2 hover:opacity-90 transition"
             >
-              {`Email sent! We’ll get back to you soon.`}
+              {`Thank you for your enquiry. We will contact you soon`}
             </p>
           </div> }
         </form>
