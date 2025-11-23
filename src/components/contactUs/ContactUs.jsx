@@ -275,7 +275,7 @@ export default function ContactUs() {
   }`}
 >
   <HiCheckCircle className="w-6 h-6" />
-  <span>Email Sent Successfully</span>
+  <span>Thanks for your enquiry.We’ll contact you soon.</span>
 </div>
 
      )}

@@ -50,12 +50,14 @@ function App() {
   const [submitted, setSubmitted] = useState(false); // new flag
   const location = useLocation();
  
-  const[count,setCount] = useState(15000)
+  const[count,setCount] = useState(10000)
 
 
   const handleClose = ()=>{
     setShowPopup(false)
-    setCount(count+30000)
+    if(count>=10000){
+      setCount(20000)
+    }
   }
 
   
@@ -67,7 +69,7 @@ function App() {
    
     // Only start the timer if the user has NOT submitted yet
     if (!showPopup && !submitted) {
-      timer = setTimeout(() => setShowPopup(true), count); // show after 15s
+      timer = setTimeout(() => setShowPopup(true), count); 
     }
 
     return () => clearTimeout(timer);
