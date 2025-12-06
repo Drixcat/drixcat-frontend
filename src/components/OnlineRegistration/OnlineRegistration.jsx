@@ -114,6 +114,8 @@ const handleSubmit = async (e) => {
       { headers: { "Content-Type": "multipart/form-data" } }
     );
 
+
+    
     if (res.status === 200) {
       setSendSuccess(true);
        const audio = new Audio("/mixkit-positive-notification-951.wav");
@@ -131,7 +133,7 @@ const handleSubmit = async (e) => {
       });
     }
   } catch (err) {
-    console.error(err);
+    alert("Error submitting the form. Please try again.");
   } finally {
     setIsLoading(false);
   }
