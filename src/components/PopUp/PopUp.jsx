@@ -18,7 +18,8 @@ function PopUp({onClose,onSubmitSuccess}) {
     trainingMode: '',
     currentProfile: '',
     course: '',
-    query: ''
+    query: '',
+    isPopupOpen: true
   });
 
   const [courses,setCourses] = useState([])
@@ -32,7 +33,8 @@ function PopUp({onClose,onSubmitSuccess}) {
     trainingMode: '',
     currentProfile: '',
     course: '',
-    query: ''
+    query: '',
+    isPopupOpen: true
   })
 
   }
@@ -65,7 +67,7 @@ function PopUp({onClose,onSubmitSuccess}) {
         setSendFailure(true);
       }
 
-      setFormData({ name: '', email: '', phone: '', trainingMode: '', currentProfile:'', course: '', query: '' });
+      setFormData({ name: '', email: '', phone: '', trainingMode: '', currentProfile:'', course: '', query: '',isPopupOpen: true });
       setIsLoading(false);
       setTimeout(()=>{
         onSubmitSuccess()
