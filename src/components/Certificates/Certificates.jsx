@@ -84,8 +84,9 @@ const Certificates = () => {
                     </div> */}
 
                      <div className="absolute z-10 flex flex-col items-center justify-center w-full px-6 py-10">
+                        {/* https://d1csarkz8obe9u.cloudfront.net/posterpreviews/portrait-certificate-template-design-5f452092bb7cdc699d1536c1023e6025_screen.jpg?ts=1637050294 */}
                         <img
-                            src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/portrait-certificate-template-design-5f452092bb7cdc699d1536c1023e6025_screen.jpg?ts=1637050294"
+                            src="/Certificates/Copy of Blue Green Modern Web Programming Course Completion Certificate.jpg.jpeg"
                             alt="Certificate Preview"
                             className="rounded-lg shadow-lg w-4/5 md:w-11/12 lg:w-3/5 max-w-sm hover:scale-105 transition-transform duration-300 bg-white"
                         />
