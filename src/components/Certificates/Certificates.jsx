@@ -88,7 +88,7 @@ const Certificates = () => {
                         <img
                             src="/Certificates/Copy of Blue Green Modern Web Programming Course Completion Certificate.jpg.jpeg"
                             alt="Certificate Preview"
-                            className="rounded-lg shadow-lg w-4/5 md:w-11/12 lg:w-3/5 max-w-sm hover:scale-105 transition-transform duration-300 bg-white"
+                            className="rounded-lg shadow-lg w-1 md:w-11/12 lg:w-3/5 max-w-sm hover:scale-105 transition-transform duration-300 bg-white"
                         />
                         <span className="block mt-6 text-white text-base font-medium text-center opacity-90">
                             Your success deserves recognition.
