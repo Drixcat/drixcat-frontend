@@ -34,7 +34,7 @@ export default function ApplyCertification() {
 
     const handleSubmit = async(e) => {
         e.preventDefault();
-        // Submit logic here
+        
         setIsLoading(true)
         const res = await axios.post(`https://api.drixcat.com/contact/applycertificate`,form,{
             headers:{
