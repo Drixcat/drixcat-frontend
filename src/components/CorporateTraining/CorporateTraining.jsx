@@ -394,7 +394,7 @@ const CorporateTraining = () => {
       className="text-center md:text-left w-full md:w-1/2 text-white"
     >
       <h1 className="text-3xl md:text-4xl font-semibold mb-4">
-        Empower Your Workforce with <span className="text-[#0c1818]">Drixcat</span> Corporate Training
+        Empower Your Workforce with <span className="text-[#0c1818]">Drixcat Institute of AI</span> Corporate Training
       </h1>
       <p className="text-gray-200 mb-6 leading-relaxed">
         Unlock your team’s potential with our tailor-made corporate training
@@ -455,7 +455,7 @@ const CorporateTraining = () => {
 
       {/* Section 3: Benefits, Key Features & Programs */}
       <section className="bg-[#f4f4fb] py-12 px-6 md:px-16">
-        <h2 className="text-3xl font-semibold mb-10 text-center">Why Choose Drixcat?</h2>
+        <h2 className="text-3xl font-semibold mb-10 text-center">Why Choose Drixcat Institute of AI?</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
     {/* Tailored Learning */}
     <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-[0_0_10px_#50f48a] transition-shadow text-center">
@@ -509,7 +509,7 @@ const CorporateTraining = () => {
 
   {/* Final line */}
   <p className="text-center text-sm md:text-base text-[#0c1818] mt-10 max-w-3xl mx-auto">
-    By choosing <span className="text-[#099f4e] font-semibold">Drixcat</span>, you’re investing in your organization’s future success. 
+    By choosing <span className="text-[#099f4e] font-semibold">Drixcat Institute of AI</span>, you’re investing in your organization’s future success. 
     Our seminars and training sessions transform employees into certified professionals — 
     building confidence and ensuring long-term growth.
   </p>

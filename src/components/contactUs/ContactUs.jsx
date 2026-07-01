@@ -25,7 +25,7 @@ const centers = [
     phone: "+91-9953356262",
     whatsapp: "+91-9953356262",
     email: "info@drixcat.com",
-    address: "1ST & 3RD FLOOR, BLOCK-B-40/B-3,SECTOR-1,NEAR LEMON TREE HOTEL, NOIDA - 201301",
+    address: "BLOCK-B-40/B-3,SECTOR-1,NEAR LEMON TREE HOTEL, NOIDA - 201301",
   },
 ];
 

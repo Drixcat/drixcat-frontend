@@ -13,6 +13,8 @@ import {
   FaLinkedin,
   FaTwitter,
   FaInstagram,
+  FaFacebook,
+  FaTelegram,
 } from "react-icons/fa";
 import { motion } from "framer-motion";
 
@@ -296,7 +298,7 @@ const Placement = () => {
             transition={{ delay: 0.2 }}
             className="text-lg md:text-2xl text-gray-100 mb-8 max-w-2xl"
           >
-            At Drixcat, we are proud of our{" "}
+            At Drixcat Institute of AI, we are proud of our{" "}
             <span className="font-semibold text-[#50f48a]">
               89% placement rate
             </span>{" "}
@@ -351,7 +353,7 @@ const Placement = () => {
               industry-aligned curriculum.
             </p>
             <p className="text-base mb-2">
-              Drixcat graduates are placed in top companies like TCS, Accenture,
+              Drixcat Institute of AI graduates are placed in top companies like TCS, Accenture,
               Infosys, Cognizant, HCL, and more.
             </p>
             <p className="text-base">
@@ -398,7 +400,7 @@ const Placement = () => {
             Companies Hiring Our Students
           </h2>
           <p className="text-lg mb-4">
-            Drixcat graduates are working in top organizations across the globe.
+            Drixcat Institute of AI graduates are working in top organizations across the globe.
           </p>
           <div className="text-sm text-gray-500 mb-2">Trusted By</div>
           {/* Marquee */}
@@ -527,7 +529,7 @@ const Placement = () => {
           transition={{ duration: 0.6 }}
           className="text-3xl text-blue-900 font-bold text-center mb-8"
         >
-          Placement Highlights at Drixcat
+          Placement Highlights at Drixcat Institute of AI
         </motion.h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 max-w-6xl mx-auto">
           {highlights.map((item, i) => (
@@ -688,6 +690,22 @@ const Placement = () => {
               className="text-white hover:text-[#808098] text-2xl"
             >
               <FaInstagram />
+            </a>
+               <a
+              href="https://www.facebook.com/share/1CULc3aAph/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white hover:text-[#808098] text-2xl"
+            >
+              <FaFacebook />
+            </a>
+               <a
+              href="https://t.me/Drixcatplacementupdate"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white hover:text-[#808098] text-2xl"
+            >
+              <FaTelegram />
             </a>
           </div>
         </div>

@@ -86,7 +86,7 @@ const Certificates = () => {
                      <div className="absolute z-10 flex flex-col items-center justify-center w-full px-6 py-10">
                         {/* https://d1csarkz8obe9u.cloudfront.net/posterpreviews/portrait-certificate-template-design-5f452092bb7cdc699d1536c1023e6025_screen.jpg?ts=1637050294 */}
                     <img
-  src="/Certificates/Copy of Blue Green Modern Web Programming Course Completion Certificate.jpg.jpeg"
+  src="/Certificates/certificate.jpeg"
   alt="Certificate Preview"
 className="block rounded-lg shadow-lg w-full max-w-3xl h-auto hover:scale-105 transition-transform duration-300"
 />

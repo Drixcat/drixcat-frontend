@@ -461,7 +461,7 @@ useEffect(()=>{
           </form>
         </div>
         {/* Right: Logo / Branding */}
-        <div className="md:w-1/2 relative flex items-center justify-center">
+      <div className="hidden md:flex md:w-1/2 relative items-center justify-center">
           <div className="absolute inset-0 bg-gradient-to-br from-[#099F4E]/80 to-[#1A1A2E]/90 z-10 rounded-tr-2xl rounded-br-2xl" />
           <img
             src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80"
@@ -470,12 +470,13 @@ useEffect(()=>{
           />
 
           <div className="absolute z-10 flex flex-col items-center justify-center w-full px-6 py-10">
-            <img
-              src="Logo_drixcat.png"
-              alt="Certificate Preview"
-              className="rounded-lg w-3/5 max-w-xs min-w-[180px] hover:scale-105 transition-transform duration-300 "
-            />
-            <span className="block mt-6 text-white text-base font-medium text-center opacity-90">
+           <img
+  src="/drixcat_official_logo-1-removebg-preview.png"
+  alt="Certificate Preview"
+  className="rounded-lg w-full max-w-md h-auto md:h-auto max-h-[300px] md:max-h-none object-contain hover:scale-105 transition-transform duration-300"
+  
+/>
+         <span className="block mt-2 md:mt-6 text-white text-sm md:text-base font-medium text-center opacity-90">
               Empowering Learners,
               <br />
               Building Futures

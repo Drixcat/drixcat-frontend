@@ -1,5 +1,5 @@
 import React from "react";
-import { FaLightbulb, FaEye, FaRocket, FaChalkboardTeacher, FaLaptopCode, FaCloud, FaRobot, FaUserGraduate, FaHandsHelping, FaCertificate, FaAward, FaUsers, FaRegHandshake, FaRegCheckCircle, FaRegClock, FaLinkedin, FaTwitter, FaInstagram } from "react-icons/fa";
+import { FaLightbulb, FaEye, FaRocket, FaChalkboardTeacher, FaLaptopCode, FaCloud, FaRobot, FaUserGraduate, FaHandsHelping, FaCertificate, FaAward, FaUsers, FaRegHandshake, FaRegCheckCircle, FaRegClock, FaLinkedin, FaTwitter, FaInstagram, FaFacebook, FaTelegram } from "react-icons/fa";
 import { motion } from "framer-motion";
 
 // Dummy images (replace with real assets)
@@ -226,7 +226,7 @@ const AboutUs = () => {
                         variants={fadeInUp}
                         className="text-4xl md:text-6xl font-bold text-white mb-4 drop-shadow-lg"
                     >
-                        About Drixcat
+                        About Drixcat Institute of AI
                     </motion.h1>
                     <motion.p
                         initial="hidden"
@@ -277,7 +277,7 @@ const AboutUs = () => {
                         <div className="bg-gray-50 rounded-xl shadow-md p-8">
                             <h2 className="text-2xl md:text-3xl font-bold text-blue-900 mb-4">About Us</h2>
                             <p className="text-gray-700 mb-4">
-                                At Drixcat, our highest priority is to help students and professionals build job-oriented skills that open real career opportunities.
+                                At Drixcat Institute of AI, our highest priority is to help students and professionals build job-oriented skills that open real career opportunities.
                             </p>
                             <p className="text-gray-700">
                                 We believe that learning should not just be about gaining knowledge, but about applying it in the industry with confidence.
@@ -343,7 +343,7 @@ const AboutUs = () => {
                         variants={fadeIn}
                         className="text-gray-700 text-center mb-10 max-w-2xl mx-auto"
                     >
-                        Drixcat is a registered IT training institute offering industry-relevant courses in emerging technologies, designed to help you build a successful tech career.
+                        Drixcat Institute of AI is a registered IT training institute offering industry-relevant courses in emerging technologies, designed to help you build a successful tech career.
                     </motion.p>
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
                         {courseCategories.map((cat, idx) => (
@@ -374,7 +374,7 @@ const AboutUs = () => {
                         variants={fadeInUp}
                         className="text-2xl md:text-3xl font-bold text-blue-900 mb-8 text-center"
                     >
-                        Why Choose Drixcat?
+                        Why Choose Drixcat Institute of AI?
                     </motion.h2>
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
                         {features.map((f, idx) => (
@@ -549,6 +549,12 @@ const AboutUs = () => {
                         </a>
                         <a href="https://www.instagram.com/drixcat_education?igsh=dGc3dzd4YWViZWtl&utm_source=qr" target="_blank" rel="noopener noreferrer" className="text-blue-200 hover:text-white text-2xl transition">
                             <FaInstagram />
+                        </a>
+                            <a href="https://www.facebook.com/share/1CULc3aAph/" target="_blank" rel="noopener noreferrer" className="text-blue-200 hover:text-white text-2xl transition">
+                            <FaFacebook />
+                        </a>
+                        <a href="https://t.me/Drixcatplacementupdate" target="_blank" rel="noopener noreferrer" className="text-blue-200 hover:text-white text-2xl transition">
+                            <FaTelegram />
                         </a>
                     </div>
                 </div>

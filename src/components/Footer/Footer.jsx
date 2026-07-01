@@ -3,6 +3,7 @@ import {
   FaFacebookF,
   FaLinkedinIn,
   FaInstagram,
+  FaTelegram,
   
 } from "react-icons/fa";
 import {
@@ -28,7 +29,7 @@ const footerLinks = [
 const socialLinks = [
   {
     icon: <FaFacebookF />,
-    href: "https://www.facebook.com/share/19C8eurvzR/?mibextid=wwXIfr",
+    href: "https://www.facebook.com/share/1CULc3aAph/",
     label: "Facebook",
   },
  
@@ -37,6 +38,11 @@ const socialLinks = [
     icon: <FaInstagram />,
     href: "https://www.instagram.com/drixcat_education?igsh=dGc3dzd4YWViZWtl&utm_source=qr",
     label: "Instagram",
+  },
+   {
+    icon: <FaTelegram/>,
+    href: "https://t.me/Drixcatplacementupdate",
+    label: "Telegram",
   },
 ];
 
@@ -49,7 +55,7 @@ const Footer = () => {
           <div className="flex flex-col items-start">
             <div className="flex items-center mb-3">
               <span className="text-2xl font-bold text-gray-100 tracking-tight">
-                Drixcat
+                Drixcat Institute of AI
               </span>
             </div>
             <p className="text-gray-400 text-sm">
@@ -107,7 +113,7 @@ const Footer = () => {
               <div>
                 <p className="font-medium text-gray-300">Noida Office:</p>
                 <p className="leading-relaxed">
-                  1ST & 3RD FLOOR, BLOCK-B-40/B-3, SECTOR-1, NEAR LEMON TREE
+                  BLOCK-B-40/B-3, SECTOR-1, NEAR LEMON TREE
                   HOTEL, NOIDA - 201301
                 </p>
               </div>

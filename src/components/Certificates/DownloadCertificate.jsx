@@ -80,9 +80,9 @@ const DownloadCertificate = () => {
 
           <div className="absolute z-10 flex flex-col items-center justify-center w-full px-6 py-10">
             <img
-              src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/portrait-certificate-template-design-5f452092bb7cdc699d1536c1023e6025_screen.jpg?ts=1637050294"
+              src="/Certificates/certificate.jpeg"
               alt="Certificate Preview"
-              className="rounded-lg shadow-lg w-3/5 max-w-xs min-w-[180px] hover:scale-105 transition-transform duration-300 bg-white"
+              className=" w-full rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 bg-white"
             />
             <span className="block mt-6 text-white text-base font-medium text-center opacity-90">
               Your success deserves recognition.

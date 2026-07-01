@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { FaLightbulb, FaEye, FaRocket, FaChalkboardTeacher, FaLaptopCode, FaCloud, FaRobot, FaUserGraduate, FaHandsHelping, FaCertificate, FaAward, FaUsers, FaRegHandshake, FaRegCheckCircle, FaRegClock, FaLinkedin, FaTwitter, FaInstagram } from "react-icons/fa";
+import { FaLightbulb, FaEye, FaRocket, FaChalkboardTeacher, FaLaptopCode, FaCloud, FaRobot, FaUserGraduate, FaHandsHelping, FaCertificate, FaAward, FaUsers, FaRegHandshake, FaRegCheckCircle, FaRegClock, FaLinkedin, FaTwitter, FaInstagram, FaFacebook, FaTelegram } from "react-icons/fa";
 
 import { useNavigate } from "react-router-dom";
 
@@ -87,8 +87,16 @@ const GetInTouch = () => {
                         <a href="https://www.linkedin.com/company/edutech-masters/posts/?feedView=all" target="_blank" rel="noopener noreferrer" className="text-blue-200 hover:text-white text-2xl transition">
                             <FaLinkedin />
                         </a>
-                        <a href="https://www.instagram.com/drixcat_education?igsh=dGc3dzd4YWViZWtl&utm_source=qr" target="_blank" rel="noopener noreferrer" className="text-blue-200 hover:text-white text-2xl transition">
+                        <a href="https://www.instagram.com/drixcat_education?igsh=OGZ1MmV3cXJ6ejVz" target="_blank" rel="noopener noreferrer" className="text-blue-200 hover:text-white text-2xl transition">
                             <FaInstagram />
+                        </a>
+
+                              <a href="https://www.facebook.com/share/1CULc3aAph/" target="_blank" rel="noopener noreferrer" className="text-blue-200 hover:text-white text-2xl transition">
+                            <FaFacebook />
+                        </a>
+
+                           <a href="https://t.me/Drixcatplacementupdate" target="_blank" rel="noopener noreferrer" className="text-blue-200 hover:text-white text-2xl transition">
+                            <FaTelegram />
                         </a>
                     </div>
                 </div>

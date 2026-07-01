@@ -2,12 +2,22 @@ import React, { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import  courses  from "./courses";
-import { FaAward,FaGlobe,FaHandshake  } from "react-icons/fa";
+import { FaAward,FaGlobe,FaHandshake, FaInfo  } from "react-icons/fa";
 import axios from "axios";
 import API_BASE_URL from "../../config";
+import { HiInformationCircle, HiPhone } from "react-icons/hi2";
 
 
-
+import {
+  FaGraduationCap,
+  FaBriefcase,
+  FaUserTie,
+  
+  FaChartLine,
+  FaTools,
+  FaTrophy,
+  FaBookOpen,
+} from "react-icons/fa";
 
 // Dummy data for courses, accreditations, achievements, mentors, benefits
 const ACCREDITATIONS = [
@@ -191,14 +201,14 @@ const MENTOR_COMPANIES = [
 ];
 
 const BENEFITS = [
-  { icon: "🎓", text: "Globally recognized certifications" },
-  { icon: "💼", text: "Job-ready skills & portfolio" },
-  { icon: "🤝", text: "1:1 mentorship from industry experts" },
-  { icon: "🌎", text: "Flexible online/offline learning" },
-  { icon: "📈", text: "Career guidance & placement support" },
-  { icon: "🛠️", text: "Hands-on real-world projects" },
-  { icon: "🏆", text: "Access to alumni network" },
-  { icon: "📚", text: "Lifetime access to learning resources" },
+  { icon: <FaGraduationCap />, text: "Globally recognized certifications" },
+  { icon: <FaBriefcase />, text: "Job-ready skills & portfolio" },
+  { icon: <FaUserTie />, text: "1:1 mentorship from industry experts" },
+  { icon: <FaGlobe />, text: "Flexible online/offline learning" },
+  { icon: <FaChartLine />, text: "Career guidance & placement support" },
+  { icon: <FaTools />, text: "Hands-on real-world projects" },
+  { icon: <FaTrophy />, text: "Access to alumni network" },
+  { icon: <FaBookOpen />, text: "Lifetime access to learning resources" },
 ];
 
 const SOCIALS = [
@@ -219,6 +229,33 @@ const SOCIALS = [
       </svg>
     ),
     url: "https://wa.me/919953356262",
+  },
+   {
+    name: "Facebook",
+    icon: (
+     <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+  <path d="M24 12.073C24 5.404 18.627 0 12 0S0 5.404 0 12.073c0 6.019 4.388 11.009 10.125 11.927v-8.437H7.078v-3.49h3.047V9.413c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953h-1.514c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.49h-2.796V24C19.612 23.082 24 18.092 24 12.073z" />
+</svg>
+    ),
+    url: "https://www.facebook.com/share/1CULc3aAph/",
+  },
+   {
+    name: "Instagram",
+    icon: (
+    <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+  <path d="M7.75 2C4.574 2 2 4.574 2 7.75v8.5C2 19.426 4.574 22 7.75 22h8.5C19.426 22 22 19.426 22 16.25v-8.5C22 4.574 19.426 2 16.25 2h-8.5zm0 2h8.5A3.75 3.75 0 0 1 20 7.75v8.5A3.75 3.75 0 0 1 16.25 20h-8.5A3.75 3.75 0 0 1 4 16.25v-8.5A3.75 3.75 0 0 1 7.75 4zm9.5 1.5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zM12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"/>
+</svg>
+    ),
+    url: "https://www.instagram.com/drixcat_education?igsh=OGZ1MmV3cXJ6ejVz",
+  },
+    {
+    name: "Telegram",
+    icon: (
+ <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+  <path d="M23.953 4.57a2.22 2.22 0 0 0-.316-1.09 2.14 2.14 0 0 0-2.44-.95L1.68 10.07a1.98 1.98 0 0 0 .06 3.75l4.93 1.54 1.91 6.02a1.98 1.98 0 0 0 3.17.92l2.77-2.26 4.55 3.35a1.98 1.98 0 0 0 3.11-1.18L23.99 4.99a2.2 2.2 0 0 0-.037-.42zM9.58 14.84l-.4 3.76-1.18-3.72 10.4-6.56-8.82 6.52z" />
+</svg>
+    ),
+    url: "https://t.me/Drixcatplacementupdate",
   },
 ];
 
@@ -750,7 +787,7 @@ const[isLoading,setIsLoading] = useState(false)
           <div className="grid grid-cols-1 md:grid-cols-2 gap-y-6 gap-x-10 mb-8">
             {BENEFITS.map((b, idx) => (
               <div key={idx} className="flex items-start gap-4">
-                <span className="text-2xl md:text-3xl">{b.icon}</span>
+                <span className="text-[#272727] text-2xl md:text-3xl">{b.icon}</span>
                 <span className="text-[#808098] text-lg">{b.text}</span>
               </div>
             ))}
@@ -785,14 +822,14 @@ const[isLoading,setIsLoading] = useState(false)
           <div className="flex flex-col md:flex-row items-center justify-center gap-4 mb-4 text-white text-base">
             <span className="flex items-center gap-2">
               <span role="img" aria-label="email">
-                ✉️
+                <HiInformationCircle className="text-lg" />
               </span>
               info@drixcat.com
             </span>
             <span className="hidden md:inline-block">|</span>
             <span className="flex items-center gap-2">
               <span role="img" aria-label="phone">
-                ☎️
+                <HiPhone className="text-lg" />
               </span>
               +91-9953356262
             </span>

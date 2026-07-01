@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import {NavLink, Link } from "react-router-dom";
 
 const navLinks = [
   { name: "Home", href: "/" },
@@ -43,7 +43,7 @@ export default function Navbar() {
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center">
             <Link to="/">
-              <img src="/Logo_drixcat.png" alt="logo" width={70} />
+              <img src="/drixcat_official_logo-1-removebg-preview.png" alt="logo" width={70} />
             </Link>
           </div>
 
@@ -72,24 +72,34 @@ export default function Navbar() {
                   {/* Dropdown */}
                   <div className="absolute left-0 mt-2 w-48 bg-white rounded shadow-lg border border-gray-100 z-30 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
                     {link.dropdown.map((item) => (
-                      <Link
+                      <NavLink
                         key={item.name}
                         to={item.href}
+                        
                         className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-[#099F4E] transition"
+
+                        style={({ isActive }) => ({
+    color: isActive ? "#099F4E" : "",
+    fontWeight: isActive ? "bold" : "normal",
+  })}
                       >
                         {item.name}
-                      </Link>
+                      </NavLink>
                     ))}
                   </div>
                 </div>
               ) : (
-                <Link
+                <NavLink
                   key={link.name}
                   to={link.href}
                   className="text-gray-700 hover:text-[#099F4E] transition-colors duration-200 font-medium px-2 py-1 rounded"
+                    style={({ isActive }) => ({
+    color: isActive ? "#099F4E" : "",
+    fontWeight: isActive ? "bold" : "normal",
+  })}
                 >
                   {link.name}
-                </Link>
+                </NavLink>
               )
             )}
           </div>
