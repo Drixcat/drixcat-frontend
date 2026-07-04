@@ -125,7 +125,7 @@ const Footer = () => {
               </div>
 
               {/* Emails */}
-              <div className="flex flex-col sm:flex-row sm:flex-wrap sm:justify-end gap-2 sm:gap-4 mt-2">
+              <div className="flex flex-col md:items-end gap-2 sm:gap-4 mt-2">
                 <div className="flex items-center space-x-2">
                   <HiUserGroup className="text-lg" />
                   <a
@@ -135,6 +135,8 @@ const Footer = () => {
                     hr@drixcat.com
                   </a>
                 </div>
+
+               
 
                 <div className="flex items-center space-x-2">
                   <HiBuildingOffice2 className="text-lg" />
