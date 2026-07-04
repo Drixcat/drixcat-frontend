@@ -160,10 +160,10 @@ useEffect(()=>{
   
 
   return (
-    <div className="min-h-screen flex items-center justify-center  py-8">
+    <div className="min-h-screen flex items-center justify-center  py-8 ">
       <div className="max-w-5xl w-full flex flex-col md:flex-row shadow-xl rounded-2xl overflow-hidden ">
         {/* Left: Form */}
-        <div className="flex-1 p-8 bg-[#F4F7FB]">
+        <div className="flex-1 p-8 bg-[#F4F7FB] border-t border-l border-b border-gray-300 rounded-tl-2xl rounded-bl-2xl overflow-hidden">
           <h2 className="text-2xl font-bold text-[#099F4E] ">
             Online Registration
           </h2>
@@ -461,28 +461,13 @@ useEffect(()=>{
           </form>
         </div>
         {/* Right: Logo / Branding */}
-      <div className="hidden md:flex md:w-1/2 relative items-center justify-center">
-          <div className="absolute inset-0 bg-gradient-to-br from-[#099F4E]/80 to-[#1A1A2E]/90 z-10 rounded-tr-2xl rounded-br-2xl" />
-          <img
-            src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80"
-            alt="Certificate Illustration"
-            className="object-cover w-full h-full z-0"
-          />
-
-          <div className="absolute z-10 flex flex-col items-center justify-center w-full px-6 py-10">
-           <img
-  src="/drixcat_official_logo-1-removebg-preview.png"
-  alt="Certificate Preview"
-  className="rounded-lg w-full max-w-md h-auto md:h-auto max-h-[300px] md:max-h-none object-contain hover:scale-105 transition-transform duration-300"
-  
-/>
-         <span className="block mt-2 md:mt-6 text-white text-sm md:text-base font-medium text-center opacity-90">
-              Empowering Learners,
-              <br />
-              Building Futures
-            </span>
-          </div>
-        </div>
+      <div className="hidden md:block md:w-1/2 border-t border-r border-b border-gray-300 rounded-tr-2xl rounded-br-2xl overflow-hidden">
+  <img
+    src="/online-registration-right-image.jpeg"
+    alt="Certificate Preview"
+    className="w-full h-full object-cover rounded-tr-2xl rounded-br-2xl"
+  />
+</div>
       </div>
     </div>
   );

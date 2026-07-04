@@ -17,6 +17,7 @@ import {
   FaTelegram,
 } from "react-icons/fa";
 import { motion } from "framer-motion";
+import AluminiCards from "../AluminiCards/AluminiCards";
 
 const heroBg =
   "https://images.unsplash.com/photo-1513258496099-48168024aec0?auto=format&fit=crop&w=1500&q=80";
@@ -362,6 +363,10 @@ const Placement = () => {
             </p>
           </motion.div>
         </div>
+      </Section>
+
+      <Section className="bg-white">
+        <AluminiCards title={"Our Placements"}/>
       </Section>
 
       {/* Section 3: Our Placement Approach */}

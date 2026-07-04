@@ -405,7 +405,7 @@ const getCardsPerView = () => {
   return 1;
 };
 
-const AluminiCards = () => {
+const AluminiCards = ({title}) => {
 const [current, setCurrent] = useState(0);
 const [cardsPerView, setCardsPerView] = useState(getCardsPerView());
 const intervalRef = useRef();
@@ -459,7 +459,7 @@ return (
     <section className={`${sectionBg} py-16 px-4 md:px-8`}>
         <div className="max-w-7xl mx-auto">
             <h2 className={`text-3xl md:text-4xl font-bold mb-10 text-center ${headingColor}`}>
-               Our Alumini
+              {title?title:"Our Alumini"}
             </h2>
             <div className="relative">
                 {/* Carousel */}
